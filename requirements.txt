@@ -10,6 +10,6 @@ wordcloud
 # IA E NLP (modo cloud leve)
 scikit-learn
 transformers==4.38.0
-sentencepiece==0.1.96
+
 
 
