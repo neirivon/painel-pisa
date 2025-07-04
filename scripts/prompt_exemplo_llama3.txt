@@ -1,0 +1,8 @@
+Analise o seguinte parágrafo e identifique:
+1. O nível da Taxonomia de Bloom mais provável;
+2. A polaridade do sentimento predominante;
+3. A dimensão e nível da Rubrica SINAPSE;
+4. As palavras-chave principais.
+
+Texto:
+"\"O Programa Internacional de Avaliação de Estudantes (Pisa) avalia o conhecimento\ne as habilidades dos estudantes na faixa etária dos 15 anos em matemática,\nleitura e ciências.\""

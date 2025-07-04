@@ -1,39 +1,44 @@
-# Ambientes virtuais
-venv*/
-*/venv*/
+# ⛔ Arquivos de segredo e ambiente
+.env
+.streamlit/secrets.toml
 
-# Arquivos temporários e de log
+# 🐍 Ambientes virtuais
+venv/
+venv_*/
+*.env/
+*.venv/
+__pycache__/
+*.pyc
+
+# 💾 Dados e artefatos pesados
+*.csv
+*.tsv
+*.json
+*.sqlite3
+*.db
 *.log
-*.bak
-*.tmp
-
-# Backups de banco de dados
-*.sql
-
-# Index FAISS (se regenerável)
-*.index
-
-# Arquivos pesados de mídia
-*.mp3
-*.wav
-*.mp4
 *.zip
-*.pdf
+*.mp4
+*.wav
+*.mp3
+*.tar.gz
+*.egg-info/
 
-# Arquivos de teste ou rascunho
-scripts/teste*
-scripts/test_*
-scripts/*.txt
-scripts/venv_*/
-scripts/*.log
-scripts/*.sql
+# 🧪 Testes e cache
+.ipynb_checkpoints
+.cache/
+.pytest_cache/
+coverage/
 
-# Dados brutos que não vão para o deploy
-dados_processados/
-modelos_coqui/
-realtime-translator/
-saida_blocos_xtts/
-avalicoes_ia/
-downloads/
-logs/
-respostas_pdf/
+# 📦 Build
+build/
+dist/
+*.egg
+*.whl
+
+# 🧙 Configs locais
+.DS_Store
+.idea/
+.vscode/
+*.code-workspace
+
