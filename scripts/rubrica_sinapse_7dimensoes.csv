@@ -1,0 +1,25 @@
+dimensao,nivel,titulo,descricao
+Taxonomia de Bloom,1,Explorador em Desenvolvimento,Demonstra reconhecimento ou repetição de conceitos sem elaboração.
+Taxonomia de Bloom,2,Construtor de Ideias,Compreende os conceitos e os reorganiza de forma básica.
+Taxonomia de Bloom,3,Criador de Conexões,Aplica e analisa conceitos em novos contextos com coerência.
+Taxonomia de Bloom,4,Transformador de Saberes,"Cria, avalia e propõe ideias originais com profundidade crítica."
+Taxonomia SOLO,1,Explorador em Desenvolvimento,Expressa uma única ideia desconectada (uniestrutural).
+Taxonomia SOLO,2,Construtor de Ideias,Lista ideias múltiplas sem articulação entre elas (multiestrutural).
+Taxonomia SOLO,3,Criador de Conexões,Conecta ideias de forma lógica e estruturada (relacional).
+Taxonomia SOLO,4,Transformador de Saberes,"Generaliza, extrapola ou sintetiza com abstração (abstrato estendido)."
+Perfil Neuropsicopedagógico,1,Explorador em Desenvolvimento,"Apresenta dificuldades na organização, coesão e clareza textual."
+Perfil Neuropsicopedagógico,2,Construtor de Ideias,Expressa com estrutura básica e vocabulário funcional.
+Perfil Neuropsicopedagógico,3,Criador de Conexões,"Demonstra fluidez, coerência e inferência entre ideias."
+Perfil Neuropsicopedagógico,4,Transformador de Saberes,"Elabora textos com abstrações, metáforas e pensamento complexo."
+DUA – Desenho Universal para Aprendizagem,1,Explorador em Desenvolvimento,Utiliza uma forma limitada de representação e expressão.
+DUA – Desenho Universal para Aprendizagem,2,Construtor de Ideias,Apresenta ideias com vocabulário acessível e poucos recursos.
+DUA – Desenho Universal para Aprendizagem,3,Criador de Conexões,"Integra textos, imagens e outras linguagens para reforçar ideias."
+DUA – Desenho Universal para Aprendizagem,4,Transformador de Saberes,Explora múltiplas formas expressivas com clareza e intencionalidade.
+Metodologia Ativa,1,Explorador em Desenvolvimento,"Demonstra resposta passiva, sem tentativa de ação."
+Metodologia Ativa,2,Construtor de Ideias,Aponta estratégia simples com alguma conexão ao problema.
+Metodologia Ativa,3,Criador de Conexões,"Aplica estratégias para resolver, adaptar ou propor soluções."
+Metodologia Ativa,4,Transformador de Saberes,"Inova, problematiza ou colabora com soluções críticas e bem fundamentadas."
+Pertencimento e Equidade Territorial (CTC + ESCS),1,Explorador em Desenvolvimento,Ignora ou não reconhece elementos do território e cultura local.
+Pertencimento e Equidade Territorial (CTC + ESCS),2,Construtor de Ideias,"Reconhece o território, mas ainda sem articulação crítica."
+Pertencimento e Equidade Territorial (CTC + ESCS),3,Criador de Conexões,Relaciona saberes escolares com a vivência cultural e local.
+Pertencimento e Equidade Territorial (CTC + ESCS),4,Transformador de Saberes,Valoriza criticamente o território e propõe soluções com protagonismo sociocultural.

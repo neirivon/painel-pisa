@@ -1,0 +1,107 @@
+Claro! Abaixo estão os exemplos práticos para cada nível da dimensão “Planejamento Didático com Princípios de Universalidade e Acessibilidade Educacional (baseado no DUA)”, como parte da Rubrica SINAPSE para IA.
+
+Esses exemplos são cuidadosamente elaborados para aplicação por professores, avaliadores humanos ou sistemas de IA educacional — sempre respeitando os 3 princípios do DUA (Representação, Ação/Expressão, Engajamento).
+
+🧩 Dimensão: Planejamento Didático com Princípios de Universalidade e Acessibilidade Educacional (baseado no DUA)
+🔹 Nível 1 – Planejamento Excludente ou Inflexível
+📌 Descritor: A proposta ignora princípios de acessibilidade e diversidade.
+📚 Exemplos práticos:
+
+A IA propõe um exercício de leitura com texto denso e sem imagens, áudio ou legenda.
+
+A atividade exige resposta exclusivamente escrita em letra cursiva, sem aceitar outras formas.
+
+Aula online gravada sem legendas ou tradução em Libras.
+
+Prova digital sem possibilidade de ampliação da fonte ou uso de leitor de tela.
+
+🔹 Nível 2 – Planejamento Emergente com Adaptações Pontuais
+📌 Descritor: Reconhece a diversidade, mas responde de forma reativa.
+📚 Exemplos práticos:
+
+A IA oferece áudio de um texto apenas quando detecta aluno com deficiência visual.
+
+Disponibiliza tradução em Libras somente após solicitação individual.
+
+Aluno com dislexia recebe material adaptado, mas apenas após intervenção do professor.
+
+A IA permite ampliar a fonte, mas não adapta o layout ou a forma de navegação.
+
+🔹 Nível 3 – Planejamento Universal Parcialmente Estruturado
+📌 Descritor: Aplica parcialmente os princípios do DUA, com opções limitadas.
+📚 Exemplos práticos:
+
+A IA oferece conteúdos em formato de vídeo, texto e áudio, mas não ajusta a ordem ou prioridade conforme o perfil do aluno.
+
+A avaliação permite múltiplas formas de resposta (escrita, oral ou vídeo), mas sem conexão com estilos de aprendizagem identificados.
+
+Atividades usam gamificação, mas sem análise de engajamento emocional ou acessibilidade dos elementos gráficos.
+
+🔹 Nível 4 – Planejamento Universal, Acessível e Personalizado
+📌 Descritor: Aplica de forma plena os três princípios do DUA.
+📚 Exemplos práticos:
+
+A IA identifica o aluno como aprendiz visual e oferece conteúdo com infográficos animados, narrativas visuais e vídeos com legenda e Libras simultâneas.
+
+Atividades podem ser respondidas via áudio, texto, vídeo ou manipulação de objetos virtuais, com liberdade de escolha estruturada.
+
+O sistema detecta queda de engajamento e adapta a atividade, mudando a abordagem para uma narrativa gamificada com personagens e recompensas.
+
+IA oferece um plano de estudos personalizado com múltiplas rotas de aprendizagem, acessível em dispositivos móveis e compatível com leitores de tela.
+
+📝 Comentários adicionais
+Estes exemplos são flexíveis e podem ser adaptados por instituições de ensino, docentes e desenvolvedores de IA educacional para garantir inclusão plena, conforme os princípios do Desenho Universal para a Aprendizagem (DUA).
+
+Se quiser, posso:
+
+Incluir esses exemplos no JSON da rubrica SINAPSE IA (formato estruturado por nível);
+
+Exportar como PDF diagramado com visual pedagógico;
+
+Adicionar na interface de rotulagem ou painel do Streamlit.
+
+Deseja que eu prossiga com alguma dessas opções?
+
+
+
+
+
+
+Você disse:
+Agora trace um paralelo Dimensão: Planejamento Didático com Princípios de Universalidade e Acessibilidade Educacional (baseado no DUA), com exemplos na coluna do meio, e a DUA original na coluna mais a direita.
+
+
+O ChatGPT disse:
+Aqui está o paralelo estruturado em tabela entre a dimensão da Rubrica SINAPSE para IA — Planejamento Didático com Princípios de Universalidade e Acessibilidade Educacional — e os 3 princípios originais do DUA. Inclui uma coluna central com exemplos práticos correspondentes a cada nível de sofisticação do planejamento.
+
+🧩 Paralelo Rubrica SINAPSE × Princípios Originais do DUA
+Nível (Rubrica SINAPSE para IA)	Exemplos Práticos	Princípios do DUA (CAST)
+Nível 1
+Planejamento Excludente ou Inflexível	- Texto longo sem imagens, áudio ou tradução em Libras;
+- Prova apenas escrita sem opção de ampliação ou alternativa oral;
+- Aula digital sem legenda ou recursos visuais.	❌ Nenhum princípio aplicado
+Barreiras de acesso predominam. A diversidade é ignorada.
+Nível 2
+Planejamento Emergente com Adaptações Pontuais	- Libras só se o aluno pedir;
+- IA permite áudio só após marcação de deficiência;
+- Ajustes manuais pelo professor para cada caso.	☑️ Representação (parcial e sob demanda)
+☑️ Ação/Expressão (casos isolados)
+❌ Engajamento (não considerado)
+Nível 3
+Planejamento Universal Parcialmente Estruturado	- Conteúdos em texto, áudio e vídeo, mas sem personalização;
+- IA oferece formas diferentes de resposta (vídeo, texto, voz), sem conectar ao estilo de aprendizagem;
+- Gamificação genérica, sem acessibilidade ou motivação adaptada.	☑️ Representação (disponível)
+☑️ Ação/Expressão (opcional)
+❌ ou ☑️ Engajamento (parcial ou genérico)
+Nível 4
+Planejamento Universal, Acessível e Personalizado	- IA adapta material visual, textual ou auditivo conforme o perfil identificado;
+- Atividades são acessíveis, gamificadas e emocionalmente engajadoras;
+- A resposta pode ser em múltiplos formatos (oral, vídeo, simulação, etc.);
+- Acessibilidade garantida desde o design (ex: fonte, cor, navegação).	✅ Representação (múltiplas formas de acesso)
+✅ Ação/Expressão (diversidade de respostas)
+✅ Engajamento (motivações e preferências do aluno respeitadas)
+
+✅ Conclusão
+Este paralelo mostra como a Rubrica SINAPSE para IA evolui de um modelo excludente para um modelo plenamente alinhado com o DUA, servindo tanto como instrumento de avaliação pedagógica quanto como guia de projeto para IAs educacionais.
+
+

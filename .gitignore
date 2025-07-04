@@ -1,0 +1,39 @@
+# Ambientes virtuais
+venv*/
+*/venv*/
+
+# Arquivos temporários e de log
+*.log
+*.bak
+*.tmp
+
+# Backups de banco de dados
+*.sql
+
+# Index FAISS (se regenerável)
+*.index
+
+# Arquivos pesados de mídia
+*.mp3
+*.wav
+*.mp4
+*.zip
+*.pdf
+
+# Arquivos de teste ou rascunho
+scripts/teste*
+scripts/test_*
+scripts/*.txt
+scripts/venv_*/
+scripts/*.log
+scripts/*.sql
+
+# Dados brutos que não vão para o deploy
+dados_processados/
+modelos_coqui/
+realtime-translator/
+saida_blocos_xtts/
+avalicoes_ia/
+downloads/
+logs/
+respostas_pdf/

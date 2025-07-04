@@ -1,0 +1,1593 @@
+.
+├── arquivos_com_potencial.csv
+├── atualizar_requisitos_local.sh
+├── check_intents.py
+├── checkpoints
+│   ├── pisa_2003_cognitive_item.txt
+│   ├── pisa_2003_school.txt
+│   └── pisa_2003_student.txt
+├── corrigir_caminhos_dados.sh
+├── corrigir_caminhos_malformados.sh
+├── corrigir_concatenacoes_mais_seguras.sh
+├── corrigir_config_caminho_csv.sh
+├── dados_processados
+│   ├── 2018
+│   │   └── VNM
+│   │       ├── cog_2018_vnm_nans.csv
+│   │       └── cog_2018_vnm_nans.json
+│   ├── autoavaliacoes
+│   │   └── mullix_contribuicoes.txt
+│   ├── bncc
+│   │   ├── bncc_9ano_matematica.csv
+│   │   ├── bncc_9ano_matematica.json
+│   │   ├── habilidades_bncc_9ano_ciencias.csv
+│   │   ├── habilidades_bncc_9ano_ciencias.json
+│   │   ├── habilidades_bncc_9ano_lingua_portuguesa.csv
+│   │   ├── habilidades_bncc_9ano_lingua_portuguesa.json
+│   │   ├── habilidades_bncc_9ano_matematica.csv
+│   │   ├── habilidades_bncc_9ano_matematica.json
+│   │   ├── rubrica_saeb_v2.json
+│   │   ├── rubrica_sinapse_9ano_ciencias_v1.csv
+│   │   ├── rubrica_sinapse_9ano_ciencias_v1.json
+│   │   ├── rubrica_sinapse_9ano_lingua_portuguesa_v1_corrigido.csv
+│   │   ├── rubrica_sinapse_9ano_lingua_portuguesa_v1_corrigido.json
+│   │   ├── rubrica_sinapse_9ano_lingua_portuguesa_v1.csv
+│   │   ├── rubrica_sinapse_9ano_lingua_portuguesa_v1.json
+│   │   ├── rubrica_sinapse_9ano_matematica.csv
+│   │   ├── rubrica_sinapse_9ano_matematica.json
+│   │   ├── rubrica_sinapse_9ano_matematica_v1.csv
+│   │   ├── rubrica_sinapse_9ano_matematica_v1.json
+│   │   ├── rubrica_sinapse_9ano_todas_v1.csv
+│   │   ├── rubrica_sinapse_9ano_todas_v1.json
+│   │   ├── rubrica_sinapse_9ano_todas_v2.csv
+│   │   ├── rubrica_sinapse_9ano_todas_v2.json
+│   │   ├── rubrica_sinapse_9ano_todas_v3.csv
+│   │   ├── rubrica_sinapse_9ano_todas_v3.json
+│   │   ├── rubrica_sinapse_9ano_todas_v4.csv
+│   │   ├── rubrica_sinapse_9ano_todas_v4.json
+│   │   ├── rubrica_sinapse_dim_contextualizacao.csv
+│   │   ├── rubrica_sinapse_dim_contextualizacao.json
+│   │   └── rubrica_sinapse_ia_v1_2.json
+│   ├── estrutura_campos_banco_pisa.csv
+│   ├── exportados
+│   │   └── medias_pais_item_escs_2022.txt
+│   ├── Instrucoes.PRISMA.INEP_RELATORIOS_COMPLETOS.txt
+│   ├── Instrucoes.PRISMA.INEP.txt
+│   ├── mapa_campos_desempenho_pisa.csv
+│   ├── mapa_equivalencia_campos_pisa.csv
+│   ├── mapeamento_campos_desempenho_faltantes.csv
+│   ├── mullix_contribuicoes.txt
+│   ├── ocde_json
+│   │   ├── 2000_pisa_2000_en.json
+│   │   ├── 2003_pisa_2003_data_analysis_manual_spss.json
+│   │   ├── 2003_pisa_2003_en.json
+│   │   ├── 2006_pisa_2006_v1_en.json
+│   │   ├── 2006_pisa_2006_v2_en.json
+│   │   ├── 2009_pisa_2009_v1.json
+│   │   ├── 2009_pisa_2009_v2.json
+│   │   ├── 2009_pisa_2009_v3.json
+│   │   ├── 2009_pisa_2009_v4_en.json
+│   │   ├── 2009_pisa_2009_v5.json
+│   │   ├── 2009_pisa_2009_v6_.json
+│   │   ├── 2012_pisa_2012_results_snapshot_volume_i_eng.json
+│   │   ├── 2012_pisa_2012_v1.json
+│   │   ├── 2012_pisa_2012_v2.json
+│   │   ├── 2012_pisa_2012_v4.json
+│   │   ├── 2012_pisa_2012_v5_en.json
+│   │   ├── 2012_pisa2012_v6_en.json
+│   │   ├── 2015_pisa_2015_brazil_prt.json
+│   │   ├── 2015_pisa_2015_v1_en.json
+│   │   ├── 2015_pisa_2015_v2_en.json
+│   │   ├── 2015_pisa_2015_v3_en.json
+│   │   ├── 2015_pisa_2015_v4_en.json
+│   │   ├── 2015_pisa_2015_v5_en.json
+│   │   ├── 2018_pisa2018_cn_bra.json
+│   │   ├── 2018_pisa_2018_v1_en.json
+│   │   ├── 2018_pisa_2018_v2_en.json
+│   │   ├── 2018_pisa2018_v3_en.json
+│   │   ├── 2018_pisa_2018_v4_en.json
+│   │   ├── 2018_pisa_2018_v5_en.json
+│   │   ├── 2018_pisa_2018_v6_en.json
+│   │   ├── 2022_pisa_2022_insights_and_interpretations.json
+│   │   ├── 2022_pisa_2022_v1_en.json
+│   │   ├── 2022_pisa_2022_v2_en.json
+│   │   ├── 2022_pisa_2022_v3_en.json
+│   │   └── 2022_pisa_2022_v4_en.json
+│   ├── ocde_txt
+│   │   ├── 2000_pisa_2000_en.txt
+│   │   ├── 2003_pisa_2003_data_analysis_manual_spss.txt
+│   │   ├── 2003_pisa_2003_en.txt
+│   │   ├── 2006_pisa_2006_v1_en.txt
+│   │   ├── 2006_pisa_2006_v2_en.txt
+│   │   ├── 2009_pisa_2009_v1.txt
+│   │   ├── 2009_pisa_2009_v2.txt
+│   │   ├── 2009_pisa_2009_v3.txt
+│   │   ├── 2009_pisa_2009_v4_en.txt
+│   │   ├── 2009_pisa_2009_v5.txt
+│   │   ├── 2009_pisa_2009_v6_.txt
+│   │   ├── 2012_pisa_2012_results_snapshot_volume_i_eng.txt
+│   │   ├── 2012_pisa_2012_v1.txt
+│   │   ├── 2012_pisa_2012_v2.txt
+│   │   ├── 2012_pisa_2012_v4.txt
+│   │   ├── 2012_pisa_2012_v5_en.txt
+│   │   ├── 2012_pisa2012_v6_en.txt
+│   │   ├── 2015_pisa_2015_brazil_prt.txt
+│   │   ├── 2015_pisa_2015_v1_en.txt
+│   │   ├── 2015_pisa_2015_v2_en.txt
+│   │   ├── 2015_pisa_2015_v3_en.txt
+│   │   ├── 2015_pisa_2015_v4_en.txt
+│   │   ├── 2015_pisa_2015_v5_en.txt
+│   │   ├── 2018_pisa2018_cn_bra.txt
+│   │   ├── 2018_pisa_2018_v1_en.txt
+│   │   ├── 2018_pisa_2018_v2_en.txt
+│   │   ├── 2018_pisa2018_v3_en.txt
+│   │   ├── 2018_pisa_2018_v4_en.txt
+│   │   ├── 2018_pisa_2018_v5_en.txt
+│   │   ├── 2018_pisa_2018_v6_en.txt
+│   │   ├── 2022_pisa_2022_insights_and_interpretations.txt
+│   │   ├── 2022_pisa_2022_v1_en.txt
+│   │   ├── 2022_pisa_2022_v2_en.txt
+│   │   ├── 2022_pisa_2022_v3_en.txt
+│   │   └── 2022_pisa_2022_v4_en.txt
+│   ├── pisa
+│   │   ├── 2006
+│   │   │   ├── attitudes.csv
+│   │   │   ├── attitudes.json
+│   │   │   ├── cognitive.csv
+│   │   │   └── cognitive.json
+│   │   ├── 2009
+│   │   │   ├── era_cog09_s_june11.csv
+│   │   │   ├── era_cog09_s_june11.json
+│   │   │   ├── era_cog09_td_june11.csv
+│   │   │   ├── era_cog09_td_june11.json
+│   │   │   ├── era_scq09_june11.csv
+│   │   │   ├── era_scq09_june11.json
+│   │   │   ├── era_stq09_june11.csv
+│   │   │   ├── era_stq09_june11.json
+│   │   │   ├── student.csv
+│   │   │   ├── student.json
+│   │   │   ├── student_sps.csv
+│   │   │   └── student_sps.json
+│   │   ├── 2012
+│   │   │   ├── int_cog09_s_dec11.csv
+│   │   │   ├── int_cog09_s_dec11.json
+│   │   │   ├── int_cog09_td_dec11.csv
+│   │   │   ├── int_cog09_td_dec11.json
+│   │   │   ├── int_par09_dec11.csv
+│   │   │   ├── int_par09_dec11.json
+│   │   │   ├── int_scq09_dec11.csv
+│   │   │   ├── int_scq09_dec11.json
+│   │   │   ├── int_stq09_dec11.csv
+│   │   │   └── int_stq09_dec11.json
+│   │   └── 2015
+│   │       ├── cy6_ms_cm2_stu_cog2015.csv
+│   │       ├── cy6_ms_cm2_stu_cog2015.json
+│   │       ├── cy6_ms_cm2_stu_qqq2015.csv
+│   │       ├── cy6_ms_cm2_stu_qqq2015.json
+│   │       ├── cy6_ms_cm2_stu_qtm2015.csv
+│   │       ├── cy6_ms_cm2_stu_qtm2015.json
+│   │       ├── cy6_ms_cmb_flt_ttm2015.csv
+│   │       ├── cy6_ms_cmb_flt_ttm2015.json
+│   │       ├── cy6_ms_cmb_sch_qqq2015.csv
+│   │       ├── cy6_ms_cmb_sch_qqq2015.json
+│   │       ├── cy6_ms_cmb_stu_cog2015.csv
+│   │       ├── cy6_ms_cmb_stu_flt2015.csv
+│   │       ├── cy6_ms_cmb_stu_flt2015.json
+│   │       ├── cy6_ms_cmb_stu_qq22015.csv
+│   │       ├── cy6_ms_cmb_stu_qq22015.json
+│   │       ├── cy6_ms_cmb_tch_qqq2015.csv
+│   │       └── cy6_ms_cmb_tch_qqq2015.json
+│   ├── prisma
+│   │   ├── PRISMA_2020_expandido_texto_bruto.txt
+│   │   ├── PRISMA_2020_resumido_texto_bruto.txt
+│   │   ├── prisma_checklist_expandido_populado.json
+│   │   ├── prisma_checklist_resumido_populado.json
+│   │   └── prisma_checklists_abnt.json
+│   ├── questoes
+│   │   ├── questoes_pisa_ordenadas.csv
+│   │   ├── questoes_pisa_ordenadas.json
+│   │   ├── questoes_pisa_ordenadas_padronizado.csv
+│   │   ├── questoes_pisa_ordenadas_padronizado.json
+│   │   ├── questoes_pisa_ordenadas_v6a.csv
+│   │   ├── questoes_pisa_ordenadas_v6a.json
+│   │   └── questoes_pisa_tri_mineiro_completas.json
+│   ├── questoes_leitura.json
+│   ├── relatorios_completos
+│   │   ├── inferencias_globais_inep2022.csv
+│   │   ├── inferencias_globais_inep2022.json
+│   │   ├── relatorio_completo_inep_2022.csv
+│   │   └── relatorio_completo_inep_2022.json
+│   ├── relatorios_inep
+│   │   ├── relatorio_inep_2000.csv
+│   │   ├── relatorio_inep_2000.json
+│   │   ├── relatorio_inep_2003.csv
+│   │   ├── relatorio_inep_2003.json
+│   │   ├── relatorio_inep_2006.csv
+│   │   ├── relatorio_inep_2006.json
+│   │   ├── relatorio_inep_2009.csv
+│   │   ├── relatorio_inep_2009.json
+│   │   ├── relatorio_inep_2012.csv
+│   │   ├── relatorio_inep_2012.json
+│   │   ├── relatorio_inep_2015.csv
+│   │   ├── relatorio_inep_2015.json
+│   │   ├── relatorio_inep_2018.csv
+│   │   ├── relatorio_inep_2018.json
+│   │   ├── relatorio_inep_2022.csv
+│   │   ├── relatorio_inep_2022_enriquecido.csv
+│   │   ├── relatorio_inep_2022_enriquecido.json
+│   │   └── relatorio_inep_2022.json
+│   ├── respostas
+│   │   ├── faiss_index_pisa_sinapse.index
+│   │   ├── faiss_metadata_pisa_sinapse.json
+│   │   ├── questoes_pisa_sinapse.json
+│   │   ├── respostas_exemplo_por_area.txt
+│   │   ├── respostas_questoes_pisa.csv
+│   │   ├── respostas_questoes_pisa.json
+│   │   └── resumo_respostas_pisa_sinapse.txt
+│   ├── rotulagem
+│   │   ├── paragrafos_inep2022_rotulagem.csv
+│   │   └── paragrafos_inep2022_rotulagem.json
+│   ├── rubricas
+│   │   ├── analise_formatividade_somatividade.json
+│   │   ├── avaliacao_rubrica_sinapse_IA_V2.txt
+│   │   ├── avaliacoes_juizes
+│   │   │   ├── dirceu
+│   │   │   ├── neirivon
+│   │   │   └── termo_consentimento_juiz_completo.pdf
+│   │   ├── avaliacoes_rubrica_sinapse.csv
+│   │   ├── avaliacoes_rubrica_sinapse.json
+│   │   ├── avaliacoes_rubricas_referenciais.csv
+│   │   ├── avaliacoes_rubricas_referenciais.json
+│   │   ├── avaliar_rubricas_v1.csv
+│   │   ├── avaliar_rubricas_v1.json
+│   │   ├── BKP-rubrica_sinapse_ia_v1_3_padronizada.json
+│   │   ├── questoes_pisa_sinapse.csv
+│   │   ├── questoes_pisa_sinapse.json
+│   │   ├── relatorio_avaliacao_rubrica_v1_3.txt
+│   │   ├── Rubrica_Avaliacao_de_Rubricas.csv
+│   │   ├── rubrica_ctc.csv
+│   │   ├── rubrica_ctc.json
+│   │   ├── rubrica_metodologias_ativas.csv
+│   │   ├── rubrica_metodologias_ativas.json
+│   │   ├── rubrica_neuropsicopedagogia.csv
+│   │   ├── rubrica_neuropsicopedagogia.json
+│   │   ├── rubrica_saeb_v2.csv
+│   │   ├── rubrica_saeb_v2.json
+│   │   ├── rubrica_sinapse_7dimensoes.csv
+│   │   ├── rubrica_sinapse_7dimensoes.json
+│   │   ├── rubrica_sinapse_ia_v1_2_completa.json
+│   │   ├── rubrica_sinapse_ia_v1_3_completa.json
+│   │   ├── rubrica_sinapse_ia_v1_3.json
+│   │   ├── rubrica_sinapse_ia_v1_3_padronizada.json
+│   │   ├── rubrica_sinapse_IA_V1.csv
+│   │   ├── rubrica_sinapse_ia_v4.json
+│   │   ├── rubrica_sinapse_v5.csv
+│   │   ├── rubrica_sinapse_v5.json
+│   │   ├── rubrica_sinapse_v6a_complementar.json
+│   │   ├── rubrica_sinapse_v6a_corrigida.csv
+│   │   ├── rubrica_sinapse_v6a_corrigida.json
+│   │   ├── rubrica_sinapse_v6_adaptada.csv
+│   │   ├── rubrica_sinapse_v6_adaptada.json
+│   │   ├── rubrica_sinapse_v6a_melhorada.json
+│   │   ├── rubricas_referenciais_completas.csv
+│   │   ├── rubricas_referenciais_completas_final (1).json
+│   │   ├── rubricas_referenciais_completas_final.json
+│   │   ├── rubricas_referenciais_completas.json
+│   │   ├── rubricas_referenciais_completas_v4.json
+│   │   ├── rubricas_referenciais.csv
+│   │   ├── rubricas_referenciais.json
+│   │   └── termos_juizes
+│   ├── rubricas_edicao_pisa
+│   └── tmap
+│       └── rubricas_pedagogicas_tmap.csv
+├── downloads
+│   ├── 2019_Energy_Dashboards.xlsx
+│   └── Dicionario_Informacoes_ATLAS_Esgotos.xlsx
+├── exportar_rubrica_saeb_v2_para_csv.py
+├── fonts
+│   └── DejaVuSans.ttf
+├── Indeferimento_Pedidio_acesso_Codigo_EscolaS_e_Municipios_INEP-DetalhesNUP_23546047123202517.pdf
+├── log_colunas_cog_2018.txt
+├── log_colunas_pvs_2018.txt
+├── log_pvs_2018.txt
+├── logs
+│   ├── verificar_cog_pisa_2018_vnm_20250519_154935.log
+│   ├── verificar_pvs_pisa_2018_vnm_20250519_153602.log
+│   └── verificar_pvs_pisa_2018_vnm_20250519_154111.log
+├── log_verificacao_cog_2018.txt
+├── Modelo de Justificativa – Seleção de Juízes Especialistas.txt
+├── modelos_coqui
+│   └── XTTS-v2
+│       ├── config.json
+│       ├── dvae.pth
+│       ├── hash.md5
+│       ├── language_ids.json
+│       ├── LICENSE.txt
+│       ├── mel_stats.pth
+│       ├── model.pth
+│       ├── README.md
+│       ├── samples
+│       │   ├── de_sample.wav
+│       │   ├── en_sample.wav
+│       │   ├── es_sample.wav
+│       │   ├── fr_sample.wav
+│       │   ├── ja-sample.wav
+│       │   ├── pt_sample.wav
+│       │   ├── tr_sample.wav
+│       │   └── zh-cn-sample.wav
+│       ├── speakers_xtts.pth
+│       ├── vocab.json
+│       └── voz_ana_florence.wav
+├── outputs_tmap
+│   ├── municipios_tmap.geojson
+│   └── rubricas_pedagogicas_tmap.csv
+├── padronizar_conexao_mongo.sh
+├── painel_pisa
+│   ├── 15_Comparativo_SAEB_PISA_2021_2022.py
+│   ├── 15_Comparativo_SAEB_PISA_2021_2022.py.bak
+│   ├── 15_Explicacao_ESCS_SAEB.py
+│   ├── 15_Explicacao_ESCS_SAEB.py.bak
+│   ├── assets
+│   │   ├── comparacao_divisoes_ibge.png
+│   │   ├── imagens
+│   │   │   ├── bruno.png
+│   │   │   ├── eduardo.png
+│   │   │   ├── janaina.png
+│   │   │   ├── neirivon.png
+│   │   │   └── orlando.png
+│   │   └── logos
+│   │       ├── IFTM_360.png
+│   │       └── sinapse.png
+│   ├── correspondencias_microrregioes.csv
+│   ├── corrigir_import_e_config.py
+│   ├── corrigir_import_e_config.py.bak
+│   ├── corrigir_posicao_pageconfig.py
+│   ├── corrigir_posicao_pageconfig.py.bak
+│   ├── dados_cloud
+│   │   ├── avaliacoes_juizes
+│   │   │   ├── dirceu
+│   │   │   └── neirivon
+│   │   ├── campos_colecoes_pisa.txt
+│   │   ├── comparativo_brasil_top5_pisa.json
+│   │   ├── conclusao_comparativa_pisa_saeb.json
+│   │   ├── conclusao_pisa_ocde.json
+│   │   ├── estrutura_equivalente_pais.csv
+│   │   ├── estrutura_equivalente_pontuacoes.csv
+│   │   ├── gabarito_professor.csv
+│   │   ├── historico_top5_paises.csv
+│   │   ├── historico_top5_paises.json
+│   │   ├── log_anos_ignorados.csv
+│   │   ├── questoes_leitura.json
+│   │   ├── questoes_pisa_tmap.json
+│   │   ├── Rubrica SINAPSE IA v1.4.pdf
+│   │   ├── rubrica_sinapse_ia_v4.html
+│   │   ├── rubrica_sinapse_pedagogica_aluno.json
+│   │   ├── rubrica_sinapse_pedagogica_professor.json
+│   │   ├── termos_juizes
+│   │   │   └── termo_consentimento_juiz_completo.pdf
+│   │   └── triagem_acessibilidade.json
+│   ├── documento_final_projeto_2025-05-02_16-21.pdf
+│   ├── documento_final_projeto_2025-05-02_16-26.pdf
+│   ├── documento_final_projeto_2025-05-02_16-34.pdf
+│   ├── documento_final_projeto_2025-05-02_16-42.pdf
+│   ├── documento_final_projeto_2025-05-02_16-50.pdf
+│   ├── documento_final_projeto_2025-05-02_17-05.pdf
+│   ├── documento_final_projeto_2025-05-02_17-18.pdf
+│   ├── documento_final_projeto_2025-05-04_23-21.pdf
+│   ├── documento_final_projeto_2025-05-05_14-12.pdf
+│   ├── extrair_medias_pisa2003.py
+│   ├── extrair_medias_pisa2003.py.bak
+│   ├── favicon.png
+│   ├── Home.py
+│   ├── Home.py.bak
+│   ├── __init__.py
+│   ├── __init__.py.bak
+│   ├── injetar_bloco_edicao_pages.py
+│   ├── injetar_bloco_edicao_pages.py.bak
+│   ├── injetar_import_os.py
+│   ├── injetar_import_os.py.bak
+│   ├── pages
+│   │   ├── 00_Questoes_PISA_SINAPSE.py
+│   │   ├── 00_Questoes_PISA_SINAPSE.py.bak
+│   │   ├── 01_Introducao_PISA_OCDE.py
+│   │   ├── 01_Mapa_e_Rubricas_TMAP.py
+│   │   ├── 01_Mapa_e_Rubricas_TMAP.py.bak
+│   │   ├── 01_Mapa_SINAPSE_v4.py
+│   │   ├── 01_Mapa_SINAPSE_v4.py.bak
+│   │   ├── 01_Resumo_Edicao.py
+│   │   ├── 01_Resumo_Edicao.py.bak
+│   │   ├── 01_Seminario_Avaliacoes_Externas.py
+│   │   ├── 02_Botao_Forcado.py
+│   │   ├── 02_Botao_Forcado.py.bak
+│   │   ├── 02_Distribuicao_Rubricas_SAEB.py
+│   │   ├── 02_Distribuicao_Rubricas_SAEB.py.bak
+│   │   ├── 03_Comparativo_PISA_OCDE.py
+│   │   ├── 03_Comparativo_PISA_OCDE.py.bak
+│   │   ├── 03_Triagem_Inclusiva.py
+│   │   ├── 04_Dashboard_SAEB_2021_Municipios.py
+│   │   ├── 04_Dashboard_SAEB_2021_Municipios.py.bak
+│   │   ├── 04_Mapa_Brasil_Microrregioes.py
+│   │   ├── 04_Mapa_Brasil_Microrregioes.py.bak
+│   │   ├── 04_politicas_publicas.py
+│   │   ├── 04_politicas_publicas.py.bak
+│   │   ├── 04_Responder_Prova_Adaptada.py
+│   │   ├── 05_Rubricas_Avaliativas.py
+│   │   ├── 05_Rubricas_Avaliativas.py.bak
+│   │   ├── 06_Exemplos_Paragrafos_Analisados.py
+│   │   ├── 06_Exemplos_Paragrafos_Analisados.py.bak
+│   │   ├── 07_Comparativo_PISA_SAEB_TMAP.py
+│   │   ├── 07_Comparativo_PISA_SAEB_TMAP.py.bak
+│   │   ├── 07_Resumo_Geral_INEP.py
+│   │   ├── 07_Resumo_Geral_INEP.py.bak
+│   │   ├── 07_Rubrica_SAEB_9ano.py
+│   │   ├── 07_Rubrica_SAEB_9ano.py.bak
+│   │   ├── 08_Comparativo_LP_MT.py
+│   │   ├── 08_Comparativo_LP_MT.py.bak
+│   │   ├── 08_Comparativo_PISA_SAEB.py
+│   │   ├── 08_Comparativo_PISA_SAEB.py.bak
+│   │   ├── 101_comandos_de_voz.py
+│   │   ├── 10_Mapa_UFs_IBGE.py
+│   │   ├── 10_Mapa_UFs_IBGE.py.bak
+│   │   ├── 10_Rubricas_Regionais_Contextualizadas.py
+│   │   ├── 10_Rubricas_Regionais_Contextualizadas.py.bak
+│   │   ├── 11_Explicacao_Didatica_Integrada.py
+│   │   ├── 11_Explicacao_Didatica_Integrada.py.bak
+│   │   ├── 11_Mapa_Municipios_IBGE.py
+│   │   ├── 11_Mapa_Municipios_IBGE.py.bak
+│   │   ├── 12_Situacoes_Interdisciplinares.py
+│   │   ├── 12_Situacoes_Interdisciplinares.py.bak
+│   │   ├── 13_Dashboard_SAEB_2021_5Ano.py
+│   │   ├── 13_Dashboard_SAEB_2021_5Ano.py.bak
+│   │   ├── 13_Dashboard_SAEB_2021_9Ano.py
+│   │   ├── 13_Dashboard_SAEB_2021_9Ano.py.bak
+│   │   ├── 13_Visualizar_Rubrica_SINAPSE.py
+│   │   ├── 13_Visualizar_Rubrica_SINAPSE.py.bak
+│   │   ├── 14_ADH_Mapa_Coropletico.py
+│   │   ├── 14_ADH_Mapa_Coropletico.py.bak
+│   │   ├── 14_Analisador_Rubrica_SINAPSE.py
+│   │   ├── 14_Analisador_Rubrica_SINAPSE_v2.py
+│   │   ├── 14_Analisador_Rubrica_SINAPSE_v3.py
+│   │   ├── 14_Analisador_Rubrica_SINAPSE_v4.py
+│   │   ├── 14_Analisador_Rubrica_SINAPSE_V5_final.py
+│   │   ├── 14_Analisador_Rubrica_SINAPSE_V5.py
+│   │   ├── 14_Analisador_Rubrica_SINAPSE_v6.py
+│   │   ├── 14_Analisador_Rubrica_SINAPSE_v7.py
+│   │   ├── 14_Analise_Microrregioes_SAEB_9Ano.py
+│   │   ├── 14_Analise_Microrregioes_SAEB_9Ano.py.bak
+│   │   ├── 14_Avaliacao_Rubrica_SINAPSE.py
+│   │   ├── 14_Avaliacao_Rubrica_SINAPSE.py.bak
+│   │   ├── 14_Dashboard_SAEB_2021_Encerramento.py
+│   │   ├── 14_Dashboard_SAEB_2021_Encerramento.py.bak
+│   │   ├── 14_Mapa_Comparativo_PISA_SAEB.py
+│   │   ├── 14_Mapa_Comparativo_PISA_SAEB.py.bak
+│   │   ├── 14_Mapa_Desempenho_SAEB_9Ano.py
+│   │   ├── 14_Mapa_Desempenho_SAEB_9Ano.py.bak
+│   │   ├── 14_Mapa_Interativo_SAEB_9Ano.py
+│   │   ├── 14_Mapa_Interativo_SAEB_9Ano.py.bak
+│   │   ├── 14_Mapa_Microrregioes_SAEB.py
+│   │   ├── 14_Mapa_Microrregioes_SAEB.py.bak
+│   │   ├── 14_Mapa_SAEB_2021_9Ano.py
+│   │   ├── 14_Mapa_SAEB_2021_9Ano.py.bak
+│   │   ├── 14_Municipios_Destaque_9Ano.py
+│   │   ├── 14_Municipios_Destaque_9Ano.py.bak
+│   │   ├── 14_Visualizar_Rubrica_SINAPSE_v4.py
+│   │   ├── 14_Visualizar_Rubrica_SINAPSE_v4.py.bak
+│   │   ├── 15_Avaliacao_Feedback_SINAPSE_v4.py
+│   │   ├── 15_Avaliacao_Feedback_SINAPSE_v4.py.bak
+│   │   ├── 15_Comparativo_SAEB_PISA_2021_2022.py
+│   │   ├── 15_Comparativo_SAEB_PISA_2021_2022.py.bak
+│   │   ├── 15_Explicacao_ESCS_SAEB.py
+│   │   ├── 15_Explicacao_ESCS_SAEB.py.bak
+│   │   ├── 15_Painel_Autoavaliacao_Gamificado.py
+│   │   ├── 16_Avaliacao_Rubrica_SINAPSE_v4.py
+│   │   ├── 16_Avaliacao_Rubrica_SINAPSE_v4.py.bak
+│   │   ├── 2003
+│   │   │   ├── index.py
+│   │   │   └── index.py.bak
+│   │   ├── 2006
+│   │   │   ├── index.py
+│   │   │   └── index.py.bak
+│   │   ├── 2009
+│   │   │   ├── index.py
+│   │   │   └── index.py.bak
+│   │   ├── 2012
+│   │   │   ├── index.py
+│   │   │   └── index.py.bak
+│   │   ├── 2015
+│   │   │   ├── index.py
+│   │   │   └── index.py.bak
+│   │   ├── 2018
+│   │   │   ├── index.py
+│   │   │   └── index.py.bak
+│   │   ├── 2022
+│   │   │   ├── index.py
+│   │   │   └── index.py.bak
+│   │   ├── 20_Rubricas_BNCC.py
+│   │   ├── 20_Rubricas_BNCC.py.bak
+│   │   ├── 98_Exportar_PDF_Completo.py
+│   │   ├── 98_Exportar_PDF_Completo.py.bak
+│   │   ├── 999_teste_leitura_pagina.py
+│   │   ├── 99_Marketing_Scientifico_SINAPSE.py
+│   │   ├── 99_Marketing_Scientifico_SINAPSE.py.bak
+│   │   ├── 99_Referencias_Bibliograficas.py
+│   │   ├── 99_Referencias_Bibliograficas.py.bak
+│   │   ├── 99_Status_Projeto.py
+│   │   ├── 99_Status_Projeto.py.bak
+│   │   ├── 99_Teste_Mapa_IBGE.py
+│   │   ├── 99_Teste_Mapa_IBGE.py.bak
+│   │   ├── BACKUP
+│   │   │   ├── 01_Mapa_e_Rubricas_TMAP.py
+│   │   │   ├── 01_Mapa_e_Rubricas_TMAP.py.bak
+│   │   │   ├── 01_Resumo_Edicao.py
+│   │   │   ├── 01_Resumo_Edicao.py.bak
+│   │   │   ├── 02_Distribuicao_Rubricas_SAEB.py
+│   │   │   ├── 02_Distribuicao_Rubricas_SAEB.py.bak
+│   │   │   ├── 03_Comparativo_PISA_OCDE.py
+│   │   │   ├── 03_Comparativo_PISA_OCDE.py.bak
+│   │   │   ├── 04_politicas_publicas.py
+│   │   │   ├── 04_politicas_publicas.py.bak
+│   │   │   ├── 05_Rubricas_Avaliativas.py
+│   │   │   ├── 05_Rubricas_Avaliativas.py.bak
+│   │   │   ├── 06_Exemplos_Paragrafos_Analisados.py
+│   │   │   ├── 06_Exemplos_Paragrafos_Analisados.py.bak
+│   │   │   ├── 07_Resumo_Geral_INEP.py
+│   │   │   ├── 07_Resumo_Geral_INEP.py.bak
+│   │   │   ├── 08_Comparativo_PISA_SAEB.py
+│   │   │   ├── 08_Comparativo_PISA_SAEB.py.bak
+│   │   │   ├── 10_Rubricas_Regionais_Contextualizadas.py
+│   │   │   ├── 10_Rubricas_Regionais_Contextualizadas.py.bak
+│   │   │   ├── 11_Explicacao_Didatica_Integrada.py
+│   │   │   ├── 11_Explicacao_Didatica_Integrada.py.bak
+│   │   │   ├── 12_Situacoes_Interdisciplinares.py
+│   │   │   ├── 12_Situacoes_Interdisciplinares.py.bak
+│   │   │   ├── 98_Exportar_PDF_Completo.py
+│   │   │   ├── 98_Exportar_PDF_Completo.py.bak
+│   │   │   ├── 99_Referencias_Bibliograficas.py
+│   │   │   └── 99_Referencias_Bibliograficas.py.bak
+│   │   └── ZIP
+│   │       ├── 03_Comparativo_PISA_OCDE.py
+│   │       ├── 03_Comparativo_PISA_OCDE.py.bak
+│   │       ├── 05_Rubricas_Avaliativas.py
+│   │       ├── 05_Rubricas_Avaliativas.py.bak
+│   │       ├── 07_Resumo_Geral_INEP.py
+│   │       ├── 07_Resumo_Geral_INEP.py.bak
+│   │       ├── 10_Rubricas_Regionais_Contextualizadas.py
+│   │       ├── 10_Rubricas_Regionais_Contextualizadas.py.bak
+│   │       ├── 14_Dashboard_SAEB_2021_Encerramento.py
+│   │       └── 14_Dashboard_SAEB_2021_Encerramento.py.bak
+│   ├── painel_comparativo_real.py
+│   ├── painel_comparativo_real.py.bak
+│   ├── pdfs_correcoes
+│   │   ├── gabarito_professor_formatado.pdf
+│   │   └── rubrica_sinapse_ia_v4.html
+│   ├── pisa-16-05-2025.txt
+│   ├── __pycache__
+│   │   └── __init__.cpython-310.pyc
+│   ├── README.md
+│   ├── setup.sh
+│   └── utils
+│       ├── avaliador_ia.py
+│       ├── avaliador_ia.py.bak
+│       ├── avaliador_nlp.py
+│       ├── avaliador_nlp.py.bak
+│       ├── componentes.py
+│       ├── componentes.py.bak
+│       ├── conexao_mongo.py
+│       ├── conexao_mongo.py.bak
+│       ├── config.py
+│       ├── config.py.bak
+│       ├── dados_cloud
+│       │   ├── 2022
+│       │   │   ├── dados.json
+│       │   │   └── rubricas_bncc_9ano.json
+│       │   ├── dados_saeb_inep
+│       │   │   └── 2021
+│       │   │       └── dados.json
+│       │   ├── relatorios_inep_pisa
+│       │   │   └── 2000
+│       │   │       └── relatorio.json
+│       │   ├── respostas
+│       │   │   ├── questoes_pisa_completas.csv
+│       │   │   ├── questoes_pisa_completas.json
+│       │   │   └── respostas_exemplo_por_area.txt
+│       │   └── rubricas
+│       │       └── rubricas_bncc_9ano.json
+│       ├── detectar_larguras_spss.py
+│       ├── detectar_larguras_spss.py.bak
+│       ├── estilo_global.py
+│       ├── estilo_global.py.bak
+│       ├── extracoes
+│       │   └── pisa2000_student_medias_avancado.json
+│       ├── extrair_dados_pisa2000.py
+│       ├── extrair_dados_pisa2000.py.bak
+│       ├── extrair_escs_pisa2000.py
+│       ├── extrair_escs_pisa2000.py.bak
+│       ├── extrair_escs_pisa2000_v2.py
+│       ├── extrair_escs_pisa2000_v2.py.bak
+│       ├── extrair_escs_pisa2000_v3.py
+│       ├── extrair_escs_pisa2000_v3.py.bak
+│       ├── extrair_mapeamento_subnatio_pisa2000.py
+│       ├── extrair_mapeamento_subnatio_pisa2000.py.bak
+│       ├── extrair_mapeamento_subnatio_pisa200_v2.py
+│       ├── extrair_mapeamento_subnatio_pisa200_v2.py.bak
+│       ├── extrair_medias_oficiais_pisa2000_lmc.py
+│       ├── extrair_medias_oficiais_pisa2000_lmc.py.bak
+│       ├── extrair_medias_oficiais_pisa2000.py
+│       ├── extrair_medias_oficiais_pisa2000.py.bak
+│       ├── extrair_medias_oficiais_pisa2000_v2.py
+│       ├── extrair_medias_oficiais_pisa2000_v2.py.bak
+│       ├── extrair_medias_oficiais_pisa2000_v3.py
+│       ├── extrair_medias_oficiais_pisa2000_v3.py.bak
+│       ├── extrair_medias_oficiais_pisa2000_v4.py
+│       ├── extrair_medias_oficiais_pisa2000_v4.py.bak
+│       ├── extrair_medias_oficiais_pisa2000_v5.py
+│       ├── extrair_medias_oficiais_pisa2000_v5.py.bak
+│       ├── extrair_medias_pisa2000_avancado.py
+│       ├── extrair_medias_pisa2000_avancado.py.bak
+│       ├── extrair_medias_pisa2000_cientifico.py
+│       ├── extrair_medias_pisa2000_cientifico.py.bak
+│       ├── extrair_medias_pisa2000.py
+│       ├── extrair_medias_pisa2000.py.bak
+│       ├── extrair_nova_colecao_pisa2000.py
+│       ├── extrair_nova_colecao_pisa2000.py.bak
+│       ├── extrair_school_info_pisa2000.py
+│       ├── extrair_school_info_pisa2000.py.bak
+│       ├── extrair_school_info_pisa2000_v2.py
+│       ├── extrair_school_info_pisa2000_v2.py.bak
+│       ├── funcoes_graficos.py
+│       ├── funcoes_graficos.py.bak
+│       ├── funcoes_rubricas.py
+│       ├── funcoes_rubricas.py.bak
+│       ├── geo_loader.py
+│       ├── geo_loader.py.bak
+│       ├── __init__.py
+│       ├── __init__.py.bak
+│       ├── inserir_rubricas_saeb_mongo_5_ano_2023.py
+│       ├── inserir_rubricas_saeb_mongo_5_ano_2023.py.bak
+│       ├── loader_dados.py
+│       ├── loader_dados.py.bak
+│       ├── loader_rubricas.py
+│       ├── loader_rubricas.py.bak
+│       ├── logger_padronizado.py
+│       ├── logger_padronizado.py.bak
+│       ├── paths.py
+│       ├── pdf_html_completo.py
+│       ├── pdf_html_completo.py.bak
+│       ├── pdf_paginas
+│       │   ├── BKP_GERAR_HTML_ORIGINAIS
+│       │   │   ├── exportar_todas_paginas_html.py
+│       │   │   ├── exportar_todas_paginas_html.py.bak
+│       │   │   ├── gerar_html_01_Mapa_e_Rubricas_TMAP.py
+│       │   │   ├── gerar_html_01_Mapa_e_Rubricas_TMAP.py.bak
+│       │   │   ├── gerar_html_01_Resumo_Edicao.py
+│       │   │   ├── gerar_html_01_Resumo_Edicao.py.bak
+│       │   │   ├── gerar_html_02_Distribuicao_Rubricas_SAEB.py
+│       │   │   ├── gerar_html_02_Distribuicao_Rubricas_SAEB.py.bak
+│       │   │   ├── gerar_html_03_Comparativo_PISA_OCDE.py
+│       │   │   ├── gerar_html_03_Comparativo_PISA_OCDE.py.bak
+│       │   │   ├── gerar_html_04_politicas_publicas.py
+│       │   │   ├── gerar_html_04_politicas_publicas.py.bak
+│       │   │   ├── gerar_html_05_Rubricas_Avaliativas.py
+│       │   │   ├── gerar_html_05_Rubricas_Avaliativas.py.bak
+│       │   │   ├── gerar_html_06_Exemplos_Paragrafos_Analisados.py
+│       │   │   ├── gerar_html_06_Exemplos_Paragrafos_Analisados.py.bak
+│       │   │   ├── gerar_html_07_Resumo_Geral_INEP_2000.py
+│       │   │   ├── gerar_html_07_Resumo_Geral_INEP_2000.py.bak
+│       │   │   ├── gerar_html_08_Comparativo_PISA_SAEB.py
+│       │   │   ├── gerar_html_08_Comparativo_PISA_SAEB.py.bak
+│       │   │   ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.py
+│       │   │   ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.py.bak
+│       │   │   ├── gerar_html_11_Explicacao_Didatica_Integrada.py
+│       │   │   ├── gerar_html_11_Explicacao_Didatica_Integrada.py.bak
+│       │   │   ├── gerar_html_12_Situacoes_Interdisciplinares_2000.py
+│       │   │   ├── gerar_html_12_Situacoes_Interdisciplinares_2000.py.bak
+│       │   │   ├── gerar_html_99_Referencias_Bibliograficas.py
+│       │   │   ├── gerar_html_99_Referencias_Bibliograficas.py.bak
+│       │   │   └── __pycache__
+│       │   │       ├── gerar_html_01_Mapa_e_Rubricas_TMAP.cpython-310.pyc
+│       │   │       └── gerar_html_01_Resumo_Edicao.cpython-310.pyc
+│       │   ├── corrigir_funcoes_html.sh
+│       │   ├── exportar_todas_paginas_html.py
+│       │   ├── exportar_todas_paginas_html.py.bak
+│       │   ├── gerar_html_01_Mapa_e_Rubricas_TMAP.py
+│       │   ├── gerar_html_01_Mapa_e_Rubricas_TMAP.py.bak
+│       │   ├── gerar_html_01_Resumo_Edicao.py
+│       │   ├── gerar_html_01_Resumo_Edicao.py.bak
+│       │   ├── gerar_html_02_Distribuicao_Rubricas_SAEB.py
+│       │   ├── gerar_html_02_Distribuicao_Rubricas_SAEB.py.bak
+│       │   ├── gerar_html_03_Comparativo_PISA_OCDE.py
+│       │   ├── gerar_html_03_Comparativo_PISA_OCDE.py.bak
+│       │   ├── gerar_html_04_politicas_publicas.py
+│       │   ├── gerar_html_04_politicas_publicas.py.bak
+│       │   ├── gerar_html_05_Rubricas_Avaliativas.py
+│       │   ├── gerar_html_05_Rubricas_Avaliativas.py.bak
+│       │   ├── gerar_html_06_Exemplos_Paragrafos_Analisados.py
+│       │   ├── gerar_html_06_Exemplos_Paragrafos_Analisados.py.bak
+│       │   ├── gerar_html_07_Resumo_Geral_INEP_2000.py
+│       │   ├── gerar_html_07_Resumo_Geral_INEP_2000.py.bak
+│       │   ├── gerar_html_08_Comparativo_PISA_SAEB.py
+│       │   ├── gerar_html_08_Comparativo_PISA_SAEB.py.bak
+│       │   ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.py
+│       │   ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.py.bak
+│       │   ├── gerar_html_11_Explicacao_Didatica_Integrada.py
+│       │   ├── gerar_html_11_Explicacao_Didatica_Integrada.py.bak
+│       │   ├── gerar_html_12_Situacoes_Interdisciplinares_2000.py
+│       │   ├── gerar_html_12_Situacoes_Interdisciplinares_2000.py.bak
+│       │   ├── gerar_html_99_Referencias_Bibliograficas.py
+│       │   ├── gerar_html_99_Referencias_Bibliograficas.py.bak
+│       │   └── __pycache__
+│       │       ├── gerar_html_01_Mapa_e_Rubricas_TMAP.cpython-310.pyc
+│       │       ├── gerar_html_01_Resumo_Edicao.cpython-310.pyc
+│       │       ├── gerar_html_02_Distribuicao_Rubricas_SAEB.cpython-310.pyc
+│       │       ├── gerar_html_03_Comparativo_PISA_OCDE.cpython-310.pyc
+│       │       ├── gerar_html_04_politicas_publicas.cpython-310.pyc
+│       │       ├── gerar_html_05_Rubricas_Avaliativas.cpython-310.pyc
+│       │       ├── gerar_html_06_Exemplos_Paragrafos_Analisados.cpython-310.pyc
+│       │       ├── gerar_html_07_Resumo_Geral_INEP_2000.cpython-310.pyc
+│       │       ├── gerar_html_08_Comparativo_PISA_SAEB.cpython-310.pyc
+│       │       ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.cpython-310.pyc
+│       │       ├── gerar_html_11_Explicacao_Didatica_Integrada.cpython-310.pyc
+│       │       ├── gerar_html_12_Situacoes_Interdisciplinares_2000.cpython-310.pyc
+│       │       └── gerar_html_99_Referencias_Bibliograficas.cpython-310.pyc
+│       ├── pisa-inclusao-streamlit-836b4678cd6e.json
+│       ├── __pycache__
+│       │   ├── avaliador_ia.cpython-310.pyc
+│       │   ├── componentes.cpython-310.pyc
+│       │   ├── conexao_mongo.cpython-310.pyc
+│       │   ├── config.cpython-310.pyc
+│       │   ├── estilo_global.cpython-310.pyc
+│       │   ├── extrair_dados_pisa2000.cpython-310.pyc
+│       │   ├── funcoes_rubricas.cpython-310.pyc
+│       │   ├── geo_loader.cpython-310.pyc
+│       │   ├── __init__.cpython-310.pyc
+│       │   ├── loader_dados.cpython-310.pyc
+│       │   ├── loader_rubricas.cpython-310.pyc
+│       │   ├── paths.cpython-310.pyc
+│       │   └── pdf_html_completo.cpython-310.pyc
+│       ├── rubrica_avaliativa_pisa_saeb.md
+│       └── validador_caminhos.py
+├── painel_pisa.egg-info
+│   ├── dependency_links.txt
+│   ├── PKG-INFO
+│   ├── SOURCES.txt
+│   └── top_level.txt
+├── pisa_streamlit_google.txt
+├── Planejamento Didático com Princípios de Universalidade e Acessibilidade Educacional (baseado no DUA)
+├── README_cloud_SINAPSE2_PISA.md
+├── README.md
+├── requirements_cloud.txt
+├── requirements_local.txt
+├── respostas_pdf
+├── Rubrica-Contextualizacao_Territorial_e_Cultural_CTC.txt
+├── rubrica_sinapse_ia_v1_2.json
+├── rubrica_sinapse_ia_v1_3_padronizada.json
+├── saida_tts_demo.mp3
+├── schema_cognitive_item_2009.csv
+├── schema_cognitive_item_2009.json
+├── scripts
+│   ├── 05_Rubricas_Avaliativas.py
+│   ├── 05_Rubricas_Avaliativas.py.bak
+│   ├── 06_Analise_Relatorio_INEP_2000.py
+│   ├── 06_Analise_Relatorio_INEP_2000.py.bak
+│   ├── 11_Analise_Relatorio_OCDE.py
+│   ├── 11_Analise_Relatorio_OCDE.py.bak
+│   ├── 13_Dashboard_SAEB_2021_5Ano.py
+│   ├── 13_Dashboard_SAEB_2021_5Ano.py.bak
+│   ├── adicionar_dimensao_8_rubrica_sinapse_ia_v1_3.py
+│   ├── al_microrregioes_2015.json
+│   ├── amostrar_parser_pisa_2000.py
+│   ├── amostrar_parser_pisa_2000.py.bak
+│   ├── analisador_dados_inep.py
+│   ├── analisador_dados_inep.py.bak
+│   ├── analisar_colecoes_pisa.py
+│   ├── analisar_colecoes_pisa.py.bak
+│   ├── analisar_formatividade_somatividade.py
+│   ├── analisar_relatorio_inep.py
+│   ├── analisar_relatorio_inep.py.bak
+│   ├── analisar_relatorio_inep_v2.py
+│   ├── analisar_relatorio_inep_v2.py.bak
+│   ├── analisar_saeb_2021_nacional.py
+│   ├── analisar_saeb_2021_nacional.py.bak
+│   ├── analise_escs15_pisa.py
+│   ├── analise_escs15_pisa.py.bak
+│   ├── apagar_colecao_inutil.py
+│   ├── apagar_colecao_inutil.py.bak
+│   ├── app_ditado_e_voz.py
+│   ├── atualizar_ibge_saeb_5ano.py
+│   ├── atualizar_ibge_saeb_5ano.py.bak
+│   ├── atualizar_matematica_resumo.py
+│   ├── atualizar_matematica_resumo.py.bak
+│   ├── atualizar_rubrica_sinapse_ia_v1_3.py
+│   ├── atualizar_versao_rubrica_sinapse_ia_v1_3_corrigido.py
+│   ├── atualizar_versao_rubrica_sinapse_ia_v1_3.py
+│   ├── avaliador_sinapse_7dimensoes_cpu.py
+│   ├── avaliador_sinapse_7dimensoes_gpu_detalhado_com_acentos.py
+│   ├── avaliador_sinapse_7dimensoes_gpu_detalhado.py
+│   ├── avaliador_sinapse_7dimensoes_gpu_personalizado.py
+│   ├── avaliador_sinapse_7dimensoes_gpu_seguro.py
+│   ├── avaliador_sinapse_7dimensoes.py
+│   ├── avaliar_resposta_aluno_ia_mongodb_auth.py
+│   ├── avaliar_rubrica_sinapse_ia_v1_2_txt_json.py
+│   ├── avaliar_rubrica_sinapse_ia_v1_2_txt.py
+│   ├── avaliar_rubrica_sinapse_IA_V1.py
+│   ├── avaliar_rubricas_referenciais.py
+│   ├── b1.py
+│   ├── backup_e_deletar_pisa_ocde.sh
+│   ├── backup_pisa2000_medias_oficiais_20250501_194227.json
+│   ├── baixada_maranhense.json
+│   ├── baixar_atlas_2013_ibge_inep.py
+│   ├── baixar_atlas_2013_ibge_inep.py.bak
+│   ├── baixar_complementos_xtts.py
+│   ├── baixar_pisa_microdados.py
+│   ├── baixar_pisa_microdados.py.bak
+│   ├── baixar_xtts_v2.sh
+│   ├── boletins_saeb_por_estado.py
+│   ├── boletins_saeb_por_estado.py.bak
+│   ├── busca_bruta_atlas_2013_dados_bruto_pt_BR.py
+│   ├── busca_bruta_atlas_2013_dados_bruto_pt_BR.py.bak
+│   ├── buscar_bncc_todos_bancos.py
+│   ├── buscar_inep_todos_bancos.py
+│   ├── buscar_resposta_semelhante.py
+│   ├── buscar_resposta_semelhante.py.bak
+│   ├── buscar_saeb_todos_bancos.py
+│   ├── calcular_medias_dask.py
+│   ├── calcular_medias_dask.py.bak
+│   ├── calcular_medias_por_pais_chunked.py
+│   ├── calcular_medias_por_pais_chunked.py.bak
+│   ├── ce_microrregioes_2015.geojson
+│   ├── ce_microrregioes_2015.json
+│   ├── censo_escolar_para_descobrir_nome_município.py
+│   ├── censo_escolar_para_descobrir_nome_município.py.bak
+│   ├── coletar_atlas_async_log_progresso_deepseek.py
+│   ├── coletar_atlas_async_log_progresso_deepseek.py.bak
+│   ├── coletar_atlas_async_log_progresso_qwen.py
+│   ├── coletar_atlas_async_log_progresso_qwen.py.bak
+│   ├── coletar_atlas_async_qwen.py
+│   ├── coletar_atlas_async_qwen.py.bak
+│   ├── comando_voz_teste.py
+│   ├── comparar_campos_colecoes.py
+│   ├── comparar_campos_colecoes.py.bak
+│   ├── conferir_colunas_shapefile.py
+│   ├── conferir_colunas_shapefile.py.bak
+│   ├── construir_historico_pisa_top5.py
+│   ├── consultar_rubrica_sinapse_v5.py
+│   ├── consultar_rubrica_sinapse_v5.py.bak
+│   ├── converter_ce_ma_geoson.py
+│   ├── converter_ce_ma_geoson.py.bak
+│   ├── converter_ce_ma_jsonarray.py
+│   ├── converter_ce_ma_jsonarray.py.bak
+│   ├── converter_csv_para_json_2022.py
+│   ├── converter_csv_para_json_2022.py.bak
+│   ├── converter_csv_para_json_blindado.py
+│   ├── converter_csv_para_json_blindado.py.bak
+│   ├── converter_doc_docx.py
+│   ├── converter_doc_docx.py.bak
+│   ├── converter_doc_para_docx_corrigido.py
+│   ├── converter_doc_para_docx_corrigido.py.bak
+│   ├── converter_ma_al_jsonarray.py
+│   ├── converter_ma_al_jsonarray.py.bak
+│   ├── converter_questoes_para_ordenadas.py
+│   ├── converter_questoes_para_ordenadas.py.bak
+│   ├── converter_rubrica_para_v6a_padrao.py
+│   ├── converter_rubrica_para_v6a_padrao.py.bak
+│   ├── converter_schemas_para_csv.py
+│   ├── converter_shapefiles_para_json.py
+│   ├── converter_shapefiles_para_json.py.bak
+│   ├── cookies_inep.json
+│   ├── copiar_colecoes_inep_para_pisa.py
+│   ├── copiar_colecoes_saeb_para_pisa.py
+│   ├── corrigir_componente_lp_sinapse_9ano.py
+│   ├── corrigir_componente_lp_sinapse_9ano.py.bak
+│   ├── corrigir_pisa2000.py
+│   ├── corrigir_pisa2000.py.bak
+│   ├── corrigir_questoes_pisa_tmap_json.py
+│   ├── corrigir_rubrica_v1_2_para_v1_3.py
+│   ├── crawler_ocde_pisa.py
+│   ├── crawler_ocde_pisa.py.bak
+│   ├── criar_arquivos_equivalencias_csv.py
+│   ├── criar_arquivos_equivalencias.py
+│   ├── criar_campo_editavel.py
+│   ├── criar_estrutura_pisa.py
+│   ├── criar_estrutura_pisa.py.bak
+│   ├── criar_estrutura.sh
+│   ├── criar_mapeamento_id_municipio_nome_2023_internet.py
+│   ├── criar_mapeamento_id_municipio_nome_2023_internet.py.bak
+│   ├── criar_mapeamento_id_municipio_nome_2023.py
+│   ├── criar_mapeamento_id_municipio_nome_2023.py.bak
+│   ├── criar_pastas_edicoes_pisa.py
+│   ├── criar_pastas_edicoes_pisa.py.bak
+│   ├── criar_questoes_pisa_tri_mineiro_completas.py
+│   ├── criar_questoes_pisa_tri_mineiro_completas.py.bak
+│   ├── criar_relatorio_inep_v2.py
+│   ├── criar_relatorio_inep_v2.py.bak
+│   ├── cruzar_municipios_saeb2023_ibge.py
+│   ├── cruzar_municipios_saeb2023_ibge.py.bak
+│   ├── cruzar_tmap_saeb2023_super.py
+│   ├── cruzar_tmap_saeb2023_super.py.bak
+│   ├── ctc_dim_niv_descritores.py
+│   ├── ctc_dim_niv_descritores.py.bak
+│   ├── debug_json_erro.py
+│   ├── deletar_colecao.py
+│   ├── deletar_colecao.py.bak
+│   ├── demonstrar_tts_role.py
+│   ├── descobrir_microrregiao_sao_vicente.py
+│   ├── descobrir_microrregiao_sao_vicente.py.bak
+│   ├── descobrir_numero_de_linhas.py
+│   ├── descobrir_numero_de_linhas.py.bak
+│   ├── diagnosticar_colecoes.py
+│   ├── diagnosticar_colecoes.py.bak
+│   ├── diagnosticar_colunas_saeb_5ano.py
+│   ├── diagnosticar_colunas_saeb_5ano.py.bak
+│   ├── diagnostico_colunas_pv_pisa2003.py
+│   ├── diagnostico_colunas_pv_pisa2003.py.bak
+│   ├── dignostico_rapido_pandas_pisa_2003.py
+│   ├── dignostico_rapido_pandas_pisa_2003.py.bak
+│   ├── estrutura_equivalente_pais.csv
+│   ├── estrutura_equivalente_pontuacoes.csv
+│   ├── etl_ocde_relatorios.py
+│   ├── etl_pisa2003_student_corrigido_brasil_ok.py
+│   ├── etl_pisa2003_student_corrigido_brasil_ok.py.bak
+│   ├── etl_pisa2003_student_definitivo.py
+│   ├── etl_pisa2003_student_definitivo.py.bak
+│   ├── etl_pisa2003_student_final_com_wfstuwt.py
+│   ├── etl_pisa2003_student_final_com_wfstuwt.py.bak
+│   ├── etl_pisa2003_student_final_notas_corrigido.py
+│   ├── etl_pisa2003_student_final_notas_corrigido.py.bak
+│   ├── etl_pisa2003_student_final_notas.py
+│   ├── etl_pisa2003_student_final_notas.py.bak
+│   ├── etl_pisa2003_student_final_sav.py
+│   ├── etl_pisa2003_student_final_sav.py.bak
+│   ├── etl_pisa2003_student_final_wfstuwt_colspecs.py
+│   ├── etl_pisa2003_student_final_wfstuwt_colspecs.py.bak
+│   ├── etl_pisa2003_student_principal.py
+│   ├── etl_pisa2003_student_principal.py.bak
+│   ├── etl_pisa2003_student.py
+│   ├── etl_pisa2003_student.py.bak
+│   ├── etl_pisa_geral.py
+│   ├── etl_pisa_geral.py.bak
+│   ├── exporta_dados_no_banco_medias_pais_item_escs_2022.py
+│   ├── exportar_avaliacoes_csv.py
+│   ├── exportar_avaliacoes_rubricas.py
+│   ├── exportar_baixada_maranhense_json.py
+│   ├── exportar_baixada_maranhense_json.py.bak
+│   ├── exportar_cog_em_blocos.py
+│   ├── exportar_cog_em_blocos.py.bak
+│   ├── exportar_colecoes_mongo_inep.py
+│   ├── exportar_microrregiao_uniao_dos_palmares.py
+│   ├── exportar_microrregiao_uniao_dos_palmares.py.bak
+│   ├── exportar_municipios_txt.py
+│   ├── exportar_municipios_txt.py.bak
+│   ├── exportar_rotulos_para_validacao.py
+│   ├── exportar_sao_vicente_ferrer_munic_json.py
+│   ├── exportar_sao_vicente_ferrer_munic_json.py.bak
+│   ├── exportar_schema_para_csv.py
+│   ├── extrair_coordenadas.py
+│   ├── extrair_destaques_atlas.py
+│   ├── extrair_destaques_atlas.py.bak
+│   ├── extrair_e_converter_schemas_2009.py
+│   ├── extrair_e_converter_todos_schemas_2009.py
+│   ├── extrair_escalas_saeb2023_bncc.py
+│   ├── extrair_escalas_saeb2023_tradicional.py
+│   ├── extrair_habilidades_bncc_9ano_ciencias_paginas.py
+│   ├── extrair_habilidades_bncc_9ano_ciencias_paginas.py.bak
+│   ├── extrair_habilidades_bncc_9ano_lingua_portuguesa_paginas.py
+│   ├── extrair_habilidades_bncc_9ano_lingua_portuguesa_paginas.py.bak
+│   ├── extrair_habilidades_bncc_9ano_matematica_paginas.py
+│   ├── extrair_habilidades_bncc_9ano_matematica_paginas.py.bak
+│   ├── extrair_habilidades_bncc_9ano_matematica.py
+│   ├── extrair_habilidades_bncc_9ano_matematica.py.bak
+│   ├── extrair_info_ibge_microrregioes.py
+│   ├── extrair_info_ibge_microrregioes.py.bak
+│   ├── extrair_info_ibge_microrregioes_revisado.py
+│   ├── extrair_info_ibge_microrregioes_revisado.py.bak
+│   ├── extrair_info_ibge_shp.py
+│   ├── extrair_info_ibge_shp.py.bak
+│   ├── extrair_itens_prisma_expandido_txt.py
+│   ├── extrair_mascara_2009.py
+│   ├── extrair_mascara_school_2009.py
+│   ├── extrair_mascara_sps.py
+│   ├── extrair_matriz_ciencias_humanas_saeb2023.py
+│   ├── extrair_matriz_ciencias_natureza_saeb2023.py
+│   ├── extrair_matriz_lingua_matematica_saeb2023.py
+│   ├── extrair_matriz_lp_matematica_2ano_saeb2023.py
+│   ├── extrair_municipios_tmap.py
+│   ├── extrair_municipios_tmap.py.bak
+│   ├── extrair_nans_cog_2018_vnm.py
+│   ├── extrair_nans_cog_2018_vnm.py.bak
+│   ├── extrair_pisa_2000_doc.py
+│   ├── extrair_pisa_2000_doc.py.bak
+│   ├── extrair_pvs_brasil_2018.py
+│   ├── extrair_pvs_brasil_2018.py.bak
+│   ├── extrair_relatorio_inep_2000_pymupdf.py
+│   ├── extrair_relatorio_inep_2000_pymupdf.py.bak
+│   ├── extrair_saeb2021_apresentacao_9ano.py
+│   ├── extrair_saeb2021_presskit_9ano.py
+│   ├── extrair_saeb2021_volume1.py
+│   ├── extrair_saeb2021_volume2.py
+│   ├── extrair_saeb2021_volume3.py
+│   ├── extrair_saeb2021_volume4.py
+│   ├── extrair_saeb2023_documentos_metodologicos.py
+│   ├── extrair_schema_2000_sas.py
+│   ├── extrair_schemas_2003.py
+│   ├── extrair_schema_sas_generico_2000.py
+│   ├── extrair_schemas_complementares_2000.py
+│   ├── extrair_schemas_complementares_2000_robusto.py
+│   ├── extrair_schema_spss_robusto.py
+│   ├── extrair_schemas_sas_lote_2000.py
+│   ├── extrair_schemas_student_2000.py
+│   ├── extrair_texto_docx.py
+│   ├── extrair_texto_docx.py.bak
+│   ├── extrair_texto_pisa_ocde_2000.py
+│   ├── extrair_texto_pisa_ocde_2000.py.bak
+│   ├── extrair_texto_prisma_expandido.py
+│   ├── extrair_texto_prisma_resumido.py
+│   ├── extrair_todos_schemas_spss_2009.py
+│   ├── extrator_inep_pdf_to_mongo.py
+│   ├── extrator_inseridor_pisa2000.py
+│   ├── extrator_inseridor_pisa2000.py.bak
+│   ├── falha_conexao.html
+│   ├── falha_conexao.png
+│   ├── fdp2_teste.py
+│   ├── forcar_atualizacao_microrregioes.py
+│   ├── forcar_atualizacao_microrregioes.py.bak
+│   ├── forcar_atualizacao_microrregioes_saeb9ano.py
+│   ├── forcar_atualizacao_microrregioes_saeb9ano.py.bak
+│   ├── forcar_correcao_microrregioes_geometry.py
+│   ├── forcar_correcao_microrregioes_geometry.py.bak
+│   ├── forcar_insercao_microrregioes_saeb9ano.py
+│   ├── forcar_insercao_microrregioes_saeb9ano.py.bak
+│   ├── gerar_base_questoes_pisa.py
+│   ├── gerar_base_questoes_pisa.py.bak
+│   ├── gerar_comparacao_ibge.py
+│   ├── gerar_comparacao_ibge.py.bak
+│   ├── gerar_conclusao_comparativa_pisa_saeb.py
+│   ├── gerar_conclusao_pisa_ocde_exibicao.py
+│   ├── gerar_conclusao_pisa_ocde.py
+│   ├── gerar_csv_gabarito_professor.py
+│   ├── gerar_csv_microrregioes_rubricas.py
+│   ├── gerar_csv_microrregioes_rubricas.py.bak
+│   ├── gerar_dashboard_saeb9ano_mongo.py
+│   ├── gerar_dashboard_saeb9ano_mongo.py.bak
+│   ├── gerar_faiss_index_pisa_sinapse.py
+│   ├── gerar_faiss_index_pisa_sinapse.py.bak
+│   ├── gerar_html_rubrica_sinapse_ia_v4.py
+│   ├── gerar_id_municipios_tmap_saeb2023_final.py
+│   ├── gerar_id_municipios_tmap_saeb2023_final.py.bak
+│   ├── gerar_id_municipios_tmap_saeb2023_forcado.py
+│   ├── gerar_id_municipios_tmap_saeb2023_forcado.py.bak
+│   ├── gerar_id_municipios_tmap_saeb2023.py
+│   ├── gerar_id_municipios_tmap_saeb2023.py.bak
+│   ├── gerar_json_microrregioes_2015.py
+│   ├── gerar_json_microrregioes_2015.py.bak
+│   ├── gerar_json_prisma_resumido_manual.py
+│   ├── gerar_json_prisma_resumido_txt.py
+│   ├── gerar_mapeamento_idmunicipio_nome_ts_escola_saeb2023.py
+│   ├── gerar_mapeamento_idmunicipio_nome_ts_escola_saeb2023.py.bak
+│   ├── gerar_municipios_3melhores_3piores.py
+│   ├── gerar_municipios_3melhores_3piores.py.bak
+│   ├── gerar_pais_2022_detalhado.py
+│   ├── gerar_pais_2022_detalhado.py.bak
+│   ├── gerar_pdf_de_csv.py
+│   ├── gerar_pdf_de_csv_rl.py
+│   ├── gerar_pdf_final_projeto.py
+│   ├── gerar_pdf_final_projeto.py.bak
+│   ├── gerar_pdf_gabarito_formatado.py
+│   ├── gerar_pdf_gabarito_professor_csv.py
+│   ├── gerar_pdf_gabarito_professor_moderno.py
+│   ├── gerar_pdf_gabarito_professor.py
+│   ├── gerar_pdf_gabarito_professor_rl.py
+│   ├── gerar_pdf_gabarito_professor_unicode.py
+│   ├── gerar_pdf_respostas_json.py
+│   ├── gerar_qr.py
+│   ├── gerar_qr.py.bak
+│   ├── gerar_questoes_pisa_ordenadas.py
+│   ├── gerar_questoes_pisa_ordenadas.py.bak
+│   ├── gerar_questoes_pisa_sinapse.py
+│   ├── gerar_questoes_pisa_sinapse.py.bak
+│   ├── gerar_questoes_pisa_tmap_json_csv.py
+│   ├── gerar_questoes_pisa_tmap_json.py
+│   ├── gerar_ranking_codigos_ficticios.py
+│   ├── gerar_ranking_codigos_ficticios.py.bak
+│   ├── gerar_relatorio_avaliacao_rubrica_v1_3.py
+│   ├── gerar_relatorio_completo_inep2022.py
+│   ├── gerar_relatorio_inep_bloom.py
+│   ├── gerar_relatorio_inep_bloom.py.bak
+│   ├── gerar_rubrica_pedagogica_aluno.py
+│   ├── gerar_rubrica_pedagogica_professor.py
+│   ├── gerar_rubricas_avaliar_rubricas_v1_json_csv.py
+│   ├── gerar_rubricas_avaliar_rubricas_v1_json_csv.py.bak
+│   ├── gerar_rubrica_sinapse_9ano_ciencias_v1.py
+│   ├── gerar_rubrica_sinapse_9ano_ciencias_v1.py.bak
+│   ├── gerar_rubrica_sinapse_9ano_lingua_portuguesa_v1.py
+│   ├── gerar_rubrica_sinapse_9ano_lingua_portuguesa_v1.py.bak
+│   ├── gerar_rubrica_sinapse_9ano_matematica.py
+│   ├── gerar_rubrica_sinapse_9ano_matematica.py.bak
+│   ├── gerar_rubrica_sinapse_9ano_matematica_v1.py
+│   ├── gerar_rubrica_sinapse_9ano_matematica_v1.py.bak
+│   ├── gerar_rubrica_sinapse_9ano_todas_v1.py
+│   ├── gerar_rubrica_sinapse_9ano_todas_v1.py.bak
+│   ├── gerar_rubrica_sinapse_9ano_todas_v2.py
+│   ├── gerar_rubrica_sinapse_9ano_todas_v2.py.bak
+│   ├── gerar_rubrica_sinapse_ia_v1_2_ollama_funcional.py
+│   ├── gerar_rubrica_sinapse_ia_v1_2_ollama_local.py
+│   ├── gerar_rubrica_sinapse_ia_v1_2_ollama.py
+│   ├── gerar_rubrica_sinapse_ia_v1_2.py
+│   ├── gerar_rubrica_sinapse_ia_v1_3_padronizada.py
+│   ├── gerar_rubrica_sinapse_v4.py
+│   ├── gerar_rubrica_sinapse_v4.py.bak
+│   ├── gerar_rubrica_sinapse_v5.py
+│   ├── gerar_rubrica_sinapse_v5.py.bak
+│   ├── gerar_rubrica_sinapse_v6a_melhorada.py
+│   ├── gerar_rubricas_pedagogicas_tmap_v4.py
+│   ├── gerar_rubricas_pedagogicas_tmap_v4.py.bak
+│   ├── gerar_rubricas_sinapse_tmap.py
+│   ├── gerar_rubricas_sinapse_tmap.py.bak
+│   ├── gerar_saeb2023_brasil.py
+│   ├── gerar_saeb2023_brasil.py.bak
+│   ├── gerar_schema_json_mascara_2009.py
+│   ├── gerar_termo_tcle_responsave_legal.py
+│   ├── gerar_tmap_id_municipio_2023.py
+│   ├── gerar_tmap_id_municipio_2023.py.bak
+│   ├── grafico_longitudinal_pisa_ocde.hmtl
+│   ├── importar_adh_base_radar.py
+│   ├── importar_adh_base_radar.py.bak
+│   ├── importar_agregados_saeb_2019_mg.py
+│   ├── importar_agregados_saeb_2019_mg.py.bak
+│   ├── importar_agregados_saeb_2019.py
+│   ├── importar_agregados_saeb_2019.py.bak
+│   ├── importar_agregados_saeb_2019_tmap.py
+│   ├── importar_agregados_saeb_2019_tmap.py.bak
+│   ├── importar_agregados_saeb_2021_brasil.py
+│   ├── importar_agregados_saeb_2021_brasil.py.bak
+│   ├── importar_agregados_saeb_2021_mg.py
+│   ├── importar_agregados_saeb_2021_mg.py.bak
+│   ├── importar_agregados_saeb_2021_regiao.py
+│   ├── importar_agregados_saeb_2021_regiao.py.bak
+│   ├── importar_agregados_saeb_2021_tmap.py
+│   ├── importar_agregados_saeb_2021_tmap.py.bak
+│   ├── importar_agregados_saeb_2023_mg.py
+│   ├── importar_agregados_saeb_2023_mg.py.bak
+│   ├── importar_agregados_saeb_2023_tmap.py
+│   ├── importar_agregados_saeb_2023_tmap.py.bak
+│   ├── importar_cognitive_item_2009_spss.py
+│   ├── importar_escs_media_por_pais.py
+│   ├── importar_escs_media_por_pais.py.bak
+│   ├── importar_escs_resumo_2022.py
+│   ├── importar_escs_resumo_2022.py.bak
+│   ├── importar_json_ibge_para_mongo.py
+│   ├── importar_json_ibge_para_mongo.py.bak
+│   ├── importar_medias_escs.sh
+│   ├── importar_medias_paises_2022.py
+│   ├── importar_medias_paises_2022.py.bak
+│   ├── importar_microdados_complementares_2000.py
+│   ├── importar_microdados_ed_basica_2023.py
+│   ├── importar_microdados_flt_cog_2022_checkpoint.py
+│   ├── importar_microdados_flt_qqq_2022_checkpoint.py
+│   ├── importar_microdados_flt_tim_2022_checkpoint.py
+│   ├── importar_microdados_int_2000.py
+│   ├── importar_microdados_int_2003_checkpoint.py
+│   ├── importar_microdados_int_2003_fragmentado.py
+│   ├── importar_microdados_int_2006.py
+│   ├── importar_microdados_int_2009.py
+│   ├── importar_microdados_sch_qqq_2022_checkpoint.py
+│   ├── importar_microdados_stu_cog_2022_checkpoint.py
+│   ├── importar_microdados_student_2000.py
+│   ├── importar_microdados_stu_qqq_2022_checkpoint.py
+│   ├── importar_microdados_stu_tim_2022_checkpoint.py
+│   ├── importar_microdados_tch_qqq_2022_checkpoint.py
+│   ├── importar_ocde_2018.py
+│   ├── importar_ocde_2018.py.bak
+│   ├── importar_pais_2022_detalhado.py
+│   ├── importar_pais_2022_detalhado.py.bak
+│   ├── importar_pais_2022_simplificado.py
+│   ├── importar_pais_2022_simplificado.py.bak
+│   ├── importar_pisa2006.py
+│   ├── importar_pisa2009_sas.py
+│   ├── importar_pisa2009_txt_com_sas.py
+│   ├── importar_pisa2009_txt.py
+│   ├── importar_pisa2012_txt.py
+│   ├── importar_pisa2015.py
+│   ├── importar_pisa_brasil_mathematics.py
+│   ├── importar_pisa_brasil_mathematics.py.bak
+│   ├── importar_pisa_ocde_2000_mongo.py
+│   ├── importar_pisa_ocde_2000_mongo.py.bak
+│   ├── importar_pisa_ocde.py
+│   ├── importar_pisa_ocde.py.bak
+│   ├── importar_planilhas_pisa_ocde_2018.py
+│   ├── importar_planilhas_pisa_ocde_2018.py.bak
+│   ├── importar_resumo_geral_2022.py
+│   ├── importar_resumo_geral_2022.py.bak
+│   ├── importar_resumo_paises_2022.py
+│   ├── importar_resumo_paises_2022.py.bak
+│   ├── importar_rubrica_sinapse.py
+│   ├── importar_saeb_2017_alunos_9ef.py
+│   ├── importar_saeb_2017_escolas.py
+│   ├── importar_saeb_2017_prof_item_dir.py
+│   ├── importar_saeb_2019_regiao_brasil.py
+│   ├── importar_saeb_2019_regiao_brasil.py.bak
+│   ├── importar_saeb_2019_uf.py
+│   ├── importar_saeb_2019_uf.py.bak
+│   ├── importar_saeb2023_9ef.py
+│   ├── importar_sav_2022_em_blocos.py
+│   ├── importar_school_2009_mongo.py
+│   ├── importar_stu_cog_2022_com_checkpoint.py
+│   ├── importar_student_2009_sps_completo.py
+│   ├── importar_suplemento_tecnico_2023.py
+│   ├── importar_todos_2009_mongo.py
+│   ├── importar_todos_2009_sas.py
+│   ├── importar_todos_2009_sps.py
+│   ├── inferencia_llama3_inep2000.py
+│   ├── inferencia_llama3_inep2003.py
+│   ├── inferencia_llama3_inep2006.py
+│   ├── inferencia_llama3_inep2009.py
+│   ├── inferencia_llama3_inep2012.py
+│   ├── inferencia_llama3_inep2015.py
+│   ├── inferencia_llama3_inep2018.py
+│   ├── inferencia_llama3_inep2022_gc.py
+│   ├── inferencia_llama3_inep2022_gc.py.py
+│   ├── inferencia_llama3_inep2022.py
+│   ├── inferir_global_relatorio_completo_inep2022.py
+│   ├── inserir_avaliacoes_rubricas.py
+│   ├── inserir_avaliar_rubricas_v1.py
+│   ├── inserir_avaliar_rubricas_v1.py.bak
+│   ├── inserir_campos_faltantes_5ano.py
+│   ├── inserir_campos_faltantes_5ano.py.bak
+│   ├── inserir_correcoes_microrregioes_ibge_normalizado.py
+│   ├── inserir_correcoes_microrregioes_ibge_normalizado.py.bak
+│   ├── inserir_correcoes_microrregioes_ibge.py
+│   ├── inserir_correcoes_microrregioes_ibge.py.bak
+│   ├── inserir_dados_ibge_5ano.py
+│   ├── inserir_dados_ibge_5ano.py.bak
+│   ├── inserir_escs_2022.py
+│   ├── inserir_feedback_rubrica_v4.py
+│   ├── inserir_feedback_rubrica_v4.py.bak
+│   ├── inserir_habilidades_bncc_9ano_lingua_portuguesa_manual.py
+│   ├── inserir_habilidades_bncc_9ano_lingua_portuguesa_manual.py.bak
+│   ├── inserir_habilidades_bncc_9ano_matematica_manual.py
+│   ├── inserir_habilidades_bncc_9ano_matematica_manual.py.bak
+│   ├── inserir_ibge_microrregioes_corrigido.py
+│   ├── inserir_ibge_microrregioes_corrigido.py.bak
+│   ├── inserir_ibge_microrregioes_mongo.py
+│   ├── inserir_ibge_microrregioes_mongo.py.bak
+│   ├── inserir_info_geografica_5ano.py
+│   ├── inserir_info_geografica_5ano.py.bak
+│   ├── inserir_municipios_saeb2021.py
+│   ├── inserir_municipios_saeb2021.py.bak
+│   ├── inserir_nivel_lp_saeb2021.py
+│   ├── inserir_nivel_lp_saeb2021.py.bak
+│   ├── inserir_nivel_mat_saeb2021.py
+│   ├── inserir_nivel_mat_saeb2021.py.bak
+│   ├── inserir_questoes_ordenadas_v6a.py
+│   ├── inserir_questoes_ordenadas_v6a.py.bak
+│   ├── inserir_questoes_pisa_ordenadas.py
+│   ├── inserir_questoes_pisa_ordenadas.py.bak
+│   ├── inserir_regioes_saeb_2021_9ano.py
+│   ├── inserir_regioes_saeb_2021_9ano.py.bak
+│   ├── inserir_rubrica_ctc_mongo.py
+│   ├── inserir_rubricas_bncc.py
+│   ├── inserir_rubricas_bncc.py.bak
+│   ├── inserir_rubrica_sinapse_dim_CTC.py
+│   ├── inserir_rubrica_sinapse_dim_CTC.py.bak
+│   ├── inserir_rubrica_sinapse_v2.py
+│   ├── inserir_rubrica_sinapse_v2.py.bak
+│   ├── inserir_rubrica_sinapse_v3.py
+│   ├── inserir_rubrica_sinapse_v3.py.bak
+│   ├── inserir_rubrica_sinapse_v4.py
+│   ├── inserir_rubrica_sinapse_v4.py.bak
+│   ├── inserir_rubrica_sinapse_v6a.py
+│   ├── inserir_rubrica_sinapse_v6a.py.bak
+│   ├── inserir_rubricas_mongodb.py
+│   ├── inserir_rubricas_referenciais.py
+│   ├── inserir_rubricas_saeb_mongo_5_ano_2023.py
+│   ├── inserir_rubricas_saeb_mongo_5_ano_2023.py.bak
+│   ├── inserir_rubrica_v6a_corrigida.py
+│   ├── inserir_rubrica_v6a_corrigida.py.bak
+│   ├── inserir_texto_prisma_expandido_completo.py
+│   ├── inspecionar_ce.py
+│   ├── inspecionar_ce.py.bak
+│   ├── inspecionar_colecao_pisa.py
+│   ├── inspecionar_colunas_municipios_ma.py
+│   ├── inspecionar_colunas_municipios_ma.py.bak
+│   ├── inspecionar_colunas_ts_aluno_9ef_2023.py
+│   ├── inspecionar_colunas_ts_aluno_9ef_2023.py.bak
+│   ├── inspecionar_colunas_ts_escola_2023.py
+│   ├── inspecionar_colunas_ts_escola_2023.py.bak
+│   ├── inspecionar_colunas_ts_municipio_2019.py
+│   ├── inspecionar_colunas_ts_municipio_2019.py.bak
+│   ├── inspecionar_id_municipio_saeb_2023.py
+│   ├── inspecionar_id_municipio_saeb_2023.py.bak
+│   ├── inspecionar_mongo.py
+│   ├── inspecionar_mongo.py.bak
+│   ├── intents_dialogflow.json
+│   ├── json2csv.py
+│   ├── json2csv.py.bak
+│   ├── json_para_gabarito_csv.py
+│   ├── juntar_escs_com_medias_por_item.py
+│   ├── juntar_escs_com_medias_por_item.py.bak
+│   ├── ler_conclusao_pisa_ocde.py
+│   ├── ler_shapefile_mun_alagoas.py
+│   ├── ler_shapefile_mun_alagoas.py.bak
+│   ├── limpar_paises_ocde_2018.py
+│   ├── limpar_paises_ocde_2018.py.bak
+│   ├── limpar_prompt_conclusoes.py
+│   ├── listar_campos_brasil_ibge.py
+│   ├── listar_campos_brasil_ibge.py.bak
+│   ├── listar_campos_por_colecao_pisa.py
+│   ├── listar_colecoes_saeb.py
+│   ├── listar_colunas_microdados_pisa_2018_cog.py
+│   ├── listar_colunas_microdados_pisa_2018_cog.py.bak
+│   ├── listar_colunas_microdados_pisa_2018_pvs.py
+│   ├── listar_colunas_microdados_pisa_2018_pvs.py.bak
+│   ├── listar_json_ocde_cloud.py
+│   ├── listar_paginas_bncc_com_codigo.py
+│   ├── listar_paginas_bncc_com_codigo.py.bak
+│   ├── listar_paginas_bncc_com_ef09ma.py
+│   ├── listar_paginas_bncc_com_ef09ma.py.bak
+│   ├── listar_paises_com_escs.py
+│   ├── listar_paises_com_escs.py.bak
+│   ├── llama3.py
+│   ├── ma_microrregioes_2015.geojson
+│   ├── ma_microrregioes_2015.json
+│   ├── mapa_saeb_triangulo_alto_paranaiba.py
+│   ├── mapa_saeb_triangulo_alto_paranaiba.py.bak
+│   ├── mapeamento_id_municipio_nome_2023.json
+│   ├── mapear_campos_desempenho_pisa.py
+│   ├── mapear_campos_equivalentes_pisa.py
+│   ├── media_escs15.py
+│   ├── media_escs15.py.bak
+│   ├── medias_por_pais_por_item_pisa2022.py
+│   ├── medias_por_pais_por_item_pisa2022.py.bak
+│   ├── meu_app_speech_g.py
+│   ├── microrregioes_nao_encontradas_ibge.csv
+│   ├── migrar_colecoes.py
+│   ├── migrar_colecoes.py.bak
+│   ├── mini_diagnostico_localizar_w_fstuwt.py
+│   ├── mini_diagnostico_localizar_w_fstuwt.py.bak
+│   ├── montar_banco_pisa.py
+│   ├── montar_banco_pisa.py.bak
+│   ├── municipios_saeb_2021.txt
+│   ├── mun_TMAP.py
+│   ├── nome_correto_ibge_2015.py
+│   ├── nome_correto_ibge_2015.py.bak
+│   ├── novo_pipeline_inep.py
+│   ├── novo_pipeline_inep.py.bak
+│   ├── novo_triangular_inep_pisa.py
+│   ├── novo_triangular_inep_pisa.py.bak
+│   ├── nspecionar_colecao_inep.py
+│   ├── nspecionar_colecao_inep.py.bak
+│   ├── organizar_arquivos_por_ano.py
+│   ├── organizar_arquivos_por_ano.py.bak
+│   ├── padronizar_dimensoes_rubrica_sinapse_ia_v1_3.py
+│   ├── painel_brasil_ocde.py
+│   ├── painel_brasil_ocde.py.bak
+│   ├── painel_inep_streamlit.py
+│   ├── painel_inep_streamlit.py.bak
+│   ├── painel_pisa_final.py
+│   ├── painel_pisa_final.py.bak
+│   ├── painel_pisa_ocde.py
+│   ├── painel_pisa_ocde.py.bak
+│   ├── painel_streamlit_modelo_kawasaki.py
+│   ├── painel_streamlit_modelo_kawasaki.py.bak
+│   ├── painel_streamlit_pisa.py
+│   ├── painel_streamlit_pisa.py.bak
+│   ├── paragrafos_e_textos.py
+│   ├── paragrafos_e_textos.py.bak
+│   ├── parser_inep_pdf.py
+│   ├── parser_inep_pdf.py.bak
+│   ├── parser_pisa_2000.py
+│   ├── parser_pisa_2000.py.bak
+│   ├── parser_secoes_relatorio_inep_2000.py
+│   ├── parser_secoes_relatorio_inep_2000.py.bak
+│   ├── parser_tabelas_pisa_2000.py
+│   ├── parser_tabelas_pisa_2000.py.bak
+│   ├── plot_ranking_ficticio.py
+│   ├── plot_ranking_ficticio.py.bak
+│   ├── populate_saeb_2001_resumo.py
+│   ├── populate_saeb_2001_resumo.py.bak
+│   ├── preencher_rubricas_saeb_mongo.py
+│   ├── preencher_rubricas_saeb_mongo.py.bak
+│   ├── preencher_rubricas_saeb_rgi.py
+│   ├── preencher_rubricas_saeb_rgi.py.bak
+│   ├── preview_pisa2009_sps.py
+│   ├── prisma_checklist_expandido.py
+│   ├── prisma_checklist_extrair.py
+│   ├── processar_relatorios_inep.py
+│   ├── processar_relatorios_inep.py.bak
+│   ├── proficiencias_medias_estudantes.py
+│   ├── proficiencias_medias_estudantes.py.bak
+│   ├── prompt_exemplo_llama3.txt
+│   ├── __pycache__
+│   │   └── sas7bdat_parser.cpython-310.pyc
+│   ├── python3
+│   ├── quantos_paises_ocde.py
+│   ├── quantos_paises_ocde.py.bak
+│   ├── ranking_saeb2023_codigos_ficticios.py
+│   ├── ranking_saeb2023_codigos_ficticios.py.bak
+│   ├── ranking_saeb2023_municipios_reais.py
+│   ├── ranking_saeb2023_municipios_reais.py.bak
+│   ├── regerar_pisa_json.py
+│   ├── regerar_pisa_json.py.bak
+│   ├── registrar_rubrica_bncc_9ano.py
+│   ├── registrar_rubrica_bncc_9ano.py.bak
+│   ├── reimportar_pisa2009_sps.py
+│   ├── reimportar_student_2009_sps.py
+│   ├── renomear_colecoes_pisa.py
+│   ├── renomear_colecoes_pisa.py.bak
+│   ├── reprocessar_erros_llama3.py
+│   ├── reprocessar_llama3_inep_2022.py
+│   ├── respostas_exemplo_por_area_texto.py
+│   ├── respostas_exemplo_por_area_texto.py.bak
+│   ├── restaurar_colecao.py
+│   ├── restaurar_colecao.py.bak
+│   ├── rubrica_ctc_json_csv.py
+│   ├── rubrica_sinapse_7dimensoes.csv
+│   ├── rubrica_sinapse_7dimensoes.json
+│   ├── rubrica_sinapse_v6_adaptada.py
+│   ├── rubrica_sinapse_v6_adaptada.py.bak
+│   ├── rubricas_pisa.html
+│   ├── rubricas_saeb_complementadas.json
+│   ├── saeb_2001_resumo.py
+│   ├── saeb_2001_resumo.py.bak
+│   ├── saeb_2023_scraper_brasil.py
+│   ├── saeb_2023_scraper_brasil.py.bak
+│   ├── saeb_municipios_top10.py
+│   ├── saeb_municipios_top10.py.bak
+│   ├── salvar_questoes_pisa_json.py
+│   ├── salvar_questoes_pisa_json.py.bak
+│   ├── salvar_rubrica_saeb_v2.py
+│   ├── salvar_rubrica_sinapse_ia_mongodb.py
+│   ├── sas7bdat_parser.py
+│   ├── scanner_indicadores_ibge.py
+│   ├── scanner_indicadores_ibge.py.bak
+│   ├── scraper_atlasbr.py
+│   ├── scraper_atlasbr.py.bak
+│   ├── scraper_saeb_2023_playwright.py
+│   ├── scraper_saeb_2023_playwright.py.bak
+│   ├── scraper_saeb_2023_robusto.py
+│   ├── scraper_saeb_2023_robusto.py.bak
+│   ├── scraper_uberlandia_com_cookies.py
+│   ├── scraper_uberlandia_com_cookies.py.bak
+│   ├── scraping_atlas_2013_forca_bruta.py
+│   ├── scraping_atlas_2013_forca_bruta.py.bak
+│   ├── scraping_atlas_2013_municipios_log_progresso_chatao.py
+│   ├── scraping_atlas_2013_municipios_log_progresso_chatao.py.bak
+│   ├── scraping_atlas_2013_municipios.py
+│   ├── scraping_atlas_2013_municipios.py.bak
+│   ├── scraping_atlas_2013.py
+│   ├── scraping_atlas_2013.py.bak
+│   ├── script_tts_xtts.sh
+│   ├── servidor_flask_receber_fdf.py
+│   ├── setup_estrutura_painel_pisa.py
+│   ├── setup_estrutura_painel_pisa.py.bak
+│   ├── simplificar_pais_2022.py
+│   ├── simplificar_pais_2022.py.bak
+│   ├── sintese_hmtl.py
+│   ├── sintese_hmtl.py.bak
+│   ├── sobrescrever_rubrica_sinapse_ia_v1_2.py
+│   ├── tabela_comparativa_html.py
+│   ├── tabela_comparativa_html.py.bak
+│   ├── testar_avaliador_ia_v6a_final.py
+│   ├── testar_avaliador_ia_v6a_final.py.bak
+│   ├── testar_avaliador_ia_v6a.py
+│   ├── testar_avaliador_ia_v6a.py.bak
+│   ├── testar_caminhos.py
+│   ├── testar_caminhos.py.bak
+│   ├── testar_fpdf2_unicode_ttf.py
+│   ├── testar_leitura_bncc.py
+│   ├── testar_leitura_bncc.py.bak
+│   ├── testar_leitura_mongodb_questoes.py
+│   ├── testar_leitura_mongodb_questoes.py.bak
+│   ├── testar_leitura_mongo_terminal.py
+│   ├── testar_leitura_mongo_terminal.py.bak
+│   ├── testar_xtts_v2.py
+│   ├── teste_abertura_saeb.py
+│   ├── teste_abertura_saeb.py.bak
+│   ├── teste_webdriver_chrome.py
+│   ├── teste_webdriver_chrome.py.bak
+│   ├── triangular_relatorio_inep_pisa.py
+│   ├── triangular_relatorio_inep_pisa.py.bak
+│   ├── unificar_camadas_geograficas.py
+│   ├── unificar_camadas_geograficas.py.bak
+│   ├── unificar_datasets.py
+│   ├── unificar_datasets.py.bak
+│   ├── varrer_abas_e_paises_ocde_2018.py
+│   ├── varrer_abas_e_paises_ocde_2018.py.bak
+│   ├── veirificar_papgeis_g_cloud.py
+│   ├── verifica_dados_pisa.py
+│   ├── verificar_baixada_maranhense.py
+│   ├── verificar_baixada_maranhense.py.bak
+│   ├── verificar_busca_dados_no_banco_errado.py
+│   ├── verificar_campos_pisa.py
+│   ├── verificar_campos_restantes_pisa.py
+│   ├── verificar_chave_cruzamento.py
+│   ├── verificar_chave_cruzamento.py.bak
+│   ├── verificar_cinco_dados.py
+│   ├── verificar_cinco_dados.py.bak
+│   ├── verificar_codigos_escs.py
+│   ├── verificar_codigos_escs.py.bak
+│   ├── verificar_codigos_notas.py
+│   ├── verificar_codigos_notas.py.bak
+│   ├── verificar_cog_pisa_2018_vnm.py
+│   ├── verificar_cog_pisa_2018_vnm.py.bak
+│   ├── verificar_colecoes_2003.py
+│   ├── verificar_colecoes_2006.py
+│   ├── verificar_colecoes_2009.py
+│   ├── verificar_colecoes_edicoes_lote.py
+│   ├── verificar_colunas_2022.py
+│   ├── verificar_colunas_arquivo_certo.py
+│   ├── verificar_colunas_arquivo_certo.py.bak
+│   ├── verificar_colunas_arquivo_resumo.py
+│   ├── verificar_colunas_arquivo_resumo.py.bak
+│   ├── verificar_colunas_cog.py
+│   ├── verificar_colunas_cog.py.bak
+│   ├── verificar_colunas_csv_ibge_corrigido.py
+│   ├── verificar_colunas_csv_ibge_corrigido.py.bak
+│   ├── verificar_colunas_escs_trend.py
+│   ├── verificar_colunas_escs_trend.py.bak
+│   ├── verificar_colunas_municipios_csv.py
+│   ├── verificar_colunas_municipios_csv.py.bak
+│   ├── verificar_colunas_overall_continuous.py
+│   ├── verificar_colunas_overall_continuous.py.bak
+│   ├── verificar_colunas_resumo_paises_2022.py
+│   ├── verificar_colunas_resumo_paises_2022.py.bak
+│   ├── verificar_conteudo_docx_2000.py
+│   ├── verificar_conteudo_docx_2000.py.bak
+│   ├── verificar_edicoes_inep.py
+│   ├── verificar_e_renomear_colecoes.py
+│   ├── verificar_e_renomear_colecoes.py.bak
+│   ├── verificar_estrutura_sinapse.py
+│   ├── verificar_estrutura_sinapse.py.bak
+│   ├── verificar_historico_pisa_brasil.py
+│   ├── verificar_integridade_ibge_geometry.py
+│   ├── verificar_integridade_ibge_geometry.py.bak
+│   ├── verificar_microdados_pisa_2018_cog_chunk.py
+│   ├── verificar_microdados_pisa_2018_cog_chunk.py.bak
+│   ├── verificar_microdados_pisa_2018_cog.py
+│   ├── verificar_microdados_pisa_2018_cog.py.bak
+│   ├── verificar_microdados_pisa_2018_cog_streamlog.py
+│   ├── verificar_microdados_pisa_2018_cog_streamlog.py.bak
+│   ├── verificar_microdados_pisa_2018.py
+│   ├── verificar_microdados_pisa_2018.py.bak
+│   ├── verificar_microdados_pisa_2018_qqq.py
+│   ├── verificar_microdados_pisa_2018_qqq.py.bak
+│   ├── verificar_microrregioes_faltantes.py
+│   ├── verificar_microrregioes_faltantes.py.bak
+│   ├── verificar_microrregioes_faltantes_saeb9ano.py
+│   ├── verificar_microrregioes_faltantes_saeb9ano.py.bak
+│   ├── verificar_microrregioes_ibge.py
+│   ├── verificar_microrregioes_ibge.py.bak
+│   ├── verificar_nomes_reais_colunas_pisa_escs_2022.py
+│   ├── verificar_nomes_reais_colunas_pisa_escs_2022.py.bak
+│   ├── verificar_paises_ocde_2018.py
+│   ├── verificar_paises_ocde_2018.py.bak
+│   ├── verificar_paises_pisa_ocde_2018.py
+│   ├── verificar_paises_pisa_ocde_2018.py.bak
+│   ├── verificar_planilha_pisa_2018.py
+│   ├── verificar_planilha_pisa_2018.py.bak
+│   ├── verificar_pvs_pisa_2018_vnm.py
+│   ├── verificar_pvs_pisa_2018_vnm.py.bak
+│   ├── verificar_sav.py
+│   ├── verificar_sav.py.bak
+│   ├── verificar_speakers_xtts.py
+│   ├── verificar_viana_ma_2015.py
+│   ├── verificar_viana_ma_2015.py.bak
+│   ├── verificar_viana_shp_ma.py
+│   ├── verificar_viana_shp_ma.py.bak
+│   ├── ver_questoes_v6a.py
+│   ├── ver_questoes_v6a.py.bak
+│   ├── visualize_historico_pisa_brasil.py
+│   ├── voz_coqui.py
+│   └── web_speech_api.py
+├── setup.py
+├── setup.py.bak
+├── setup.sh
+├── TCLE_IFTM_Autorizor_Menor_Idade_Representante_Legal.pdf
+├── TCLE_IFTM_base.pdf
+├── TCLE_IFTM_COMPLETO_PROFISSIONAL.pdf
+├── TCLE_IFTM_Editavel_Com_Campos.pdf
+├── TCLE_IFTM_interativo_final.pdf
+├── TCLE_IFTM_Sem_Tracos_Espacos.pdf
+├── vosk-model-small-pt-0.3.zip
+└── voz_ana_florence.wav
+
+74 directories, 1516 files

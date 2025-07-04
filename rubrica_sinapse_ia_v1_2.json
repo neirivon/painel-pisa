@@ -1,0 +1,21 @@
+{
+  "nome": "rubrica_sinapse_ia",
+  "versao": "v1.2",
+  "base": "SAEB 2017",
+  "modelo": "LLaMA3 8B (Ollama)",
+  "timestamp": "2025-06-04T04:39:43",
+  "dimensoes": [
+    {
+      "dimensao": "Progressão Cognitiva Educacional",
+      "origem": "SAEB 2017",
+      "finalidade": "Construção de descritores pedagógicos contextualizados via IA",
+      "niveis": []
+    },
+    {
+      "dimensao": "Perfil Socioeconômico e Contextual",
+      "origem": "SAEB 2017",
+      "finalidade": "Construção de descritores pedagógicos contextualizados via IA",
+      "niveis": []
+    }
+  ]
+}

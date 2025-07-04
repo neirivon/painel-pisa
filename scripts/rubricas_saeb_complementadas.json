@@ -1,0 +1,194 @@
+[
+  {
+    "nivel": 0,
+    "faixa_desempenho": "< 125",
+    "descricao_saeb": "Os estudantes requerem atenção especial, pois ainda não demonstram habilidades muito elementares.",
+    "taxonomia_bloom": "Recordar",
+    "dua": [
+      "Engajamento ativo com apoio constante",
+      "Representação com visual simples e repetitivo",
+      "Ação física mediada e assistida"
+    ],
+    "metodologias_ativas": [
+      "Tutoria entre pares",
+      "Gamificação orientada",
+      "Aprendizagem assistida"
+    ],
+    "neuropsicopedagogia": "Estímulo à atenção sustentada, memória operacional e linguagem receptiva",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 1,
+    "faixa_desempenho": "125–149",
+    "descricao_saeb": "Localizar informações explícitas em textos curtos, identificar tema e relações simples.",
+    "taxonomia_bloom": "Recordar",
+    "dua": [
+      "Atividades com repetição e reforço visual",
+      "Uso de ícones e cores para destacar informações"
+    ],
+    "metodologias_ativas": [
+      "Ensino híbrido (estações de rota)",
+      "Mapas mentais orientados"
+    ],
+    "neuropsicopedagogia": "Desenvolvimento de percepção visual, reconhecimento textual e compreensão literal",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 2,
+    "faixa_desempenho": "150–174",
+    "descricao_saeb": "Reconhecer finalidade de textos, inferir características de personagens, interpretar tirinhas.",
+    "taxonomia_bloom": "Compreender",
+    "dua": [
+      "Representação com imagens contextualizadas",
+      "Apoio verbal + visual"
+    ],
+    "metodologias_ativas": [
+      "Estudos de caso simples",
+      "Contação de histórias",
+      "Aprendizagem baseada em jogos"
+    ],
+    "neuropsicopedagogia": "Aprimoramento da inferência e linguagem simbólica com apoio narrativo",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 3,
+    "faixa_desempenho": "175–199",
+    "descricao_saeb": "Relacionar causa e consequência em poemas, contos e tirinhas; inferir sentidos de palavras.",
+    "taxonomia_bloom": "Compreender",
+    "dua": [
+      "Modelos narrativos multimodais",
+      "Acesso a histórias com tramas lógicas"
+    ],
+    "metodologias_ativas": [
+      "Aprendizagem baseada em projetos narrativos",
+      "Debates guiados"
+    ],
+    "neuropsicopedagogia": "Integração da linguagem verbal e não verbal; desenvolvimento semântico",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 4,
+    "faixa_desempenho": "200–224",
+    "descricao_saeb": "Inferir sentidos de expressões, identificar efeitos de humor e opinião em textos diversos.",
+    "taxonomia_bloom": "Aplicar",
+    "dua": [
+      "Problemas contextualizados com flexibilidade de formato"
+    ],
+    "metodologias_ativas": [
+      "Aprendizagem baseada em problemas (PBL)",
+      "Círculo de leitura"
+    ],
+    "neuropsicopedagogia": "Estímulo de empatia cognitiva, humor e abstração",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 5,
+    "faixa_desempenho": "225–249",
+    "descricao_saeb": "Diferenciar opinião de fato, interpretar efeitos de sentido e linguagem figurada.",
+    "taxonomia_bloom": "Analisar",
+    "dua": [
+      "Comparativos visuais, gráficos, conectores textuais"
+    ],
+    "metodologias_ativas": [
+      "Sala de aula invertida",
+      "Roteiros investigativos",
+      "Laboratórios de redação"
+    ],
+    "neuropsicopedagogia": "Estímulo ao pensamento crítico e disjunção lógica",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 6,
+    "faixa_desempenho": "250–274",
+    "descricao_saeb": "Inferir assunto principal, reconhecer finalidade e interpretação crítica de textos e gráficos.",
+    "taxonomia_bloom": "Analisar",
+    "dua": [
+      "Exploração ativa com diferentes mídias",
+      "Uso de ferramentas digitais de análise textual"
+    ],
+    "metodologias_ativas": [
+      "Webquests",
+      "Design thinking",
+      "Portfólios comparativos"
+    ],
+    "neuropsicopedagogia": "Organização de conteúdo complexo e inferência hierárquica",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 7,
+    "faixa_desempenho": "275–299",
+    "descricao_saeb": "Interpretar linguagem verbal e não verbal; identificar opinião e gênero textual comparando fontes.",
+    "taxonomia_bloom": "Avaliar",
+    "dua": [
+      "Ambientes com escolha e autoria",
+      "Autocorreção guiada e revisão formativa"
+    ],
+    "metodologias_ativas": [
+      "Seminários",
+      "Autoavaliação dirigida",
+      "Solução de casos"
+    ],
+    "neuropsicopedagogia": "Metacognição, organização da narrativa e identificação de intencionalidade",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 8,
+    "faixa_desempenho": "300–324",
+    "descricao_saeb": "Inferir informações, reconhecer relações entre pronomes, pontuação e intenções comunicativas.",
+    "taxonomia_bloom": "Avaliar",
+    "dua": [
+      "Feedback entre pares, rubricas colaborativas"
+    ],
+    "metodologias_ativas": [
+      "Avaliação entre pares",
+      "Simulações de leitura crítica"
+    ],
+    "neuropsicopedagogia": "Discurso reflexivo e mediação simbólica de intencionalidade",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  },
+  {
+    "nivel": 9,
+    "faixa_desempenho": ">= 325",
+    "descricao_saeb": "Reconhecer sentido de advérbios, opinião em textos complexos, leitura inferencial plena.",
+    "taxonomia_bloom": "Criar",
+    "dua": [
+      "Expressão criativa, multimodalidade livre, autoria textual"
+    ],
+    "metodologias_ativas": [
+      "Projetos autorais",
+      "Produção de podcasts ou vídeos educativos"
+    ],
+    "neuropsicopedagogia": "Produção simbólica complexa, articulação entre cognição e afeto",
+    "base_referencial": {
+      "avaliacao_original": "SAEB 2023 - 5º ano do Ensino Fundamental",
+      "observacao": "Esta rubrica foi estruturada com base nos descritores oficiais do SAEB para o 5º ano do Ensino Fundamental. Seu uso para outras etapas escolares é inferencial e visa apoiar análises educacionais comparativas ou triangulações pedagógicas."
+    }
+  }
+]

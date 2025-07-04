@@ -1,0 +1,111 @@
+⏳ Iniciando leitura parcial de PVs do PISA 2018 (VNM)...
+
+📌 Colunas plausíveis encontradas:
+- CNT
+- CNTSCHID
+- CNTSTUID
+- PV1MATH
+- PV2MATH
+- PV3MATH
+- PV4MATH
+- PV5MATH
+- PV6MATH
+- PV7MATH
+- PV8MATH
+- PV9MATH
+- PV10MATH
+- PV1READ
+- PV2READ
+- PV3READ
+- PV4READ
+- PV5READ
+- PV6READ
+- PV7READ
+- PV8READ
+- PV9READ
+- PV10READ
+- PV1SCIE
+- PV2SCIE
+- PV3SCIE
+- PV4SCIE
+- PV5SCIE
+- PV6SCIE
+- PV7SCIE
+- PV8SCIE
+- PV9SCIE
+- PV10SCIE
+- PV1GLCM
+- PV2GLCM
+- PV3GLCM
+- PV4GLCM
+- PV5GLCM
+- PV6GLCM
+- PV7GLCM
+- PV8GLCM
+- PV9GLCM
+- PV10GLCM
+- PV1RCLI
+- PV2RCLI
+- PV3RCLI
+- PV4RCLI
+- PV5RCLI
+- PV6RCLI
+- PV7RCLI
+- PV8RCLI
+- PV9RCLI
+- PV10RCLI
+- PV1RCUN
+- PV2RCUN
+- PV3RCUN
+- PV4RCUN
+- PV5RCUN
+- PV6RCUN
+- PV7RCUN
+- PV8RCUN
+- PV9RCUN
+- PV10RCUN
+- PV1RCER
+- PV2RCER
+- PV3RCER
+- PV4RCER
+- PV5RCER
+- PV6RCER
+- PV7RCER
+- PV8RCER
+- PV9RCER
+- PV10RCER
+- PV1RTSN
+- PV2RTSN
+- PV3RTSN
+- PV4RTSN
+- PV5RTSN
+- PV6RTSN
+- PV7RTSN
+- PV8RTSN
+- PV9RTSN
+- PV10RTSN
+- PV1RTML
+- PV2RTML
+- PV3RTML
+- PV4RTML
+- PV5RTML
+- PV6RTML
+- PV7RTML
+- PV8RTML
+- PV9RTML
+- PV10RTML
+
+🧪 Primeiros dados relevantes (10 linhas):
+CNT   CNTSCHID   CNTSTUID  PV1MATH  PV2MATH  PV3MATH  PV4MATH  PV5MATH  PV6MATH  PV7MATH  PV8MATH  PV9MATH  PV10MATH  PV1READ  PV2READ  PV3READ  PV4READ  PV5READ  PV6READ  PV7READ  PV8READ  PV9READ  PV10READ  PV1SCIE  PV2SCIE  PV3SCIE  PV4SCIE  PV5SCIE  PV6SCIE  PV7SCIE  PV8SCIE  PV9SCIE  PV10SCIE  PV1GLCM  PV2GLCM  PV3GLCM  PV4GLCM  PV5GLCM  PV6GLCM  PV7GLCM  PV8GLCM  PV9GLCM  PV10GLCM  PV1RCLI  PV2RCLI  PV3RCLI  PV4RCLI  PV5RCLI  PV6RCLI  PV7RCLI  PV8RCLI  PV9RCLI  PV10RCLI  PV1RCUN  PV2RCUN  PV3RCUN  PV4RCUN  PV5RCUN  PV6RCUN  PV7RCUN  PV8RCUN  PV9RCUN  PV10RCUN  PV1RCER  PV2RCER  PV3RCER  PV4RCER  PV5RCER  PV6RCER  PV7RCER  PV8RCER  PV9RCER  PV10RCER  PV1RTSN  PV2RTSN  PV3RTSN  PV4RTSN  PV5RTSN  PV6RTSN  PV7RTSN  PV8RTSN  PV9RTSN  PV10RTSN  PV1RTML  PV2RTML  PV3RTML  PV4RTML  PV5RTML  PV6RTML  PV7RTML  PV8RTML  PV9RTML  PV10RTML
+VNM 70400001.0 70400194.0  547.218  616.028  627.063  694.093  514.993  577.053  631.764  498.714  643.027   611.816  527.258  623.573  607.658  592.791  609.684  608.395  566.696  594.165  580.661   563.836  682.120  675.746  765.775  705.330  687.378  686.474  689.012  691.594  671.864   667.675      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70400205.0  509.347  563.771  529.978  543.096  510.650  500.904  505.355  515.701  535.571   534.102  514.845  533.035  508.972  491.836  540.759  540.379  499.930  499.252  498.124   486.194  571.906  567.354  524.593  568.326  570.841  585.144  488.103  525.419  550.435   544.152      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70400375.0  535.234  596.997  544.083  502.393  572.501  582.063  527.968  528.118  499.595   536.644  546.285  567.881  575.446  540.049  590.606  550.221  504.515  526.018  507.246   510.087  636.902  647.239  592.087  552.794  637.384  615.382  532.438  612.948  564.114   576.238      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70400523.0  527.706  485.672  477.489  551.675  513.068  439.285  506.137  478.639  446.479   530.046  542.661  605.612  564.161  535.402  536.305  582.525  599.380  590.149  596.082   559.070  588.349  609.140  551.624  593.512  610.411  553.148  490.219  559.957  544.282   520.533      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70400664.0  497.494  506.849  488.518  487.015  484.479  547.225  481.682  603.891  576.500   522.907  453.933  504.777  485.813  501.658  547.184  511.684  480.341  511.522  516.548   463.676  560.674  502.050  515.842  534.626  521.097  606.296  442.749  607.509  599.975   467.981      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70400925.0  423.696  395.493  379.104  448.490  407.295  457.544  487.355  412.868  531.110   423.714  465.894  478.553  460.777  490.328  458.933  494.030  494.029  456.030  504.561   463.804  515.989  517.759  562.010  556.579  547.761  495.455  559.601  500.559  491.759   506.802      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70401018.0  429.053  445.881  494.869  422.941  482.325  454.062  508.343  428.698  462.123   475.077  488.168  512.389  516.015  520.957  513.977  457.414  531.106  485.512  531.332   508.681  487.732  462.348  539.417  503.358  526.738  477.989  499.963  493.235  562.557   514.482      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70401085.0  445.682  541.935  530.038  410.845  422.271  495.126  448.132  461.329  520.479   476.546  456.625  463.079  459.385  436.699  466.623  457.354  413.495  453.929  471.154   441.067  498.103  591.804  498.813  521.369  523.704  497.264  535.863  543.082  525.740   535.761      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70401393.0  503.988  462.079  474.568  492.402  468.672  448.051  486.432  457.592  369.597   440.361  418.796  395.401  393.308  403.337  393.566  387.557  363.807  381.210  402.817   416.565  470.892  527.138  455.104  432.207  404.288  482.262  489.423  528.452  428.087   412.970      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+VNM 70400001.0 70401460.0  434.862  438.669  450.635  464.001  449.840  410.723  496.200  458.566  424.029   404.335  466.580  489.917  476.492  524.526  467.349  496.820  447.806  469.174  477.047   445.013  388.153  468.291  493.543  527.532  532.892  475.838  497.635  466.720  430.885   449.034      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN      NaN       NaN
+
+✅ Leitura parcial segura finalizada.

@@ -1,0 +1,2 @@
+❌ Função duplicada: 'salvarJSON' nas linhas [276, 315]. ➤ Sugestão: consolidar em uma única função.
+⚠️ Biblioteca html2canvas não parece estar carregada. ➤ Adicione o script: https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js

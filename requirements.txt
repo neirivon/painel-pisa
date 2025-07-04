@@ -1,0 +1,17 @@
+# STREAMLIT E VISUALIZAÇÃO
+streamlit
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+wordcloud
+
+# IA E NLP (modo cloud leve)
+scikit-learn
+transformers==4.38.0
+torch==2.0.1+cpu
+sentencepiece
+
+# Repositório CPU-only para Torch
+-f https://download.pytorch.org/whl/torch_stable.html

@@ -1,0 +1,21 @@
+⏳ Lendo em blocos pequenos (100 linhas)...
+
+📌 Colunas relevantes:
+- CNT
+- CNTSCHID
+- CNTSTUID
+
+🧪 Primeiras linhas dos dados relevantes:
+CNT  CNTSCHID  CNTSTUID
+ALB  800115.0  800001.0
+ALB  800300.0  800002.0
+ALB  800088.0  800003.0
+ALB  800014.0  800004.0
+ALB  800294.0  800005.0
+ALB  800120.0  800006.0
+ALB  800335.0  800007.0
+ALB  800030.0  800008.0
+ALB  800218.0  800009.0
+ALB  800047.0  800010.0
+
+✅ Leitura parcial segura finalizada.

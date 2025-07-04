@@ -1,0 +1,93 @@
+import json
+from datetime import datetime
+
+# Caminho absoluto de saída
+OUTPUT_PATH = "/home/neirivon/SINAPSE2.0/PISA/painel_pisa/dados_cloud/rubrica_sinapse_pedagogica_professor.json"
+
+rubrica_professor = {
+    "nome": "rubrica_sinapse_pedagogica_professor",
+    "versao": "v1.4",
+    "publico": "professor",
+    "timestamp": datetime.now().isoformat(),
+    "objetivo": "Apoiar o professor na correção das questões adaptadas do PISA 2022 com base na Rubrica SINAPSE versão 1.4 aplicada ao contexto do TMPA.",
+    "dimensoes": [
+        {
+            "dimensao": "Capacidade de Comunicação e Expressão",
+            "criterios": [
+                "1 - Emergente: Vocabulário muito restrito; frases desconexas.",
+                "2 - Intermediário: Comunicação compreensível, mas com limitações.",
+                "3 - Proficiente: Ideias organizadas, vocabulário adequado.",
+                "4 - Avançado: Expressão fluente, argumentação sólida e coerente."
+            ]
+        },
+        {
+            "dimensao": "Raciocínio Lógico e Solução de Problemas",
+            "criterios": [
+                "1 - Emergente: Apenas repete dados, sem lógica visível.",
+                "2 - Intermediário: Resolve com apoio ou passos incompletos.",
+                "3 - Proficiente: Resolve com estratégia clara e justificativa.",
+                "4 - Avançado: Cria soluções originais e contextualizadas."
+            ]
+        },
+        {
+            "dimensao": "Relacionamento com Saberes Científicos e Culturais",
+            "criterios": [
+                "1 - Emergente: Cita fatos sem conexão com contexto.",
+                "2 - Intermediário: Reconhece relação com temas próximos.",
+                "3 - Proficiente: Integra saberes locais e escolares.",
+                "4 - Avançado: Valoriza a cultura e propõe ações educativas."
+            ]
+        },
+        {
+            "dimensao": "Progressão Cognitiva Educacional",
+            "criterios": [
+                "1 - Emergente: Memoriza ou repete sem análise.",
+                "2 - Intermediário: Aplica com apoio, em situações simples.",
+                "3 - Proficiente: Analisa, relaciona e justifica com base lógica.",
+                "4 - Avançado: Cria, propõe e articula soluções interdisciplinares."
+            ]
+        },
+        {
+            "dimensao": "Engajamento e Responsabilidade Social",
+            "criterios": [
+                "1 - Emergente: Resposta passiva, sem envolvimento.",
+                "2 - Intermediário: Demonstra início de empatia e ação coletiva.",
+                "3 - Proficiente: Compromisso com o coletivo e atitudes construtivas.",
+                "4 - Avançado: Liderança transformadora com visão crítica e social."
+            ]
+        },
+        {
+            "dimensao": "Autonomia e Autorregulação da Aprendizagem",
+            "criterios": [
+                "1 - Emergente: Depende totalmente de mediação.",
+                "2 - Intermediário: Demonstra esforço com apoio parcial.",
+                "3 - Proficiente: Planeja e ajusta ações de forma crescente.",
+                "4 - Avançado: Autônomo, reflexivo e autogestor do aprendizado."
+            ]
+        },
+        {
+            "dimensao": "Perfil Socioeconômico e Contextual",
+            "criterios": [
+                "1 - Emergente: Relato distante da vivência escolar/comunitária.",
+                "2 - Intermediário: Participação limitada, sem continuidade.",
+                "3 - Proficiente: Mostra autonomia com base em recursos disponíveis.",
+                "4 - Avançado: Demonstra ação ativa e crítica no território."
+            ]
+        },
+        {
+            "dimensao": "Pertencimento e Equidade Territorial (CTC + EJI + ESCS)",
+            "criterios": [
+                "1 - Emergente: Desconexão com cultura/localidade.",
+                "2 - Intermediário: Respeito básico às diversidades.",
+                "3 - Proficiente: Valoriza grupos sub-representados.",
+                "4 - Avançado: Propõe ações que fortalecem a identidade territorial e a justiça social."
+            ]
+        }
+    ]
+}
+
+with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+    json.dump(rubrica_professor, f, ensure_ascii=False, indent=2)
+
+print(f"✅ Arquivo salvo: {OUTPUT_PATH}")
+

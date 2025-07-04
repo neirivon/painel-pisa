@@ -1,0 +1,54 @@
+Área: Leitura | Código: L01
+Pergunta: A prefeitura de sua cidade publicou um novo regulamento para o transporte escolar. Ele deve garantir o acesso equitativo de todos os alunos, especialmente os das zonas rurais. Com base nesse regulamento, discuta os principais desafios e benefícios para os estudantes da sua região.
+- ✅ Resposta Correta (resumida): Descreve desigualdade de acesso, destaca melhorias no trajeto e segurança.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Leitura | Código: L02
+Pergunta: Leia uma notícia sobre um novo aplicativo de leitura digital adotado nas escolas públicas. Com base nisso, analise os impactos positivos e possíveis limitações dessa medida.
+- ✅ Resposta Correta (resumida): Aponta facilidade de acesso, mas ressalta carência tecnológica de algumas famílias.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Leitura | Código: L03
+Pergunta: Um poema sobre a vida no campo foi apresentado em sala de aula. Que relações você consegue estabelecer entre esse poema e a realidade da sua comunidade?
+- ✅ Resposta Correta (resumida): Relaciona versos do poema com aspectos culturais e cotidianos do campo local.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Matemática | Código: M01
+Pergunta: Durante um evento cultural da sua região, 12 municípios contribuíram proporcionalmente com recursos. O total arrecadado foi de R$ 360.000. Explique como dividir esse valor de forma justa com base no número de estudantes de cada município e quais desafios essa divisão poderia apresentar.
+- ✅ Resposta Correta (resumida): Usa regra de três para divisão proporcional. Menciona desigualdades populacionais.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Matemática | Código: M02
+Pergunta: Um gráfico mostra a evolução da taxa de alfabetização no Brasil. Analise esse gráfico e discuta o que ele revela sobre a educação ao longo dos anos.
+- ✅ Resposta Correta (resumida): Identifica crescimento, relaciona com políticas públicas e desigualdades regionais.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Matemática | Código: M03
+Pergunta: Uma pesquisa revelou que 40% dos alunos da escola utilizam transporte público, 35% vão a pé e 25% usam transporte escolar. Proponha uma maneira de representar esses dados visualmente e comente os possíveis motivos dessa distribuição.
+- ✅ Resposta Correta (resumida): Sugere gráfico de setores e interpreta os dados relacionando com infraestrutura local.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Ciências | Código: C01
+Pergunta: As águas do rio Paranaíba têm apresentado variações na qualidade segundo estudos recentes. Proponha uma ação educativa local para envolver os estudantes e a comunidade na preservação ambiental da bacia hidrográfica.
+- ✅ Resposta Correta (resumida): Sugere projeto escolar de monitoramento da água com envolvimento comunitário.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Ciências | Código: C02
+Pergunta: Um agricultor usa pesticidas em excesso na plantação. Quais os impactos dessa prática e quais alternativas sustentáveis poderiam ser adotadas?
+- ✅ Resposta Correta (resumida): Aponta contaminação do solo e propõe controle biológico como alternativa.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+
+Área: Ciências | Código: C03
+Pergunta: A pandemia de COVID-19 trouxe à tona a importância da vacinação. Explique como as vacinas funcionam e por que são fundamentais para a saúde pública.
+- ✅ Resposta Correta (resumida): Descreve o mecanismo das vacinas e a imunidade coletiva.
+- ⚠️ Resposta com erros: [Inclui ideias desconexas ou erros conceituais]
+- ❌ Resposta fora do tema: [Totalmente alheia ao conteúdo da pergunta]
+

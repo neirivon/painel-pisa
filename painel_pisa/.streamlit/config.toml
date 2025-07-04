@@ -1,0 +1,20 @@
+# PISA/painel_pisa/.streamlit/config.toml
+
+[server]
+headless = true
+enableCORS = false
+enableXsrfProtection = false
+port = 8501
+maxUploadSize = 200
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#0D47A1"
+backgroundColor = "#F9F9F9"
+secondaryBackgroundColor = "#E0E0E0"
+textColor = "#000000"
+font = "sans serif"
+

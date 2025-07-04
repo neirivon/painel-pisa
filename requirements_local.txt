@@ -1,0 +1,26 @@
+# STREAMLIT E VISUALIZAÇÃO
+streamlit
+pandas
+numpy
+matplotlib
+plotly
+seaborn
+wordcloud
+
+# MONGODB LOCAL
+pymongo
+
+# IA AVANÇADA E VETORES
+scikit-learn
+faiss-cpu
+sentence-transformers
+transformers>=4.38.0
+torch>=2.0
+sentencepiece
+
+# Suporte a outras integrações
+openai
+redis
+
+#Traslators
+googletrans==4.0.0-rc1

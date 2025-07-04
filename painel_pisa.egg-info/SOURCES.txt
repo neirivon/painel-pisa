@@ -1,0 +1,15 @@
+setup.py
+painel_pisa/15_Comparativo_SAEB_PISA_2021_2022.py
+painel_pisa/15_Explicacao_ESCS_SAEB.py
+painel_pisa/Home.py
+painel_pisa/__init__.py
+painel_pisa/corrigir_import_e_config.py
+painel_pisa/corrigir_posicao_pageconfig.py
+painel_pisa/extrair_medias_pisa2003.py
+painel_pisa/injetar_bloco_edicao_pages.py
+painel_pisa/injetar_import_os.py
+painel_pisa/painel_comparativo_real.py
+painel_pisa.egg-info/PKG-INFO
+painel_pisa.egg-info/SOURCES.txt
+painel_pisa.egg-info/dependency_links.txt
+painel_pisa.egg-info/top_level.txt

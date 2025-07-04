@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches e logs
+*.log
+*.tmp
+*.swp
+
+# Arquivos de ambiente virtual
+.venv/
+venv/
+env/
+ENV/
+venv_pisa/
+.idea/
+.vscode/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.bak
+*.old
+
+# Dados sensíveis
+*.env
+
+# Dados exportados ou locais
+exports_html/
+*.json
+*.csv
+
+# Ignorar arquivos grandes e dados brutos
+PISA/DADOS/
+SAEB/DADOS/
+*.sav
+*.sas7bdat
+*.csv
+*.zip

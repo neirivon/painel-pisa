@@ -1,0 +1,146 @@
+[
+  {
+    "dimensao": "Taxonomia de Bloom",
+    "nivel": 1,
+    "titulo": "Explorador em Desenvolvimento",
+    "descricao": "Demonstra reconhecimento ou repetição de conceitos sem elaboração."
+  },
+  {
+    "dimensao": "Taxonomia de Bloom",
+    "nivel": 2,
+    "titulo": "Construtor de Ideias",
+    "descricao": "Compreende os conceitos e os reorganiza de forma básica."
+  },
+  {
+    "dimensao": "Taxonomia de Bloom",
+    "nivel": 3,
+    "titulo": "Criador de Conexões",
+    "descricao": "Aplica e analisa conceitos em novos contextos com coerência."
+  },
+  {
+    "dimensao": "Taxonomia de Bloom",
+    "nivel": 4,
+    "titulo": "Transformador de Saberes",
+    "descricao": "Cria, avalia e propõe ideias originais com profundidade crítica."
+  },
+  {
+    "dimensao": "Taxonomia SOLO",
+    "nivel": 1,
+    "titulo": "Explorador em Desenvolvimento",
+    "descricao": "Expressa uma única ideia desconectada (uniestrutural)."
+  },
+  {
+    "dimensao": "Taxonomia SOLO",
+    "nivel": 2,
+    "titulo": "Construtor de Ideias",
+    "descricao": "Lista ideias múltiplas sem articulação entre elas (multiestrutural)."
+  },
+  {
+    "dimensao": "Taxonomia SOLO",
+    "nivel": 3,
+    "titulo": "Criador de Conexões",
+    "descricao": "Conecta ideias de forma lógica e estruturada (relacional)."
+  },
+  {
+    "dimensao": "Taxonomia SOLO",
+    "nivel": 4,
+    "titulo": "Transformador de Saberes",
+    "descricao": "Generaliza, extrapola ou sintetiza com abstração (abstrato estendido)."
+  },
+  {
+    "dimensao": "Perfil Neuropsicopedagógico",
+    "nivel": 1,
+    "titulo": "Explorador em Desenvolvimento",
+    "descricao": "Apresenta dificuldades na organização, coesão e clareza textual."
+  },
+  {
+    "dimensao": "Perfil Neuropsicopedagógico",
+    "nivel": 2,
+    "titulo": "Construtor de Ideias",
+    "descricao": "Expressa com estrutura básica e vocabulário funcional."
+  },
+  {
+    "dimensao": "Perfil Neuropsicopedagógico",
+    "nivel": 3,
+    "titulo": "Criador de Conexões",
+    "descricao": "Demonstra fluidez, coerência e inferência entre ideias."
+  },
+  {
+    "dimensao": "Perfil Neuropsicopedagógico",
+    "nivel": 4,
+    "titulo": "Transformador de Saberes",
+    "descricao": "Elabora textos com abstrações, metáforas e pensamento complexo."
+  },
+  {
+    "dimensao": "DUA – Desenho Universal para Aprendizagem",
+    "nivel": 1,
+    "titulo": "Explorador em Desenvolvimento",
+    "descricao": "Utiliza uma forma limitada de representação e expressão."
+  },
+  {
+    "dimensao": "DUA – Desenho Universal para Aprendizagem",
+    "nivel": 2,
+    "titulo": "Construtor de Ideias",
+    "descricao": "Apresenta ideias com vocabulário acessível e poucos recursos."
+  },
+  {
+    "dimensao": "DUA – Desenho Universal para Aprendizagem",
+    "nivel": 3,
+    "titulo": "Criador de Conexões",
+    "descricao": "Integra textos, imagens e outras linguagens para reforçar ideias."
+  },
+  {
+    "dimensao": "DUA – Desenho Universal para Aprendizagem",
+    "nivel": 4,
+    "titulo": "Transformador de Saberes",
+    "descricao": "Explora múltiplas formas expressivas com clareza e intencionalidade."
+  },
+  {
+    "dimensao": "Metodologia Ativa",
+    "nivel": 1,
+    "titulo": "Explorador em Desenvolvimento",
+    "descricao": "Demonstra resposta passiva, sem tentativa de ação."
+  },
+  {
+    "dimensao": "Metodologia Ativa",
+    "nivel": 2,
+    "titulo": "Construtor de Ideias",
+    "descricao": "Aponta estratégia simples com alguma conexão ao problema."
+  },
+  {
+    "dimensao": "Metodologia Ativa",
+    "nivel": 3,
+    "titulo": "Criador de Conexões",
+    "descricao": "Aplica estratégias para resolver, adaptar ou propor soluções."
+  },
+  {
+    "dimensao": "Metodologia Ativa",
+    "nivel": 4,
+    "titulo": "Transformador de Saberes",
+    "descricao": "Inova, problematiza ou colabora com soluções críticas e bem fundamentadas."
+  },
+  {
+    "dimensao": "Pertencimento e Equidade Territorial (CTC + ESCS)",
+    "nivel": 1,
+    "titulo": "Explorador em Desenvolvimento",
+    "descricao": "Ignora ou não reconhece elementos do território e cultura local."
+  },
+  {
+    "dimensao": "Pertencimento e Equidade Territorial (CTC + ESCS)",
+    "nivel": 2,
+    "titulo": "Construtor de Ideias",
+    "descricao": "Reconhece o território, mas ainda sem articulação crítica."
+  },
+  {
+    "dimensao": "Pertencimento e Equidade Territorial (CTC + ESCS)",
+    "nivel": 3,
+    "titulo": "Criador de Conexões",
+    "descricao": "Relaciona saberes escolares com a vivência cultural e local."
+  },
+  {
+    "dimensao": "Pertencimento e Equidade Territorial (CTC + ESCS)",
+    "nivel": 4,
+    "titulo": "Transformador de Saberes",
+    "descricao": "Valoriza criticamente o território e propõe soluções com protagonismo sociocultural."
+  }
+]

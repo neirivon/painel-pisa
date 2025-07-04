@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gráfico Longitudinal – PISA Brasil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f0f4f8;
+        }
+        h1 {
+            color: #003366;
+        }
+        p {
+            font-size: 16px;
+        }
+        .grafico {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>📈 Gráfico Longitudinal – Desempenho dos Estudantes Brasileiros no PISA (2000–2022)</h1>
+    <p>O gráfico a seguir apresenta a evolução das pontuações médias do Brasil nas três áreas avaliadas pelo PISA: Matemática, Leitura e Ciências.</p>
+
+    <div class="grafico">
+        <svg width="700" height="400" xmlns="http://www.w3.org/2000/svg">
+            <!-- Eixos -->
+            <line x1="60" y1="20" x2="60" y2="350" stroke="black"/>
+            <line x1="60" y1="350" x2="670" y2="350" stroke="black"/>
+
+            <!-- Rótulos dos anos -->
+            <text x="80" y="370">2000</text>
+            <text x="140" y="370">2003</text>
+            <text x="200" y="370">2006</text>
+            <text x="260" y="370">2009</text>
+            <text x="320" y="370">2012</text>
+            <text x="380" y="370">2015</text>
+            <text x="440" y="370">2018</text>
+            <text x="500" y="370">2022</text>
+
+            <!-- Linhas de base -->
+            <line x1="60" y1="100" x2="670" y2="100" stroke="#ccc"/>
+            <line x1="60" y1="150" x2="670" y2="150" stroke="#ccc"/>
+            <line x1="60" y1="200" x2="670" y2="200" stroke="#ccc"/>
+            <line x1="60" y1="250" x2="670" y2="250" stroke="#ccc"/>
+            <line x1="60" y1="300" x2="670" y2="300" stroke="#ccc"/>
+
+            <!-- Escala (Pontuação) -->
+            <text x="30" y="100">480</text>
+            <text x="30" y="150">440</text>
+            <text x="30" y="200">400</text>
+            <text x="30" y="250">360</text>
+            <text x="30" y="300">320</text>
+
+            <!-- Linha Matemática -->
+            <polyline fill="none" stroke="red" stroke-width="2"
+                      points="80,300 140,280 200,260 260,240 320,230 380,245 440,237 500,240"/>
+            <text x="510" y="240" fill="red">Matemática</text>
+
+            <!-- Linha Leitura -->
+            <polyline fill="none" stroke="blue" stroke-width="2"
+                      points="80,215 140,210 200,220 260,195 320,197 380,202 440,192 500,195"/>
+            <text x="510" y="195" fill="blue">Leitura</text>
+
+            <!-- Linha Ciências -->
+            <polyline fill="none" stroke="green" stroke-width="2"
+                      points="80,220 140,220 200,220 260,200 320,200 380,208 440,203 500,205"/>
+            <text x="510" y="205" fill="green">Ciências</text>
+        </svg>
+    </div>
+</body>
+</html>
+

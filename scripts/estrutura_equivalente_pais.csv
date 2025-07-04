@@ -1,0 +1,16 @@
+colecao,campo_detectado,campo_equivalente
+pisa_2000_cognitive_item,COUNTRY,CNT
+pisa_2000_cognitive_item,CNT,CNT
+pisa_ocde_2000_medias,pais,CNT
+pisa_ocde_2003_alunos,CNT,CNT
+pisa_2003_student,CNT,CNT
+pisa_2006_cognitive,Country,CNT
+pisa_2006_student,CNT,CNT
+pisa_2009_student_sps,CNT,CNT
+pisa_2009_student_sps,COUNTRY,CNT
+pisa_2015_cy6_ms_cm2_stu_qqq2015,CNT,CNT
+pisa_2022_student,CNT,CNT
+pisa_2022_student_qqq,CNT,CNT
+pisa_2022_teacher,CNT,CNT
+pisa_2022_teacher_questionnaire,CNT,CNT
+pisa_2022_country_questionnaire,CNT,CNT

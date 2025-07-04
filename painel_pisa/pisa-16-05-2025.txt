@@ -1,0 +1,1505 @@
+.
+├── 15_Comparativo_SAEB_PISA_2021_2022.py
+├── 15_Explicacao_ESCS_SAEB.py
+├── assets
+│   ├── comparacao_divisoes_ibge.png
+│   ├── imagens
+│   │   ├── bruno.png
+│   │   ├── eduardo.png
+│   │   ├── janaina.png
+│   │   ├── neirivon.png
+│   │   └── orlando.png
+│   └── logos
+│       ├── IFTM_360.png
+│       └── sinapse.png
+├── corrigir_import_e_config.py
+├── corrigir_posicao_pageconfig.py
+├── dados
+│   ├── IBGE
+│   │   └── 2024
+│   │       └── BR_Municipios_2024
+│   │           ├── BR_Municipios_2024.cpg
+│   │           ├── BR_Municipios_2024.dbf
+│   │           ├── BR_Municipios_2024.prj
+│   │           ├── BR_Municipios_2024.shp
+│   │           └── BR_Municipios_2024.shx
+│   └── microrregioes_rubricas.csv
+├── documento_final_projeto_2025-05-02_16-21.pdf
+├── documento_final_projeto_2025-05-02_16-26.pdf
+├── documento_final_projeto_2025-05-02_16-34.pdf
+├── documento_final_projeto_2025-05-02_16-42.pdf
+├── documento_final_projeto_2025-05-02_16-50.pdf
+├── documento_final_projeto_2025-05-02_17-05.pdf
+├── documento_final_projeto_2025-05-02_17-18.pdf
+├── documento_final_projeto_2025-05-04_23-21.pdf
+├── documento_final_projeto_2025-05-05_14-12.pdf
+├── extrair_medias_pisa2003.py
+├── favicon.png
+├── Home.py
+├── IBGE
+│   ├── DADOS
+│   │   ├── BR_Microrregioes_2022
+│   │   │   ├── BR_Microrregioes_2022.cpg
+│   │   │   ├── BR_Microrregioes_2022.dbf
+│   │   │   ├── BR_Microrregioes_2022.prj
+│   │   │   ├── BR_Microrregioes_2022.shp
+│   │   │   └── BR_Microrregioes_2022.shx
+│   │   ├── exportados_tmap
+│   │   ├── MG_Mesorregioes_2022
+│   │   │   ├── MG_Mesorregioes_2022.cpg
+│   │   │   ├── MG_Mesorregioes_2022.dbf
+│   │   │   ├── MG_Mesorregioes_2022.prj
+│   │   │   ├── MG_Mesorregioes_2022.shp
+│   │   │   └── MG_Mesorregioes_2022.shx
+│   │   └── MG_Municipios_2022
+│   │       ├── MG_Municipios_2022.cpg
+│   │       ├── MG_Municipios_2022.dbf
+│   │       ├── MG_Municipios_2022.prj
+│   │       ├── MG_Municipios_2022.shp
+│   │       └── MG_Municipios_2022.shx
+│   ├── exportar_geojson_shapefile_tmap.py
+│   ├── gerar_municipios_tmap.py
+│   ├── listar_municipios_tmap.py
+│   ├── mapa_proficiencia_simulada_tmap.py
+│   ├── MG_Triangulo_AltoParanaiba.cpg
+│   ├── MG_Triangulo_AltoParanaiba.dbf
+│   ├── MG_Triangulo_AltoParanaiba.prj
+│   ├── MG_Triangulo_AltoParanaiba.shp
+│   ├── MG_Triangulo_AltoParanaiba.shx
+│   └── rubricas_pedagogicas_tmap.py
+├── INEP
+│   └── RELATORIOS
+│       ├── 2000
+│       │   └── inep_2000.pdf
+│       ├── 2003
+│       │   └── inep_2003.pdf
+│       ├── 2006
+│       │   └── inep_2006.pdf
+│       ├── 2009
+│       │   └── inep_2009.pdf
+│       ├── 2012
+│       │   └── inep_2012.pdf
+│       ├── 2015
+│       │   └── inep_2015.pdf
+│       ├── 2018
+│       │   └── inep_2018.pdf
+│       └── 2022
+│           ├── inep_2022.pdf
+│           ├── PISA2022_FinalRelease_Compendia_18thJune24
+│           │   ├── Final release version
+│           │   │   └── bkg
+│           │   │       ├── pisa2022_ms_bkg_ict_math_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_ict_overall_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_ict_read_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_ict_scie_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_paq_math_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_paq_overall_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_paq_read_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_paq_scie_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_sch_math_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_sch_overall_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_sch_read_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_sch_scie_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_stu_math_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_stu_overall_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_stu_read_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_stu_scie_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_wb_math_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_wb_overall_compendium.xlsx
+│           │   │       ├── pisa2022_ms_bkg_wb_read_compendium.xlsx
+│           │   │       └── pisa2022_ms_bkg_wb_scie_compendium.xlsx
+│           │   └── pisa_2022MS_overall_continuous.xlsx
+│           ├── PISA2022_FinalRelease_Compendia_18thJune24_cog
+│           │   ├── pisa2022_ms_cog_female_math_compendium.xlsx
+│           │   ├── pisa2022_ms_cog_female_read_compendium.xlsx
+│           │   ├── pisa2022_ms_cog_female_scie_compendium.xlsx
+│           │   ├── pisa2022_ms_cog_male_math_compendium.xlsx
+│           │   ├── pisa2022_ms_cog_male_read_compendium.xlsx
+│           │   ├── pisa2022_ms_cog_male_scie_compendium.xlsx
+│           │   ├── pisa2022_ms_cog_overall_math_compendium.xlsx
+│           │   ├── pisa2022_ms_cog_overall_read_compendium.xlsx
+│           │   └── pisa2022_ms_cog_overall_scie_compendium.xlsx
+│           ├── PISA2022_FinalRelease_CrT_Compendia_18thJune24
+│           │   ├── bkg
+│           │   │   ├── pisa2022_crth_bkg_ict_overall_compendium.xlsx
+│           │   │   ├── pisa2022_crth_bkg_paq_overall_compendium.xlsx
+│           │   │   ├── pisa2022_crth_bkg_sch_overall_compendium.xlsx
+│           │   │   ├── pisa2022_crth_bkg_stu_overall_compendium.xlsx
+│           │   │   └── pisa2022_crth_bkg_wb_overall_compendium.xlsx
+│           │   └── cog
+│           │       ├── pisa2022_crth_cog_female_compendium.xlsx
+│           │       ├── pisa2022_crth_cog_male_compendium.xlsx
+│           │       └── pisa2022_crth_cog_overall_compendium.xlsx
+│           └── PISA2022_FinalRelease_FLT_Compendia_27thJune24
+│               ├── bkgfl
+│               │   ├── pisa2022_fl_bkg_flt_flit_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_flt_math_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_flt_overall_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_flt_read_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_ict_flit_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_ict_math_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_ict_overall_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_ict_read_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_paq_flit_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_paq_math_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_paq_overall_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_paq_read_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_sch_flit_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_sch_math_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_sch_overall_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_sch_read_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_stu_flit_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_stu_math_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_stu_overall_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_stu_read_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_wb_flit_compendium.xlsx
+│               │   ├── pisa2022_fl_bkg_wb_math_compendium.xlsx
+│               │   └── pisa2022_fl_bkg_wb_read_compendium.xlsx
+│               └── cogfl
+│                   ├── pisa2022_fl_cog_female_flit_compendium.xlsx
+│                   ├── pisa2022_fl_cog_female_math_compendium.xlsx
+│                   ├── pisa2022_fl_cog_female_read_compendium.xlsx
+│                   ├── pisa2022_fl_cog_male_flit_compendium.xlsx
+│                   ├── pisa2022_fl_cog_male_math_compendium.xlsx
+│                   ├── pisa2022_fl_cog_male_read_compendium.xlsx
+│                   ├── pisa2022_fl_cog_overall_flit_compendium.xlsx
+│                   ├── pisa2022_fl_cog_overall_math_compendium.xlsx
+│                   └── pisa2022_fl_cog_overall_read_compendium.xlsx
+├── injetar_bloco_edicao_pages.py
+├── injetar_import_os.py
+├── pages
+│   ├── 01_Mapa_e_Rubricas_TMAP.py
+│   ├── 01_Resumo_Edicao.py
+│   ├── 02_Distribuicao_Rubricas_SAEB.py
+│   ├── 03_Comparativo_PISA_OCDE.py
+│   ├── 04_Dashboard_SAEB_2021_Municipios.py
+│   ├── 04_Mapa_Brasil_Microrregioes.py
+│   ├── 04_politicas_publicas.py
+│   ├── 05_Rubricas_Avaliativas.py
+│   ├── 06_Exemplos_Paragrafos_Analisados.py
+│   ├── 07_Comparativo_PISA_SAEB_TMAP.py
+│   ├── 07_Resumo_Geral_INEP.py
+│   ├── 07_Rubrica_SAEB_9ano.py
+│   ├── 08_Comparativo_LP_MT.py
+│   ├── 08_Comparativo_PISA_SAEB.py
+│   ├── 10_Rubricas_Regionais_Contextualizadas.py
+│   ├── 11_Explicacao_Didatica_Integrada.py
+│   ├── 12_Situacoes_Interdisciplinares.py
+│   ├── 13_Dashboard_SAEB_2021_5Ano.py
+│   ├── 13_Dashboard_SAEB_2021_9Ano.py
+│   ├── 14_Analise_Microrregioes_SAEB_9Ano.py
+│   ├── 14_Dashboard_SAEB_2021_Encerramento.py
+│   ├── 14_Mapa_Comparativo_PISA_SAEB.py
+│   ├── 14_Mapa_Desempenho_SAEB_9Ano.py
+│   ├── 14_Mapa_Interativo_SAEB_9Ano.py
+│   ├── 14_Mapa_Microrregioes_SAEB.py
+│   ├── 14_Mapa_SAEB_2021_9Ano.py
+│   ├── 14_Municipios_Destaque_9Ano.py
+│   ├── 15_Comparativo_SAEB_PISA_2021_2022.py
+│   ├── 15_Explicacao_ESCS_SAEB.py
+│   ├── 2003
+│   │   └── index.py
+│   ├── 2006
+│   │   └── index.py
+│   ├── 2009
+│   │   └── index.py
+│   ├── 2012
+│   │   └── index.py
+│   ├── 2015
+│   │   └── index.py
+│   ├── 2018
+│   │   └── index.py
+│   ├── 2022
+│   │   └── index.py
+│   ├── 98_Exportar_PDF_Completo.py
+│   ├── 99_Referencias_Bibliograficas.py
+│   ├── 99_Status_Projeto.py
+│   └── BACKUP
+│       ├── 01_Mapa_e_Rubricas_TMAP.py
+│       ├── 01_Resumo_Edicao.py
+│       ├── 02_Distribuicao_Rubricas_SAEB.py
+│       ├── 03_Comparativo_PISA_OCDE.py
+│       ├── 04_politicas_publicas.py
+│       ├── 05_Rubricas_Avaliativas.py
+│       ├── 06_Exemplos_Paragrafos_Analisados.py
+│       ├── 07_Resumo_Geral_INEP.py
+│       ├── 08_Comparativo_PISA_SAEB.py
+│       ├── 10_Rubricas_Regionais_Contextualizadas.py
+│       ├── 11_Explicacao_Didatica_Integrada.py
+│       ├── 12_Situacoes_Interdisciplinares.py
+│       ├── 98_Exportar_PDF_Completo.py
+│       └── 99_Referencias_Bibliograficas.py
+├── painel_comparativo_real.py
+├── painel_pisa
+│   └── exports_html
+│       ├── 01_Mapa_e_Rubricas_TMAP.html
+│       ├── 01_Resumo_Edicao.html
+│       ├── 02_Distribuicao_Rubricas_SAEB.html
+│       ├── 03_Comparativo_PISA_OCDE.html
+│       ├── 04_politicas_publicas.html
+│       ├── 05_Rubricas_Avaliativas.html
+│       ├── 06_Exemplos_Paragrafos_Analisados.html
+│       ├── 07_Resumo_Geral_INEP_2000.html
+│       ├── 08_Comparativo_PISA_SAEB.html
+│       ├── 10_Rubricas_Regionais_Contextualizadas.html
+│       ├── 11_Explicacao_Didatica_Integrada.html
+│       ├── 12_Situacoes_Interdisciplinares_2000.html
+│       └── 99_Referencias_Bibliograficas.html
+├── PISA
+│   ├── DADOS
+│   │   ├── 2000
+│   │   │   ├── Conteudo_dos_Arquivos_da_Edicao_do_PISA_OCDE_2000.txt
+│   │   │   ├── convertidos
+│   │   │   │   ├── PISA2000_Codebook_student_questionnaire.pdf
+│   │   │   │   ├── Student_compendium_(mathematics).docx
+│   │   │   │   ├── Student_compendium_(reading).docx
+│   │   │   │   └── Student_compendium_(science).docx
+│   │   │   ├── DOC
+│   │   │   │   ├── PISA2000_Codebook_student_questionnaire.pdf
+│   │   │   │   ├── PISAMANUAL1020517.pdf
+│   │   │   │   ├── saida_pisa_2000_medias.csv
+│   │   │   │   ├── Student_compendium_(mathematics).doc
+│   │   │   │   ├── Student_compendium_(reading).doc
+│   │   │   │   └── Student_compendium_(science).doc
+│   │   │   ├── DOC_FORMATO_ANTIGO
+│   │   │   │   ├── School_compendium_(mathematics).doc
+│   │   │   │   ├── School_compendium_(reading).doc
+│   │   │   │   ├── School_compendium_(science).doc
+│   │   │   │   ├── Student_compendium_(mathematics).doc
+│   │   │   │   ├── Student_compendium_(reading).doc
+│   │   │   │   ├── Student_compendium_(science).doc
+│   │   │   │   └── Test_item_compendium_V4.doc
+│   │   │   ├── extracoes
+│   │   │   │   └── pisa_2000_ocde_paginas.json
+│   │   │   ├── RELATORIO
+│   │   │   │   └── PISA-OCDE-2000-en.pdf
+│   │   │   ├── SAS_ESCS
+│   │   │   │   └── ESCS_PISA2000.sas7bdat
+│   │   │   ├── SAV
+│   │   │   │   └── ESCS_PISA2000.sav
+│   │   │   ├── School_compendium_(reading).docx
+│   │   │   ├── School_compendium_(science).docx
+│   │   │   ├── SPSS
+│   │   │   │   ├── BACKUP
+│   │   │   │   │   └── PISA2000_SPSS_cognitive_item.txt
+│   │   │   │   ├── PISA2000_SPSS_school_questionnaire.txt
+│   │   │   │   ├── PISA2000_SPSS_student_mathematics.txt
+│   │   │   │   ├── PISA2000_SPSS_student_reading.txt
+│   │   │   │   └── PISA2000_SPSS_student_science.txt
+│   │   │   ├── Student_compendium_(mathematics).doc
+│   │   │   ├── Student_compendium_(reading).doc
+│   │   │   ├── Student_compendium_(science).doc
+│   │   │   ├── Test_item_compendium_V4.docx
+│   │   │   └── ZIP
+│   │   │       ├── intcogn_v4.txt
+│   │   │       ├── intscho.txt
+│   │   │       ├── intstud_math
+│   │   │       │   └── intstud_math_v3.txt
+│   │   │       ├── intstud_read
+│   │   │       │   └── intstud_read_v3.txt
+│   │   │       ├── intstud_scie
+│   │   │       │   └── intstud_scie_v3.txt
+│   │   │       └── PISAMANUAL1020517
+│   │   │           └── PISAMANUAL1020517.pdf
+│   │   ├── 2003
+│   │   │   ├── Cogn_CodeBook_2003.pdf
+│   │   │   ├── INT
+│   │   │   │   ├── INT_cogn_2003_v2.txt
+│   │   │   │   ├── INT_schi_2003.txt
+│   │   │   │   └── INT_stui_2003_v2.txt
+│   │   │   ├── ScQ_CodeBook_2003.pdf
+│   │   │   ├── SPSS
+│   │   │   │   ├── BACKUP
+│   │   │   │   ├── PISA2003_SPSS_cognitive_item.txt
+│   │   │   │   ├── PISA2003_SPSS_school.txt
+│   │   │   │   └── PISA2003_SPSS_student.txt
+│   │   │   └── StQ_CodeBook_2003.pdf
+│   │   ├── 2006
+│   │   │   ├── Comp_Att06_Dec07.doc
+│   │   │   ├── Comp_Att06_Dec07.xls
+│   │   │   ├── Comp_Cogn06_Dec07.doc
+│   │   │   ├── Comp_Cogn06_Dec07.xls
+│   │   │   ├── Comp_ICT06_Dec07.doc
+│   │   │   ├── Comp_Par06_Dec07.doc
+│   │   │   ├── Comp_Sch06_Dec07.doc
+│   │   │   ├── Comp_Stu06_Dec07.doc
+│   │   │   ├── INT_Cogn06_S_Dec07.zip
+│   │   │   └── SPSS
+│   │   │       ├── PISA2006_SPSS_cognitive_item.txt
+│   │   │       ├── PISA2006_SPSS_parent.txt
+│   │   │       ├── PISA2006_SPSS_school.txt
+│   │   │       ├── PISA2006_SPSS_scored_cognitive_item.txt
+│   │   │       └── PISA2006_SPSS_student.txt
+│   │   ├── 2009
+│   │   ├── 2012
+│   │   ├── 2015
+│   │   │   ├── CY6_MS_CM2_SCH_QQQ2015.sav
+│   │   │   ├── CY6_MS_CM2_STU_COG2015.sav
+│   │   │   ├── CY6_MS_CM2_STU_CPS2015.sav
+│   │   │   ├── CY6_MS_CM2_STU_QQ22015.sav
+│   │   │   ├── CY6_MS_CM2_STU_QQQ2015.sav
+│   │   │   ├── CY6_MS_CM2_STU_QTM2015.sav
+│   │   │   ├── CY6_MS_CM2_STU_TTM2015.SAV
+│   │   │   ├── CY6_MS_CM2_TCH_QQQ2015.sav
+│   │   │   ├── CY6_MS_CMB_FLT_TTM2015.sav
+│   │   │   ├── CY6_MS_CMB_SCH_QQQ2015.sav
+│   │   │   ├── CY6_MS_CMB_STU_COG2015.sav
+│   │   │   ├── CY6_MS_CMB_STU_CPS2015.sav
+│   │   │   ├── CY6_MS_CMB_STU_FLT2015.sav
+│   │   │   ├── CY6_MS_CMB_STU_QQ22015.sav
+│   │   │   ├── CY6_MS_CMB_STU_QQQ2015.sav
+│   │   │   ├── CY6_MS_CMB_STU_QTM2015.sav
+│   │   │   ├── CY6_MS_CMB_STU_TTM2015.sav
+│   │   │   ├── CY6_MS_CMB_TCH_QQQ2015.sav
+│   │   │   ├── ReadMe2015.txt
+│   │   │   └── To Read2015.txt
+│   │   ├── 2018
+│   │   │   ├── bkg
+│   │   │   │   ├── pisa_ms_bkg_glcm_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_glcm_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_glcm_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_glcm_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_glcm_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_glcm_wb_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_math_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_math_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_math_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_math_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_math_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_math_wb_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_overall_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_overall_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_overall_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_overall_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_overall_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_overall_wb_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_read_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_read_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_read_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_read_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_read_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_read_wb_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_scie_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_scie_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_scie_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_scie_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_scie_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkg_scie_wb_compendium.xlsx
+│   │   │   │   └── pisa_ms_overall_continuous.xlsx
+│   │   │   ├── bkgfl
+│   │   │   │   ├── pisa_ms_bkgfl_flit_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_flit_flt_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_flit_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_flit_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_flit_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_flit_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_flit_wb_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_math_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_math_flt_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_math_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_math_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_math_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_math_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_math_wb_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_overall_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_overall_flt_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_overall_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_overall_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_overall_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_overall_stu_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_overall_wb_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_read_ec_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_read_flt_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_read_ict_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_read_paq_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_read_sch_compendium.xlsx
+│   │   │   │   ├── pisa_ms_bkgfl_read_stu_compendium.xlsx
+│   │   │   │   └── pisa_ms_bkgfl_read_wb_compendium.xlsx
+│   │   │   ├── COG
+│   │   │   │   └── CY07_MSU_STU_COG.sav
+│   │   │   ├── cogfl
+│   │   │   │   ├── pisa_ms_cogfl_female_flit_compendium.xlsx
+│   │   │   │   ├── pisa_ms_cogfl_female_math_compendium.xlsx
+│   │   │   │   ├── pisa_ms_cogfl_female_read_compendium.xlsx
+│   │   │   │   ├── pisa_ms_cogfl_male_flit_compendium.xlsx
+│   │   │   │   ├── pisa_ms_cogfl_male_math_compendium.xlsx
+│   │   │   │   ├── pisa_ms_cogfl_male_read_compendium.xlsx
+│   │   │   │   ├── pisa_ms_cogfl_overall_flit_compendium.xlsx
+│   │   │   │   ├── pisa_ms_cogfl_overall_math_compendium.xlsx
+│   │   │   │   └── pisa_ms_cogfl_overall_read_compendium.xlsx
+│   │   │   ├── FLT
+│   │   │   │   ├── CY07_MSU_FLT_COG.SAV
+│   │   │   │   ├── CY07_MSU_FLT_QQQ.SAV
+│   │   │   │   ├── CY07_MSU_FLT_TIM.SAV
+│   │   │   │   └── CY07_MSU_FLT_TTM.SAV
+│   │   │   ├── QMC
+│   │   │   │   ├── CY07MSU_QMC_FLT_COG.SAV
+│   │   │   │   ├── CY07MSU_QMC_FLT_QQQ.SAV
+│   │   │   │   ├── CY07MSU_QMC_FLT_TIM.SAV
+│   │   │   │   ├── CY07MSU_QMC_SCH_QQQ.sav
+│   │   │   │   ├── CY07MSU_QMC_STU_COG.sav
+│   │   │   │   ├── CY07MSU_QMC_STU_QQQ.sav
+│   │   │   │   ├── CY07MSU_QMC_STU_TIM.sav
+│   │   │   │   ├── CY07_QMC_FLT_TTM.SAV
+│   │   │   │   └── CY07_QMC_STU_TTM.SAV
+│   │   │   ├── SCH
+│   │   │   │   └── CY07_MSU_SCH_QQQ.sav
+│   │   │   ├── STU
+│   │   │   │   └── CY07_MSU_STU_QQQ.sav
+│   │   │   ├── TCH
+│   │   │   │   └── CY07_MSU_TCH_QQQ.sav
+│   │   │   ├── TIM
+│   │   │   │   └── CY07_MSU_STU_TIM.sav
+│   │   │   ├── TTM
+│   │   │   │   └── CY07_MSU_STU_TTM.SAV
+│   │   │   └── VNM
+│   │   │       ├── CY07_VNM_STU_COG.sav
+│   │   │       └── CY07_VNM_STU_PVS.sav
+│   │   └── 2022
+│   │       ├── CY08MSP_CRT_COG.FORMAT.SAS
+│   │       ├── CY08MSP_CRT_COG.SAS7BDAT
+│   │       ├── CY08MSP_CRT_COG.SAV
+│   │       ├── CY08MSP_FLT_COG.FORMAT.SAS
+│   │       ├── CY08MSP_FLT_COG.SAS7BDAT
+│   │       ├── CY08MSP_FLT_COG.SAV
+│   │       ├── CY08MSP_FLT_QQQ.FORMAT.SAS
+│   │       ├── CY08MSP_FLT_QQQ.SAS7BDAT
+│   │       ├── CY08MSP_FLT_QQQ.SAV
+│   │       ├── CY08MSP_FLT_TIM.FORMAT.SAS
+│   │       ├── CY08MSP_FLT_TIM.SAS7BDAT
+│   │       ├── CY08MSP_FLT_TIM.SAV
+│   │       ├── CY08MSP_SCH_QQQ.FORMAT.SAS
+│   │       ├── CY08MSP_SCH_QQQ.SAS7BDAT
+│   │       ├── CY08MSP_SCH_QQQ.SAV
+│   │       ├── CY08MSP_STU_COG.FORMAT.SAS
+│   │       ├── CY08MSP_STU_COG.SAS7BDAT
+│   │       ├── CY08MSP_STU_COG.SAV
+│   │       ├── CY08MSP_STU_QQQ.FORMAT.SAS
+│   │       ├── CY08MSP_STU_QQQ.SAS7BDAT
+│   │       ├── CY08MSP_STU_QQQ.SAV
+│   │       ├── CY08MSP_STU_TIM.FORMAT.SAS
+│   │       ├── CY08MSP_STU_TIM.SAS7BDAT
+│   │       ├── CY08MSP_STU_TIM.SAV
+│   │       ├── CY08MSP_TCH_QQQ.FORMAT.SAS
+│   │       ├── CY08MSP_TCH_QQQ.SAS7BDAT
+│   │       ├── CY08MSP_TCH_QQQ.SAV
+│   │       ├── escs_trend.csv
+│   │       └── ReadMe.txt
+│   └── RELATORIOS
+│       ├── 2000
+│       │   └── PISA-2000-en.pdf
+│       ├── 2003
+│       │   ├── PISA 2003 Data Analysis Manual-SPSS.pdf
+│       │   └── PISA-2003-en.pdf
+│       ├── 2006
+│       │   ├── PISA-2006-V1-en.pdf
+│       │   └── PISA-2006-V2-en.pdf
+│       ├── 2009
+│       │   ├── PISA-2009-V1.pdf
+│       │   ├── PISA-2009-V2.pdf
+│       │   ├── PISA-2009-V3.pdf
+│       │   ├── PISA-2009-V4-en.pdf
+│       │   ├── PISA-2009-V5.pdf
+│       │   └── PISA-2009-V6-.pdf
+│       ├── 2012
+│       │   ├── PISA-2012-results-snapshot-Volume-I-ENG.pdf
+│       │   ├── PISA-2012-V1.pdf
+│       │   ├── PISA-2012-V2.pdf
+│       │   ├── PISA-2012-V4.pdf
+│       │   ├── PISA-2012-V5-en.pdf
+│       │   └── PISA2012-V6-en.pdf
+│       ├── 2015
+│       │   ├── PISA-2015-Brazil-PRT.pdf
+│       │   ├── PISA-2015-V1-en.pdf
+│       │   ├── PISA-2015-V2-en.pdf
+│       │   ├── PISA-2015-V3-en.pdf
+│       │   ├── PISA-2015-V4-en.pdf
+│       │   └── PISA-2015-V5-en.pdf
+│       ├── 2018
+│       │   ├── PISA2018_CN_BRA.pdf
+│       │   ├── PISA-2018-V1-en.pdf
+│       │   ├── PISA-2018-V2-en.pdf
+│       │   ├── PISA2018-V3-en.pdf
+│       │   ├── PISA-2018-V4-en.pdf
+│       │   ├── PISA-2018-V5-en.pdf
+│       │   └── PISA-2018-V6-en.pdf
+│       └── 2022
+│           ├── PISA 2022 Insights and Interpretations.pdf
+│           ├── PISA-2022-V1-en.pdf
+│           ├── PISA-2022-V2-en.pdf
+│           ├── PISA-2022-V3-en.pdf
+│           └── PISA-2022-V4-en.pdf
+├── pisa-16-05-2025.txt
+├── README.md
+├── requirements.txt
+├── SAEB
+│   ├── DADOS
+│   │   ├── 1999_2001
+│   │   │   ├── micro_saeb1999
+│   │   │   │   ├── DADOS
+│   │   │   │   │   ├── ALUNOS
+│   │   │   │   │   │   └── ALUNOS
+│   │   │   │   │   │       ├── BIOLOGIA_03ANO.TXT
+│   │   │   │   │   │       ├── CIENCIAS_04SERIE.TXT
+│   │   │   │   │   │       ├── CIENCIAS_08SERIE.TXT
+│   │   │   │   │   │       ├── FISICA_03ANO.TXT
+│   │   │   │   │   │       ├── GEOGRAFIA_03ANO.TXT
+│   │   │   │   │   │       ├── GEOGRAFIA_04SERIE.TXT
+│   │   │   │   │   │       ├── GEOGRAFIA_08SERIE.TXT
+│   │   │   │   │   │       ├── HISTORIA_03ANO.TXT
+│   │   │   │   │   │       ├── HISTORIA_04SERIE.TXT
+│   │   │   │   │   │       ├── HISTORIA_08SERIE.TXT
+│   │   │   │   │   │       ├── MATEMATICA_03ANO.TXT
+│   │   │   │   │   │       ├── MATEMATICA_04SERIE.TXT
+│   │   │   │   │   │       ├── MATEMATICA_08SERIE.TXT
+│   │   │   │   │   │       ├── PORTUGUES_03ANO.TXT
+│   │   │   │   │   │       ├── PORTUGUES_04SERIE.TXT
+│   │   │   │   │   │       ├── PORTUGUES_08SERIE.TXT
+│   │   │   │   │   │       └── QUIMICA_03ANO.TXT
+│   │   │   │   │   ├── DIRETORES
+│   │   │   │   │   │   └── DIRETORES
+│   │   │   │   │   │       └── diretores_99.txt
+│   │   │   │   │   ├── DOCENTES
+│   │   │   │   │   │   └── DOCENTES
+│   │   │   │   │   │       └── DOCENTES_99.TXT
+│   │   │   │   │   ├── ESCOLAS
+│   │   │   │   │   │   └── ESCOLAS
+│   │   │   │   │   │       └── escolas_99.txt
+│   │   │   │   │   └── TURMAS
+│   │   │   │   │       └── TURMAS
+│   │   │   │   │           ├── Turmas_03ANO.txt
+│   │   │   │   │           ├── Turmas_04SERIE.txt
+│   │   │   │   │           └── Turmas_08SERIE.txt
+│   │   │   │   ├── INPUTS_SAS_SPSS
+│   │   │   │   │   ├── ALUNOS
+│   │   │   │   │   │   ├── ~$PUT_SAS_QUIMICA_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_BIOLOGIA_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_CIENCIAS_04SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_CIENCIAS_08SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_FISICA_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_GEOGRAFIA_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_GEOGRAFIA_04SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_GEOGRAFIA_08SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_HISTORIA_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_HISTORIA_04SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_HISTORIA_08SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_MATEMATICA_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_MATEMATICA_04SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_MATEMATICA_08SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_PORTUGUES_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_PORTUGUES_04SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_PORTUGUES_08SERIE.SAS
+│   │   │   │   │   │   ├── INPUT_SAS_QUIMICA_03ANO.SAS
+│   │   │   │   │   │   ├── INPUT_SPSS_BIOLOGIA_03ANO.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_CIENCIAS_04SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_CIENCIAS_08SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_FISICA_03ANO.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_GEOGRAFIA_03ANO.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_GEOGRAFIA_04SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_GEOGRAFIA_08SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_HISTORIA_03ANO.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_HISTORIA_04SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_HISTORIA_08SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_03ANO.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_04SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_08SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_PORTUGUES_03ANO.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_PORTUGUES_04SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_PORTUGUES_08SERIE.SPS
+│   │   │   │   │   │   └── INPUT_SPSS_QUIMICA_03ANO.SPS
+│   │   │   │   │   ├── DIRETORES
+│   │   │   │   │   │   ├── INPUT_SAS_DIRETOR_99.sas
+│   │   │   │   │   │   └── INPUT_SPSS_DIRETOR_99.SPS
+│   │   │   │   │   ├── DOCENTES
+│   │   │   │   │   │   ├── INPUT_SAS_DOCENTE_99.sas
+│   │   │   │   │   │   └── INPUT_SPSS_DOCENTE_99.SPS
+│   │   │   │   │   ├── ESCOLAS
+│   │   │   │   │   │   ├── INPUT_SAS_ESCOLA_99.sas
+│   │   │   │   │   │   └── INPUT_SPSS_ESCOLA_99.SPS
+│   │   │   │   │   └── TURMAS
+│   │   │   │   │       ├── INPUT_SAS_TURMA_03ANO.sas
+│   │   │   │   │       ├── INPUT_SAS_TURMA_04SERIE.sas
+│   │   │   │   │       ├── INPUT_SAS_TURMA_08SERIE.sas
+│   │   │   │   │       ├── INPUT_SPSS_TURMA_03ANO.SPS
+│   │   │   │   │       ├── INPUT_SPSS_TURMA_04SERIE.SPS
+│   │   │   │   │       └── INPUT_SPSS_TURMA_08SERIE.SPS
+│   │   │   │   ├── JSON
+│   │   │   │   │   └── saeb_1999_2001.json
+│   │   │   │   ├── LEIA-ME
+│   │   │   │   │   └── LEIA-ME_SAEB_1999.pdf
+│   │   │   │   ├── PARQUET
+│   │   │   │   └── RELATORIOS
+│   │   │   │       ├── resultados_do_saeb_99_dados_de_contexto_brasil_regioes_e_unidades_da_federacao.pdf
+│   │   │   │       └── resultados_do_saeb_99_relatorio.pdf
+│   │   │   └── micro_saeb2001
+│   │   │       ├── DADOS
+│   │   │       │   ├── ALUNOS
+│   │   │       │   │   ├── MATEMATICA_03ANO.TXT
+│   │   │       │   │   ├── MATEMATICA_04SERIE.TXT
+│   │   │       │   │   ├── MATEMATICA_08SERIE.TXT
+│   │   │       │   │   ├── PORTUGUES_03ANO.TXT
+│   │   │       │   │   ├── PORTUGUES_04SERIE.TXT
+│   │   │       │   │   └── PORTUGUES_08SERIE.TXT
+│   │   │       │   ├── DIRETOR
+│   │   │       │   │   └── DIRETOR_01.TXT
+│   │   │       │   ├── DOCENTES
+│   │   │       │   │   └── DOCENTE_01.TXT
+│   │   │       │   ├── ESCOLAS
+│   │   │       │   │   └── ESCOLA_01.TXT
+│   │   │       │   └── TURMAS
+│   │   │       │       └── TURMA_01.TXT
+│   │   │       ├── INPUTS_SAS_SPSS
+│   │   │       │   ├── ALUNOS
+│   │   │       │   │   ├── INPUT_SAS_MATEMATICA_03ANO.sas
+│   │   │       │   │   ├── INPUT_SAS_MATEMATICA_04SERIE.sas
+│   │   │       │   │   ├── INPUT_SAS_MATEMATICA_08SERIE.sas
+│   │   │       │   │   ├── INPUT_SAS_PORTUGUES_03ANO.sas
+│   │   │       │   │   ├── INPUT_SAS_PORTUGUES_04SERIE.sas
+│   │   │       │   │   ├── INPUT_SAS_PORTUGUES_08SERIE.sas
+│   │   │       │   │   ├── INPUT_SPSS_MATEMATICA_03ANO.SPS
+│   │   │       │   │   ├── INPUT_SPSS_MATEMATICA_04SERIE.SPS
+│   │   │       │   │   ├── INPUT_SPSS_MATEMATICA_08SERIE.SPS
+│   │   │       │   │   ├── INPUT_SPSS_PORTUGUES_03ANO.SPS
+│   │   │       │   │   ├── INPUT_SPSS_PORTUGUES_04SERIE.SPS
+│   │   │       │   │   └── INPUT_SPSS_PORTUGUES_08SERIE.SPS
+│   │   │       │   ├── DIRETOR
+│   │   │       │   │   ├── INPUT_SAS_DIRETOR_01.sas
+│   │   │       │   │   └── INPUT_SPSS_DIRETOR_01.SPS
+│   │   │       │   ├── DOCENTES
+│   │   │       │   │   ├── INPUT_SAS_DOCENTES_01.sas
+│   │   │       │   │   └── INPUT_SPSS_DOCENTE_01.SPS
+│   │   │       │   ├── ESCOLAS
+│   │   │       │   │   ├── INPUT_SAS_ESCOLA_01.sas
+│   │   │       │   │   └── INPUT_SPSS_ESCOLA_01.SPS
+│   │   │       │   └── TURMAS
+│   │   │       │       ├── INPUT_SAS_TURMA_01.sas
+│   │   │       │       └── INPUT_SPSS_TURMA_01.SPS
+│   │   │       ├── JSON
+│   │   │       │   └── escala_saeb_2001_matematica_8aserie.json
+│   │   │       ├── LEIA-ME
+│   │   │       │   └── LEIA-ME_SAEB_2001.pdf
+│   │   │       └── RELATORIOS
+│   │   │           └── relatorio_saeb_2001_matematica.pdf
+│   │   ├── 2003
+│   │   │   ├── DADOS
+│   │   │   │   ├── ALUNOS
+│   │   │   │   │   ├── MATEMATICA_03ANO.TXT
+│   │   │   │   │   ├── MATEMATICA_04SERIE.TXT
+│   │   │   │   │   ├── MATEMATICA_08SERIE.TXT
+│   │   │   │   │   ├── PORTUGUES_03ANO.TXT
+│   │   │   │   │   ├── PORTUGUES_04SERIE.TXT
+│   │   │   │   │   └── PORTUGUES_08SERIE.TXT
+│   │   │   │   ├── DIRETOR
+│   │   │   │   │   └── DIRETOR_03.TXT
+│   │   │   │   ├── DOCENTES
+│   │   │   │   │   └── DOCENTE_03.TXT
+│   │   │   │   ├── ESCOLAS
+│   │   │   │   │   └── ESCOLA_03.TXT
+│   │   │   │   ├── MASCARA
+│   │   │   │   │   └── MASCARA.TXT
+│   │   │   │   └── TURMAS
+│   │   │   │       └── TURMA_03.TXT
+│   │   │   ├── INPUTS_SAS_SPSS
+│   │   │   │   ├── ALUNOS
+│   │   │   │   │   ├── INPUT_SAS_MATEMATICA_03ANO.sas
+│   │   │   │   │   ├── INPUT_SAS_MATEMATICA_04SERIE.sas
+│   │   │   │   │   ├── INPUT_SAS_MATEMATICA_08SERIE.sas
+│   │   │   │   │   ├── INPUT_SAS_PORTUGUES_03ANO.sas
+│   │   │   │   │   ├── INPUT_SAS_PORTUGUES_04SERIE.sas
+│   │   │   │   │   ├── INPUT_SAS_PORTUGUES_08SERIE.sas
+│   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_03ANO.SPS
+│   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_04SERIE.SPS
+│   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_08SERIE.SPS
+│   │   │   │   │   ├── INPUT_SPSS_PORTUGUES_03ANO.SPS
+│   │   │   │   │   ├── INPUT_SPSS_PORTUGUES_04SERIE.SPS
+│   │   │   │   │   └── INPUT_SPSS_PORTUGUES_08SERIE.SPS
+│   │   │   │   ├── DIRETOR
+│   │   │   │   │   ├── INPUT_SAS_DIRETOR_03.sas
+│   │   │   │   │   └── INPUT_SPSS_DIRETOR_03.SPS
+│   │   │   │   ├── DOCENTES
+│   │   │   │   │   ├── INPUT_SAS_DOCENTE_03.sas
+│   │   │   │   │   └── INPUT_SPSS_DOCENTE_03.SPS
+│   │   │   │   ├── ESCOLAS
+│   │   │   │   │   ├── INPUT_SAS_ESCOLA_03.sas
+│   │   │   │   │   └── INPUT_SPSS_ESCOLA_03.SPS
+│   │   │   │   ├── MASCARA
+│   │   │   │   │   └── INPUT_SAS_MASCARA.sas
+│   │   │   │   └── TURMAS
+│   │   │   │       ├── INPUT_SAS_TURMA_03.sas
+│   │   │   │       └── INPUT_SPSS_TURMA_03.SPS
+│   │   │   └── LEIA-ME
+│   │   │       └── LEIA-ME_SAEB_2003.pdf
+│   │   ├── 2005_2007
+│   │   │   ├── 2005
+│   │   │   │   ├── DADOS
+│   │   │   │   │   ├── ALUNOS
+│   │   │   │   │   │   ├── MATEMATICA_03ANO.TXT
+│   │   │   │   │   │   ├── MATEMATICA_04SERIE.TXT
+│   │   │   │   │   │   ├── MATEMATICA_08SERIE.TXT
+│   │   │   │   │   │   ├── PORTUGUES_03ANO.TXT
+│   │   │   │   │   │   ├── PORTUGUES_04SERIE.TXT
+│   │   │   │   │   │   └── PORTUGUES_08SERIE.TXT
+│   │   │   │   │   ├── DIRETOR
+│   │   │   │   │   │   └── DIRETOR_05.TXT
+│   │   │   │   │   ├── DOCENTE
+│   │   │   │   │   │   └── DOCENTE_05.TXT
+│   │   │   │   │   ├── ESCOLA
+│   │   │   │   │   │   └── ESCOLA_05.TXT
+│   │   │   │   │   └── TURMA
+│   │   │   │   │       └── TURMA_05.TXT
+│   │   │   │   ├── INPUTS_SAS_SPSS
+│   │   │   │   │   ├── ALUNOS
+│   │   │   │   │   │   ├── IMPUT_SAS_MATEMATICA_03ANO.sas
+│   │   │   │   │   │   ├── IMPUT_SAS_MATEMATICA_04SERIE.sas
+│   │   │   │   │   │   ├── IMPUT_SAS_MATEMATICA_08SERIE.sas
+│   │   │   │   │   │   ├── IMPUT_SAS_PORTUGUES_03ANO.sas
+│   │   │   │   │   │   ├── IMPUT_SAS_PORTUGUES_04SERIE.sas
+│   │   │   │   │   │   ├── IMPUT_SAS_PORTUGUES_08SERIE.sas
+│   │   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_03ANO.sps
+│   │   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_04SERIE.SPS
+│   │   │   │   │   │   ├── INPUT_SPSS_MATEMATICA_08SERIE.sps
+│   │   │   │   │   │   ├── INPUT_SPSS_PORTUGUES_03ANO.sps
+│   │   │   │   │   │   ├── INPUT_SPSS_PORTUGUES_04SERIE.sps
+│   │   │   │   │   │   └── INPUT_SPSS_PORTUGUES_08SERIE.sps
+│   │   │   │   │   ├── DIRETOR
+│   │   │   │   │   │   ├── INPUT_SAS_DIRETOR_05.sas
+│   │   │   │   │   │   └── INPUT_SPSS_DIRETOR_05.sps
+│   │   │   │   │   ├── DOCENTE
+│   │   │   │   │   │   ├── INPUT_SAS_DOCENTE_05.sas
+│   │   │   │   │   │   └── INPUT_SPSS_DOCENTE_05.sps
+│   │   │   │   │   ├── ESCOLA
+│   │   │   │   │   │   ├── INPUT_SAS_ESCOLA_05.sas
+│   │   │   │   │   │   └── INPUT_SPSS_ESCOLA_05.sps
+│   │   │   │   │   └── TURMA
+│   │   │   │   │       ├── INPUT_SAS_TURMA_05.sas
+│   │   │   │   │       └── INPUT_SPSS_TURMA_05.sps
+│   │   │   │   └── LEIA-ME
+│   │   │   │       └── LEIA-ME_SAEB_2005.pdf
+│   │   │   └── 2007
+│   │   │       ├── DADOS
+│   │   │       │   ├── TS_aluno_3EM.csv
+│   │   │       │   ├── TS_aluno_4EF.csv
+│   │   │       │   ├── TS_aluno_8EF.csv
+│   │   │       │   ├── TS_DIRETOR.csv
+│   │   │       │   ├── TS_ESCOLA.csv
+│   │   │       │   ├── TS_ITEM.csv
+│   │   │       │   └── TS_PROFESSOR.csv
+│   │   │       ├── DICIONµRIO
+│   │   │       │   ├── Dicionario_SAEB_2007.ods
+│   │   │       │   └── Dicionario_SAEB_2007.xlsx
+│   │   │       ├── ESCALAS DE PROFICIÒNCIA E MATRIZES DE REFERÒNCIA
+│   │   │       │   ├── Escalas de Profici\210ncia do Saeb - 2007.pdf
+│   │   │       │   ├── Escalas de Profici\210ncia do Saeb.pdf
+│   │   │       │   └── Matriz de Refer\210ncia de L¡ngua Portuguesa e Matem tica do Saeb.pdf
+│   │   │       ├── INPUTS
+│   │   │       │   ├── INPUT_R_TS_ALUNO_3EM.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_4EF.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_8EF.R
+│   │   │       │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │       │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │       │   ├── INPUT_R_TS_ITEM.R
+│   │   │       │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_3EM.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_4EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_8EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │       │   ├── INPUT_SAS_TS_ESCOLA.sas
+│   │   │       │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │       │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_3EM.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_4EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_8EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │       │   └── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │       ├── LEIA-ME E DOCUMENTOS T\220CNICOS
+│   │   │       │   ├── ~$ia-Me_Microdados_Saeb_2007.docx
+│   │   │       │   ├── ~$lat¢rio_Amostragem_Saeb_2007.docx
+│   │   │       │   ├── Leia-Me_Microdados_Saeb_2007.pdf
+│   │   │       │   ├── Portaria n§ 47, de 03 de maio de 2007.pdf
+│   │   │       │   └── Relat¢rio_Amostragem_Saeb_2007.pdf
+│   │   │       ├── PLANILHAS DE RESULTADOS
+│   │   │       │   ├── MEDIA_BRASIL.ods
+│   │   │       │   ├── MEDIA_BRASIL.xlsx
+│   │   │       │   ├── MEDIA_MUNICIPIOS.ods
+│   │   │       │   ├── MEDIA_MUNICIPIOS.xlsx
+│   │   │       │   ├── MEDIA_REGIOES.ods
+│   │   │       │   ├── MEDIA_REGIOES.xlsx
+│   │   │       │   ├── MEDIA_UF.ods
+│   │   │       │   └── MEDIA_UF.xlsx
+│   │   │       └── QUESTIONARIOS
+│   │   │           ├── Questionario_Aluno_3EM.pdf
+│   │   │           ├── Questionario_Aluno_4EF.pdf
+│   │   │           ├── Questionario_Aluno_8EF.pdf
+│   │   │           ├── Questionario_Diretor.pdf
+│   │   │           ├── Questionario_Escola.pdf
+│   │   │           └── Questionario_Professor.pdf
+│   │   ├── 2009
+│   │   │   ├── DADOS
+│   │   │   │   ├── TS_aluno_3EM.csv
+│   │   │   │   ├── TS_aluno_4EF.csv
+│   │   │   │   ├── TS_aluno_8EF.csv
+│   │   │   │   ├── TS_DIRETOR.csv
+│   │   │   │   ├── TS_ESCOLA.csv
+│   │   │   │   ├── TS_ITEM.csv
+│   │   │   │   └── TS_PROFESSOR.csv
+│   │   │   ├── DICION╡RIO
+│   │   │   │   └── Dicionario_SAEB_2009.xlsx
+│   │   │   ├── ESCALAS DE PROFICI╥NCIA E MATRIZES DE REFER╥NCIA
+│   │   │   │   ├── Escalas de Proficiência do Saeb_2009.pdf
+│   │   │   │   ├── Escalas de Proficiência do Saeb.pdf
+│   │   │   │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb.pdf
+│   │   │   │   └── Thumbs.db
+│   │   │   ├── INPUTS
+│   │   │   │   ├── INPUT_R_TS_ALUNO_3EM.R
+│   │   │   │   ├── INPUT_R_TS_ALUNO_4EF.R
+│   │   │   │   ├── INPUT_R_TS_ALUNO_8EF.R
+│   │   │   │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │   │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │   │   ├── INPUT_R_TS_ITEM.R
+│   │   │   │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │   │   ├── INPUT_SAS_TS_ALUNO_3EM.sas
+│   │   │   │   ├── INPUT_SAS_TS_ALUNO_4EF.sas
+│   │   │   │   ├── INPUT_SAS_TS_ALUNO_8EF.sas
+│   │   │   │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │   │   ├── INPUT_SAS_TS_ESCOLA.sas
+│   │   │   │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │   │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │   │   ├── INPUT_SPSS_TS_ALUNO_3EM.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ALUNO_4EF.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ALUNO_8EF.sps
+│   │   │   │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │   │   └── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │   ├── LEIA-ME E DOCUMENTOS TÉCNICOS
+│   │   │   │   ├── ~$ia-Me_Microdados_Saeb_2009.docx
+│   │   │   │   ├── ~$latório_Amostragem_Saeb_2009.docx
+│   │   │   │   ├── Leia-Me_Microdados_Saeb_2009.pdf
+│   │   │   │   ├── Portaria nº 87, de 7 de maio de 2009.pdf
+│   │   │   │   └── Relatório_Amostragem_Saeb_2009.pdf
+│   │   │   ├── PLANILHAS DE RESULTADOS
+│   │   │   │   ├── MEDIA_BRASIL.ods
+│   │   │   │   ├── MEDIA_BRASIL.xlsx
+│   │   │   │   ├── MEDIA_MUNICIPIOS.ods
+│   │   │   │   ├── MEDIA_MUNICIPIOS.xlsx
+│   │   │   │   ├── MEDIA_REGIOES.ods
+│   │   │   │   ├── MEDIA_REGIOES.xlsx
+│   │   │   │   ├── MEDIA_UF.ods
+│   │   │   │   └── MEDIA_UF.xlsx
+│   │   │   └── QUESTIONARIOS
+│   │   │       ├── QUESTIONARIO_ALUNO_3EM.pdf
+│   │   │       ├── QUESTIONARIO_ALUNO_4EF.pdf
+│   │   │       ├── QUESTIONARIO_ALUNO_8EF.pdf
+│   │   │       ├── Questionario_Diretor.pdf
+│   │   │       ├── Questionário_Escola.pdf
+│   │   │       └── Questionario_Professor.pdf
+│   │   ├── 2011_2013
+│   │   │   ├── 2011
+│   │   │   │   ├── microdados_saeb_2021_educacao_infantil
+│   │   │   │   │   ├── Dados
+│   │   │   │   │   │   ├── TS_EDUCACAO_INFANTIL_2021.csv
+│   │   │   │   │   │   └── TS_SECRETARIO_MUNICIPAL_2021.csv
+│   │   │   │   │   ├── Dicionário
+│   │   │   │   │   │   ├── Dicionario_educacao_infantil_2021.ods
+│   │   │   │   │   │   └── Dicionario_educacao_infantil_2021.xlsx
+│   │   │   │   │   ├── Leia-me e Documentos Técnicos
+│   │   │   │   │   │   ├── Leia-Me_Microdados_Saeb_Educacao_Infantil_2021.pdf
+│   │   │   │   │   │   ├── Nota Técnica - Detalhamento da população e resultados do SAEB 2021.pdf
+│   │   │   │   │   │   ├── PORTARIA Nº 250, DE 5 DE JULHO DE 2021.pdf
+│   │   │   │   │   │   ├── Questionário Saeb 2021-Diretor.pdf
+│   │   │   │   │   │   ├── Questionário Saeb 2021-Professor Educação Infantil.pdf
+│   │   │   │   │   │   └── Questionário Saeb 2021-Secretaria Municipal.pdf
+│   │   │   │   │   └── microdados_saeb_2021_educacao_infantil.zip
+│   │   │   │   └── microdados_saeb_2021_ensino_fundamental_e_medio
+│   │   │   │       ├── DADOS
+│   │   │   │       │   ├── TS_ALUNO_2EF.csv
+│   │   │   │       │   ├── TS_ALUNO_34EM.csv
+│   │   │   │       │   ├── TS_ALUNO_5EF.csv
+│   │   │   │       │   ├── TS_ALUNO_9EF.csv
+│   │   │   │       │   ├── TS_DIRETOR.csv
+│   │   │   │       │   ├── TS_ESCOLA.csv
+│   │   │   │       │   ├── TS_ITEM.csv
+│   │   │   │       │   ├── TS_PROFESSOR.csv
+│   │   │   │       │   └── TS_SECRETARIO_MUNICIPAL.csv
+│   │   │   │       ├── DICIONÁRIO
+│   │   │   │       │   ├── ~$Dicionario_ANEB_Prova_Brasil_2017.xlsx
+│   │   │   │       │   ├── Dicionario_Saeb_2021.ods
+│   │   │   │       │   └── Dicionario_Saeb_2021.xlsx
+│   │   │   │       ├── ESCALAS DE PROFICIÊNCIA
+│   │   │   │       │   ├── Escalas de Proficiência do Saeb - BNCC.pdf
+│   │   │   │       │   ├── Escalas de Proficiência do Saeb.pdf
+│   │   │   │       │   └── Thumbs.db
+│   │   │   │       ├── INPUTS
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_2EF.R
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_34EM.R
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_5EF.R
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_9EF.R
+│   │   │   │       │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │   │       │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │   │       │   ├── INPUT_R_TS_ITEM.R
+│   │   │   │       │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │   │       │   ├── INPUT_R_TS_SECRETARIO_MUNICIPAL.R
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_2EF.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_34EM.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_5EF.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_9EF.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ESCOLA.SAS
+│   │   │   │       │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_SECRETARIO_MUNICIPAL.sas
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_2EF.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_34EM.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_5EF.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_9EF.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_SECRETARIO_MUNICIPAL.sps
+│   │   │   │       │   └── Rhistory
+│   │   │   │       ├── LEIA-ME E DOCUMENTOS TÉCNICOS
+│   │   │   │       │   ├── Leia-Me_Microdados_Saeb_2021.pdf
+│   │   │   │       │   ├── Nota Informativa - Resultados Saeb 2021.pdf
+│   │   │   │       │   ├── Nota Técnica - Detalhamento da população e resultados do SAEB 2021.pdf
+│   │   │   │       │   ├── PORTARIA Nº 250, DE 5 DE JULHO DE 2021.pdf
+│   │   │   │       │   ├── PORTARIA Nº 399, DE 2 DE SETEMBRO DE 2022_retifica 250.pdf
+│   │   │   │       │   ├── Registro_de_Alterações_nos_Questionários.pdf
+│   │   │   │       │   └── Relatorio_Amostragem_SAEB_2021.pdf
+│   │   │   │       ├── MATRIZES DE REFERÊNCIA
+│   │   │   │       │   ├── Matriz de Referência de Ciências da Natureza - Anos Finais.pdf
+│   │   │   │       │   ├── Matriz de Referência de Ciências Humanas - Anos Finais.pdf
+│   │   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb - 2º Ano do Ensino Fundamental.pdf
+│   │   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb.pdf
+│   │   │   │       │   └── Thumbs.db
+│   │   │   │       ├── microdados_saeb_2021_ensino_fundamental_e_medio.zip
+│   │   │   │       └── PLANILHAS DE RESULTADOS
+│   │   │   │           ├── TS_BRASIL.ods
+│   │   │   │           ├── TS_BRASIL.xlsx
+│   │   │   │           ├── TS_MUNICIPIO.ods
+│   │   │   │           ├── TS_MUNICIPIO.xlsx
+│   │   │   │           ├── TS_REGIAO.ods
+│   │   │   │           ├── TS_REGIAO.xlsx
+│   │   │   │           ├── TS_UF.ods
+│   │   │   │           └── TS_UF.xlsx
+│   │   │   └── 2013
+│   │   ├── 2015
+│   │   │   ├── DADOS
+│   │   │   │   ├── TS_ALUNO_3EM.csv
+│   │   │   │   ├── TS_ALUNO_5EF.csv
+│   │   │   │   ├── TS_ALUNO_9EF.csv
+│   │   │   │   ├── TS_DIRETOR.csv
+│   │   │   │   ├── TS_ESCOLA.csv
+│   │   │   │   ├── TS_ITEM.csv
+│   │   │   │   └── TS_PROFESSOR.csv
+│   │   │   ├── DICIONÁRIO
+│   │   │   │   ├── Dicionario_ANEB_Prova_Brasil_2015_2ED.ods
+│   │   │   │   └── Dicionario_ANEB_Prova_Brasil_2015_2ED.xlsx
+│   │   │   ├── ESCALAS DE PROFICIÊNCIA
+│   │   │   │   ├── Escala_LP_3EM.pdf
+│   │   │   │   ├── Escala_LP_5EF.pdf
+│   │   │   │   ├── Escala_LP_9EF.pdf
+│   │   │   │   ├── Escala_MT_3EM.pdf
+│   │   │   │   ├── Escala_MT_5EF.pdf
+│   │   │   │   ├── Escala_MT_9EF.pdf
+│   │   │   │   └── Thumbs.db
+│   │   │   ├── INPUTS
+│   │   │   │   ├── INPUT_R_TS_ALUNO_34EM.R
+│   │   │   │   ├── INPUT_R_TS_ALUNO_5EF.R
+│   │   │   │   ├── INPUT_R_TS_ALUNO_9EF.R
+│   │   │   │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │   │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │   │   ├── INPUT_R_TS_ITEM.R
+│   │   │   │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │   │   ├── INPUT_SAS_TS_ALUNO_3EM.sas
+│   │   │   │   ├── INPUT_SAS_TS_ALUNO_5EF.sas
+│   │   │   │   ├── INPUT_SAS_TS_ALUNO_9EF.sas
+│   │   │   │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │   │   ├── INPUT_SAS_TS_ESCOLA.SAS
+│   │   │   │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │   │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │   │   ├── INPUT_SPSS_TS_ALUNO_3EM.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ALUNO_5EF.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ALUNO_9EF.sps
+│   │   │   │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │   │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │   │   └── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │   ├── LEIA-ME E DOCUMENTOS TÉCNICOS
+│   │   │   │   ├── ~$ia-Me_Microdados_Aneb_PB_2015.docx
+│   │   │   │   ├── Leia-Me_Microdados_Aneb_PB_2015_4ED.pdf
+│   │   │   │   ├── NOTA EXPLICATIVA DA 2º EDIÇÃO DOS MICRODADOS DO SAEB 2015.pdf
+│   │   │   │   └── Relatorio_Amostragem_Aneb_2015.pdf
+│   │   │   ├── MATRIZES DE REFERÊNCIA
+│   │   │   │   ├── Matriz_LP_3EM.pdf.pdf
+│   │   │   │   ├── Matriz_LP_5EF.pdf.pdf
+│   │   │   │   ├── Matriz_LP_9EF.pdf.pdf
+│   │   │   │   ├── Matriz_MT_3EM.pdf.pdf
+│   │   │   │   ├── Matriz_MT_5EF.pdf.pdf
+│   │   │   │   ├── Matriz_MT_9EF.pdf.pdf
+│   │   │   │   └── Thumbs.db
+│   │   │   ├── PLANILHAS DE RESULTADOS
+│   │   │   │   ├── TS_BRASIL.ods
+│   │   │   │   ├── TS_BRASIL.xlsx
+│   │   │   │   ├── TS_MUNICIPIO.ods
+│   │   │   │   ├── TS_MUNICIPIO.xlsx
+│   │   │   │   ├── TS_REGIAO.ods
+│   │   │   │   ├── TS_REGIAO.xlsx
+│   │   │   │   ├── TS_UF.ods
+│   │   │   │   └── TS_UF.xlsx
+│   │   │   └── QUESTIONÁRIOS
+│   │   │       ├── Questionario ALUNO - 3 Ano Ensino Medio.pdf
+│   │   │       ├── Questionario ALUNO - 5 Ano Ensino Fundamental.pdf
+│   │   │       ├── Questionario ALUNO - 9 Ano Ensino Fundamental.pdf
+│   │   │       ├── Questionario da Escola.pdf
+│   │   │       ├── Questionario do Diretor.pdf
+│   │   │       ├── Questionario do Professor.pdf
+│   │   │       └── Thumbs.db
+│   │   ├── 2017_2019
+│   │   │   ├── microdados_saeb_2017
+│   │   │   │   ├── DADOS
+│   │   │   │   │   ├── TS_ALUNO_3EM_AG.csv
+│   │   │   │   │   ├── TS_ALUNO_3EM_ESC.csv
+│   │   │   │   │   ├── TS_ALUNO_5EF.csv
+│   │   │   │   │   ├── TS_ALUNO_9EF.csv
+│   │   │   │   │   ├── TS_DIRETOR.csv
+│   │   │   │   │   ├── TS_ESCOLA.csv
+│   │   │   │   │   ├── TS_ITEM.csv
+│   │   │   │   │   └── TS_PROFESSOR.csv
+│   │   │   │   ├── DICIONÁRIO
+│   │   │   │   │   ├── ~$Dicionario_ANEB_Prova_Brasil_2017.xlsx
+│   │   │   │   │   ├── Dicionario_ANEB_Prova_Brasil_2017.ods
+│   │   │   │   │   └── Dicionario_ANEB_Prova_Brasil_2017.xlsx
+│   │   │   │   ├── ESCALAS DE PROFICIÊNCIA
+│   │   │   │   │   ├── Escala_LP_3EM.pdf
+│   │   │   │   │   ├── Escala_LP_5EF.pdf
+│   │   │   │   │   ├── Escala_LP_9EF.pdf
+│   │   │   │   │   ├── Escala_MT_3EM.pdf
+│   │   │   │   │   ├── Escala_MT_5EF.pdf
+│   │   │   │   │   ├── Escala_MT_9EF.pdf
+│   │   │   │   │   └── Thumbs.db
+│   │   │   │   ├── INPUTS
+│   │   │   │   │   ├── INPUT_R_TS_ALUNO_34EM.R
+│   │   │   │   │   ├── INPUT_R_TS_ALUNO_5EF.R
+│   │   │   │   │   ├── INPUT_R_TS_ALUNO_9EF.R
+│   │   │   │   │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │   │   │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │   │   │   ├── INPUT_R_TS_ITEM.R
+│   │   │   │   │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │   │   │   ├── INPUT_SAS_TS_ALUNO_3EM.sas
+│   │   │   │   │   ├── INPUT_SAS_TS_ALUNO_5EF.sas
+│   │   │   │   │   ├── INPUT_SAS_TS_ALUNO_9EF.sas
+│   │   │   │   │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │   │   │   ├── INPUT_SAS_TS_ESCOLA.SAS
+│   │   │   │   │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │   │   │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │   │   │   ├── INPUT_SPSS_TS_ALUNO_3EM.sps
+│   │   │   │   │   ├── INPUT_SPSS_TS_ALUNO_5EF.sps
+│   │   │   │   │   ├── INPUT_SPSS_TS_ALUNO_9EF.sps
+│   │   │   │   │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │   │   │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │   │   │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │   │   │   └── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │   │   ├── LEIA-ME E DOCUMENTOS TÉCNICOS
+│   │   │   │   │   ├── Leia-Me_Microdados_Aneb_PB_2017.pdf
+│   │   │   │   │   ├── NOTA_TECNICA_SAEB_2017.pdf
+│   │   │   │   │   ├── Registro_de_Alterações - Questionários.pdf
+│   │   │   │   │   └── Relatorio_Amostragem_Aneb_2017.pdf
+│   │   │   │   ├── MATRIZES DE REFERÊNCIA
+│   │   │   │   │   ├── Matrizes_LP.pdf
+│   │   │   │   │   ├── Matrizes_MT.pdf
+│   │   │   │   │   └── Thumbs.db
+│   │   │   │   ├── PLANILHAS DE RESULTADOS
+│   │   │   │   │   ├── PLANILHAS DE RESULTADOS SAEB 2017.zip
+│   │   │   │   │   ├── TS_BRASIL.xlsx
+│   │   │   │   │   ├── TS_MUNICIPIO.xlsx
+│   │   │   │   │   ├── TS_REGIAO.xlsx
+│   │   │   │   │   └── TS_UF.xlsx
+│   │   │   │   └── QUESTIONÁRIOS
+│   │   │   │       ├── Questionario ALUNO - 3 Serie Ensino Medio.pdf
+│   │   │   │       ├── Questionario ALUNO - 5 Ano Ensino Fundamental.pdf
+│   │   │   │       ├── Questionario ALUNO - 9 Ano Ensino Fundamental.pdf
+│   │   │   │       ├── Questionario da Escola.pdf
+│   │   │   │       ├── Questionario do Diretor.pdf
+│   │   │   │       ├── Questionario do Professor.pdf
+│   │   │   │       └── Thumbs.db
+│   │   │   └── microdados_saeb_2019
+│   │   │       ├── DADOS
+│   │   │       │   ├── TS_ALUNO_2EF.csv
+│   │   │       │   ├── TS_ALUNO_34EM.csv
+│   │   │       │   ├── TS_ALUNO_5EF.csv
+│   │   │       │   ├── TS_ALUNO_9EF.csv
+│   │   │       │   ├── TS_DIRETOR.csv
+│   │   │       │   ├── TS_ESCOLA.csv
+│   │   │       │   ├── TS_ITEM.csv
+│   │   │       │   ├── TS_PROFESSOR.csv
+│   │   │       │   └── TS_SECRETARIO_MUNICIPAL.csv
+│   │   │       ├── DICIONÁRIO
+│   │   │       │   ├── ~$Dicionario_ANEB_Prova_Brasil_2017.xlsx
+│   │   │       │   ├── Dicionario_Saeb_2019.ods
+│   │   │       │   └── Dicionario_Saeb_2019.xlsx
+│   │   │       ├── ESCALAS DE PROFICIÊNCIA
+│   │   │       │   ├── Escalas de Proficiência do Saeb - BNCC.pdf
+│   │   │       │   ├── Escalas de Proficiência do Saeb.pdf
+│   │   │       │   └── Thumbs.db
+│   │   │       ├── INPUTS
+│   │   │       │   ├── INPUT_R_TS_ALUNO_2EF.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_34EM.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_5EF.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_9EF.R
+│   │   │       │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │       │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │       │   ├── INPUT_R_TS_ITEM.R
+│   │   │       │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │       │   ├── INPUT_R_TS_SECRETARIO_MUNICIPAL.R
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_2EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_34EM.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_5EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_9EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │       │   ├── INPUT_SAS_TS_ESCOLA.SAS
+│   │   │       │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │       │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │       │   ├── INPUT_SAS_TS_SECRETARIO_MUNICIPAL.sas
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_2EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_34EM.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_5EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_9EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │       │   ├── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │       │   └── INPUT_SPSS_TS_SECRETARIO_MUNICIPAL.sps
+│   │   │       ├── LEIA-ME E DOCUMENTOS TÉCNICOS
+│   │   │       │   ├── Leia-Me_Microdados_Saeb_2019.pdf
+│   │   │       │   ├── Nota Técnica - Detalhamento da população e resultados do SAEB 2019.pdf
+│   │   │       │   ├── Portaria Nº 366 de 29 de Abril de 2019.pdf
+│   │   │       │   ├── Portaria Nº 497_retifica 366.pdf
+│   │   │       │   ├── Portaria Nº 645_retifica 366.pdf
+│   │   │       │   ├── Registro_de_Alterações_nos_Questionários.pdf
+│   │   │       │   └── Relatorio_de_amostragem_do_Saeb_2019.pdf
+│   │   │       ├── MATRIZES DE REFERÊNCIA
+│   │   │       │   ├── Matriz de Referência de Ciências da Natureza - Anos Finais - Saeb 2019.pdf
+│   │   │       │   ├── Matriz de Referência de Ciências Humanas - Anos Finais - Saeb 2019.pdf
+│   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb - 2º Ano do Ensino Fundamental.pdf
+│   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb.pdf
+│   │   │       │   └── Thumbs.db
+│   │   │       └── PLANILHAS DE RESULTADOS
+│   │   │           ├── TS_BRASIL.ods
+│   │   │           ├── TS_BRASIL.xlsx
+│   │   │           ├── TS_MUNICIPIO.ods
+│   │   │           ├── TS_MUNICIPIO.xlsx
+│   │   │           ├── TS_REGIAO.ods
+│   │   │           ├── TS_REGIAO.xlsx
+│   │   │           ├── TS_UF.ods
+│   │   │           └── TS_UF.xlsx
+│   │   ├── 2021_2023
+│   │   │   ├── 2021
+│   │   │   │   ├── microdados_saeb_2021_educacao_infantil
+│   │   │   │   │   ├── Dados
+│   │   │   │   │   │   ├── TS_EDUCACAO_INFANTIL_2021.csv
+│   │   │   │   │   │   └── TS_SECRETARIO_MUNICIPAL_2021.csv
+│   │   │   │   │   ├── Dicionário
+│   │   │   │   │   │   ├── Dicionario_educacao_infantil_2021.ods
+│   │   │   │   │   │   └── Dicionario_educacao_infantil_2021.xlsx
+│   │   │   │   │   └── Leia-me e Documentos Técnicos
+│   │   │   │   │       ├── Leia-Me_Microdados_Saeb_Educacao_Infantil_2021.pdf
+│   │   │   │   │       ├── Nota Técnica - Detalhamento da população e resultados do SAEB 2021.pdf
+│   │   │   │   │       ├── PORTARIA Nº 250, DE 5 DE JULHO DE 2021.pdf
+│   │   │   │   │       ├── Questionário Saeb 2021-Diretor.pdf
+│   │   │   │   │       ├── Questionário Saeb 2021-Professor Educação Infantil.pdf
+│   │   │   │   │       └── Questionário Saeb 2021-Secretaria Municipal.pdf
+│   │   │   │   └── microdados_saeb_2021_ensino_fundamental_e_medio
+│   │   │   │       ├── DADOS
+│   │   │   │       │   ├── TS_ALUNO_2EF.csv
+│   │   │   │       │   ├── TS_ALUNO_34EM.csv
+│   │   │   │       │   ├── TS_ALUNO_5EF.csv
+│   │   │   │       │   ├── TS_ALUNO_9EF.csv
+│   │   │   │       │   ├── TS_DIRETOR.csv
+│   │   │   │       │   ├── TS_ESCOLA.csv
+│   │   │   │       │   ├── TS_ITEM.csv
+│   │   │   │       │   ├── TS_PROFESSOR.csv
+│   │   │   │       │   └── TS_SECRETARIO_MUNICIPAL.csv
+│   │   │   │       ├── DICIONÁRIO
+│   │   │   │       │   ├── ~$Dicionario_ANEB_Prova_Brasil_2017.xlsx
+│   │   │   │       │   ├── Dicionario_Saeb_2021.ods
+│   │   │   │       │   └── Dicionario_Saeb_2021.xlsx
+│   │   │   │       ├── ESCALAS DE PROFICIÊNCIA
+│   │   │   │       │   ├── Escalas de Proficiência do Saeb - BNCC.pdf
+│   │   │   │       │   ├── Escalas de Proficiência do Saeb.pdf
+│   │   │   │       │   └── Thumbs.db
+│   │   │   │       ├── INPUTS
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_2EF.R
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_34EM.R
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_5EF.R
+│   │   │   │       │   ├── INPUT_R_TS_ALUNO_9EF.R
+│   │   │   │       │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │   │       │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │   │       │   ├── INPUT_R_TS_ITEM.R
+│   │   │   │       │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │   │       │   ├── INPUT_R_TS_SECRETARIO_MUNICIPAL.R
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_2EF.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_34EM.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_5EF.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ALUNO_9EF.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_ESCOLA.SAS
+│   │   │   │       │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │   │       │   ├── INPUT_SAS_TS_SECRETARIO_MUNICIPAL.sas
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_2EF.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_34EM.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_5EF.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ALUNO_9EF.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │   │       │   ├── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │   │       │   └── INPUT_SPSS_TS_SECRETARIO_MUNICIPAL.sps
+│   │   │   │       ├── LEIA-ME E DOCUMENTOS TÉCNICOS
+│   │   │   │       │   ├── Leia-Me_Microdados_Saeb_2021.pdf
+│   │   │   │       │   ├── Nota Informativa - Resultados Saeb 2021.pdf
+│   │   │   │       │   ├── Nota Técnica - Detalhamento da população e resultados do SAEB 2021.pdf
+│   │   │   │       │   ├── PORTARIA Nº 250, DE 5 DE JULHO DE 2021.pdf
+│   │   │   │       │   ├── PORTARIA Nº 399, DE 2 DE SETEMBRO DE 2022_retifica 250.pdf
+│   │   │   │       │   ├── Registro_de_Alterações_nos_Questionários.pdf
+│   │   │   │       │   └── Relatorio_Amostragem_SAEB_2021.pdf
+│   │   │   │       ├── MATRIZES DE REFERÊNCIA
+│   │   │   │       │   ├── Matriz de Referência de Ciências da Natureza - Anos Finais.pdf
+│   │   │   │       │   ├── Matriz de Referência de Ciências Humanas - Anos Finais.pdf
+│   │   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb - 2º Ano do Ensino Fundamental.pdf
+│   │   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb.pdf
+│   │   │   │       │   └── Thumbs.db
+│   │   │   │       └── PLANILHAS DE RESULTADOS
+│   │   │   │           ├── TS_BRASIL.ods
+│   │   │   │           ├── TS_BRASIL.xlsx
+│   │   │   │           ├── TS_MUNICIPIO.ods
+│   │   │   │           ├── TS_MUNICIPIO.xlsx
+│   │   │   │           ├── TS_REGIAO.ods
+│   │   │   │           ├── TS_REGIAO.xlsx
+│   │   │   │           ├── TS_UF.ods
+│   │   │   │           └── TS_UF.xlsx
+│   │   │   └── 2023
+│   │   │       ├── DADOS
+│   │   │       │   ├── TS_ALUNO_2EF.csv
+│   │   │       │   ├── TS_ALUNO_34EM.csv
+│   │   │       │   ├── TS_ALUNO_5EF.csv
+│   │   │       │   ├── TS_ALUNO_9EF.csv
+│   │   │       │   ├── TS_DIRETOR.csv
+│   │   │       │   ├── TS_ESCOLA.csv
+│   │   │       │   ├── TS_ITEM.csv
+│   │   │       │   ├── TS_PROFESSOR.csv
+│   │   │       │   └── TS_SECRETARIO_MUNICIPAL.csv
+│   │   │       ├── DICIONÁRIO
+│   │   │       │   ├── ~$Dicionario_ANEB_Prova_Brasil_2017.xlsx
+│   │   │       │   ├── Dicionario_Saeb_2023.ods
+│   │   │       │   └── Dicionario_Saeb_2023.xlsx
+│   │   │       ├── ESCALAS DE PROFICIÊNCIA
+│   │   │       │   ├── Escalas de Proficiência do Saeb - BNCC.pdf
+│   │   │       │   ├── Escalas de Proficiência do Saeb.pdf
+│   │   │       │   └── Thumbs.db
+│   │   │       ├── INPUTS
+│   │   │       │   ├── INPUT_R_TS_ALUNO_2EF.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_34EM.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_5EF.R
+│   │   │       │   ├── INPUT_R_TS_ALUNO_9EF.R
+│   │   │       │   ├── INPUT_R_TS_DIRETOR.R
+│   │   │       │   ├── INPUT_R_TS_ESCOLA.R
+│   │   │       │   ├── INPUT_R_TS_ITEM.R
+│   │   │       │   ├── INPUT_R_TS_PROFESSOR.R
+│   │   │       │   ├── INPUT_R_TS_SECRETARIO_MUNICIPAL.R
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_2EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_34EM.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_5EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_ALUNO_9EF.sas
+│   │   │       │   ├── INPUT_SAS_TS_DIRETOR.sas
+│   │   │       │   ├── INPUT_SAS_TS_ESCOLA.SAS
+│   │   │       │   ├── INPUT_SAS_TS_ITEM.sas
+│   │   │       │   ├── INPUT_SAS_TS_PROFESSOR.sas
+│   │   │       │   ├── INPUT_SAS_TS_SECRETARIO_MUNICIPAL.sas
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_2EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_34EM.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_5EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ALUNO_9EF.sps
+│   │   │       │   ├── INPUT_SPSS_TS_DIRETOR.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ESCOLA.sps
+│   │   │       │   ├── INPUT_SPSS_TS_ITEM.sps
+│   │   │       │   ├── INPUT_SPSS_TS_PROFESSOR.sps
+│   │   │       │   └── INPUT_SPSS_TS_SECRETARIO_MUNICIPAL.sps
+│   │   │       ├── LEIA-ME E DOCUMENTOS TÉCNICOS
+│   │   │       │   ├── Leia-Me_Microdados_Saeb_2023.pdf
+│   │   │       │   ├── Nota Técnica - Detalhamento da população e resultados do SAEB 2023.pdf
+│   │   │       │   ├── PORTARIA Nº 267, DE 21 DE JUNHO DE 2023.pdf
+│   │   │       │   └── Relatorio_de_Amostragem_SAEB_2023.pdf
+│   │   │       ├── MATRIZES DE REFERÊNCIA
+│   │   │       │   ├── Matriz de Referência de Ciências da Natureza.pdf
+│   │   │       │   ├── Matriz de Referência de Ciências Humanas.pdf
+│   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb - 2º Ano do Ensino Fundamental.pdf
+│   │   │       │   ├── Matriz de Referência de Língua Portuguesa e Matemática do Saeb.pdf
+│   │   │       │   └── Thumbs.db
+│   │   │       └── microdados_censo_escolar_2023
+│   │   │           ├── Anexos
+│   │   │           │   ├── ANEXO I - Dicionário de Dados
+│   │   │           │   │   └── dicionário_dados_educaç╞o_básica.xlsx
+│   │   │           │   └── ANEXO II -  Questionários do Censo da Educaç╞o Basica
+│   │   │           │       ├── Aluno.pdf
+│   │   │           │       ├── Escola.pdf
+│   │   │           │       ├── Gestor Escolar.pdf
+│   │   │           │       ├── Profissional Escolar.pdf
+│   │   │           │       └── Turma.pdf
+│   │   │           ├── dados
+│   │   │           │   ├── md5_microdados_ed_basica_2023.txt
+│   │   │           │   ├── microdados_ed_basica_2023.csv
+│   │   │           │   └── suplemento_cursos_tecnicos_2023.csv
+│   │   │           └── leia-me
+│   │   │               └── Leia-me.pdf
+│   │   └── microdados_saeb_2023.zip
+│   └── RELATORIOS
+│       ├── 1999_2001
+│       │   ├── relatorio_saeb_2001_matematica.pdf
+│       │   └── resultados_do_saeb_99_dados_de_contexto_brasil_regioes_e_unidades_da_federacao.pdf
+│       ├── 2003
+│       │   └── saeb_2003.pdf
+│       ├── 2005_2007
+│       │   ├── 2005
+│       │   │   ├── matematica-uf(urb_s_fed)95-05-11a.xls
+│       │   │   ├── matematica-uf(urb_s_fed)95-05-4a.xls
+│       │   │   ├── matematica-uf(urb_s_fed)95-05-8a.xls
+│       │   │   ├── portugues-uf-(urb_s_fed)95-05-11a.xls
+│       │   │   ├── portugues-uf-(urb_s_fed)95-05-4a.xls
+│       │   │   ├── portugues-uf-(urb_s_fed)95-05-8a.xls
+│       │   │   └── SAEB_1995_2005.pdf
+│       │   └── 2007
+│       │       └── Saeb_2011_primeiros_resultados_site_Inep.pdf
+│       ├── 2005-2015
+│       │   └── livro_saeb_2005_2015_completo.pdf
+│       ├── 2009
+│       ├── 2011_2013
+│       │   ├── 2011
+│       │   │   └── Saeb_2011_primeiros_resultados_site_Inep.pdf
+│       │   └── 2013
+│       │       ├── caderno2013_v2016.pdf
+│       │       ├── nota_explicativa_prova_brasil_2013.pdf
+│       │       ├── relatorio_ana_2013_2014_analise_dos_resultados.pdf
+│       │       └── relatorio_ana_2013_da_concepcao_a_realizacao.pdf
+│       ├── 2015_2016
+│       │   ├── 2015
+│       │   │   ├── livro_saeb_2005_2015_completo.pdf
+│       │   │   ├── resultados_municipais_saeb_2015.xls
+│       │   │   └── resumo_dos_resultados_saeb_2015.pdf
+│       │   └── 2016
+│       ├── 2017_2019
+│       │   ├── 2017
+│       │   │   ├── relatorio_saeb_2017.pdf
+│       │   │   ├── relatorio_saeb_ana_2016_panorama_do_brasil_e_dos_estados.pdf
+│       │   │   ├── TS_BRASIL.xlsx
+│       │   │   ├── TS_MUNICIPIO.xlsx
+│       │   │   ├── TS_REGIAO.xlsx
+│       │   │   └── TS_UF.xlsx
+│       │   └── 2019
+│       │       ├── Apresentacao_Coletiva_Imprensa_Saeb_2019.pdf
+│       │       ├── Apresentacao_Resultados_Amostrais_Saeb_2019.pdf
+│       │       ├── PressKit_Saeb_2019.pdf
+│       │       ├── relatorio_de_resultados_do_saeb_2019_volume_1.pdf
+│       │       ├── relatorio_de_resultados_do_saeb_2019_volume_2.pdf
+│       │       └── relatorio_de_resultados_do_saeb_2019_volume_3.pdf
+│       └── 2021_2023
+│           ├── 2021
+│           │   ├── apresentacao_saeb_2021.pdf
+│           │   ├── press_kit_saeb_2021.pdf
+│           │   ├── relatorio_de_resultados_do_saeb_2021_volume_1.pdf
+│           │   ├── relatorio_de_resultados_do_saeb_2021_volume_2.pdf
+│           │   ├── relatorio_de_resultados_do_saeb_2021_volume_3.pdf
+│           │   └── relatorio_de_resultados_do_saeb_2021_volume_4.pdf
+│           └── 2023
+│               └── nota_tecnica_base_amostral_saeb2023.pdf
+├── setup.sh
+└── utils
+    ├── conexao_mongo.py
+    ├── detectar_larguras_spss.py
+    ├── estilo_global.py
+    ├── extracoes
+    │   └── pisa2000_student_medias_avancado.json
+    ├── extrair_dados_pisa2000.py
+    ├── extrair_escs_pisa2000.py
+    ├── extrair_escs_pisa2000_v2.py
+    ├── extrair_escs_pisa2000_v3.py
+    ├── extrair_mapeamento_subnatio_pisa2000.py
+    ├── extrair_mapeamento_subnatio_pisa200_v2.py
+    ├── extrair_medias_oficiais_pisa2000_lmc.py
+    ├── extrair_medias_oficiais_pisa2000.py
+    ├── extrair_medias_oficiais_pisa2000_v2.py
+    ├── extrair_medias_oficiais_pisa2000_v3.py
+    ├── extrair_medias_oficiais_pisa2000_v4.py
+    ├── extrair_medias_oficiais_pisa2000_v5.py
+    ├── extrair_medias_pisa2000_avancado.py
+    ├── extrair_medias_pisa2000_cientifico.py
+    ├── extrair_medias_pisa2000.py
+    ├── extrair_nova_colecao_pisa2000.py
+    ├── extrair_school_info_pisa2000.py
+    ├── extrair_school_info_pisa2000_v2.py
+    ├── funcoes_graficos.py
+    ├── funcoes_rubricas.py
+    ├── inserir_rubricas_saeb_mongo_5_ano_2023.py
+    ├── loader_dados.py
+    ├── pdf_html_completo.py
+    ├── pdf_paginas
+    │   ├── BKP_GERAR_HTML_ORIGINAIS
+    │   │   ├── exportar_todas_paginas_html.py
+    │   │   ├── gerar_html_01_Mapa_e_Rubricas_TMAP.py
+    │   │   ├── gerar_html_01_Resumo_Edicao.py
+    │   │   ├── gerar_html_02_Distribuicao_Rubricas_SAEB.py
+    │   │   ├── gerar_html_03_Comparativo_PISA_OCDE.py
+    │   │   ├── gerar_html_04_politicas_publicas.py
+    │   │   ├── gerar_html_05_Rubricas_Avaliativas.py
+    │   │   ├── gerar_html_06_Exemplos_Paragrafos_Analisados.py
+    │   │   ├── gerar_html_07_Resumo_Geral_INEP_2000.py
+    │   │   ├── gerar_html_08_Comparativo_PISA_SAEB.py
+    │   │   ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.py
+    │   │   ├── gerar_html_11_Explicacao_Didatica_Integrada.py
+    │   │   ├── gerar_html_12_Situacoes_Interdisciplinares_2000.py
+    │   │   ├── gerar_html_99_Referencias_Bibliograficas.py
+    │   │   └── __pycache__
+    │   │       ├── gerar_html_01_Mapa_e_Rubricas_TMAP.cpython-310.pyc
+    │   │       └── gerar_html_01_Resumo_Edicao.cpython-310.pyc
+    │   ├── corrigir_funcoes_html.sh
+    │   ├── exportar_todas_paginas_html.py
+    │   ├── gerar_html_01_Mapa_e_Rubricas_TMAP.py
+    │   ├── gerar_html_01_Resumo_Edicao.py
+    │   ├── gerar_html_02_Distribuicao_Rubricas_SAEB.py
+    │   ├── gerar_html_03_Comparativo_PISA_OCDE.py
+    │   ├── gerar_html_04_politicas_publicas.py
+    │   ├── gerar_html_05_Rubricas_Avaliativas.py
+    │   ├── gerar_html_06_Exemplos_Paragrafos_Analisados.py
+    │   ├── gerar_html_07_Resumo_Geral_INEP_2000.py
+    │   ├── gerar_html_08_Comparativo_PISA_SAEB.py
+    │   ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.py
+    │   ├── gerar_html_11_Explicacao_Didatica_Integrada.py
+    │   ├── gerar_html_12_Situacoes_Interdisciplinares_2000.py
+    │   ├── gerar_html_99_Referencias_Bibliograficas.py
+    │   └── __pycache__
+    │       ├── gerar_html_01_Mapa_e_Rubricas_TMAP.cpython-310.pyc
+    │       ├── gerar_html_01_Resumo_Edicao.cpython-310.pyc
+    │       ├── gerar_html_02_Distribuicao_Rubricas_SAEB.cpython-310.pyc
+    │       ├── gerar_html_03_Comparativo_PISA_OCDE.cpython-310.pyc
+    │       ├── gerar_html_04_politicas_publicas.cpython-310.pyc
+    │       ├── gerar_html_05_Rubricas_Avaliativas.cpython-310.pyc
+    │       ├── gerar_html_06_Exemplos_Paragrafos_Analisados.cpython-310.pyc
+    │       ├── gerar_html_07_Resumo_Geral_INEP_2000.cpython-310.pyc
+    │       ├── gerar_html_08_Comparativo_PISA_SAEB.cpython-310.pyc
+    │       ├── gerar_html_10_Rubricas_Regionais_Contextualizadas.cpython-310.pyc
+    │       ├── gerar_html_11_Explicacao_Didatica_Integrada.cpython-310.pyc
+    │       ├── gerar_html_12_Situacoes_Interdisciplinares_2000.cpython-310.pyc
+    │       └── gerar_html_99_Referencias_Bibliograficas.cpython-310.pyc
+    ├── __pycache__
+    │   ├── conexao_mongo.cpython-310.pyc
+    │   ├── estilo_global.cpython-310.pyc
+    │   ├── extrair_dados_pisa2000.cpython-310.pyc
+    │   ├── funcoes_rubricas.cpython-310.pyc
+    │   ├── loader_dados.cpython-310.pyc
+    │   └── pdf_html_completo.cpython-310.pyc
+    └── rubrica_avaliativa_pisa_saeb.md
+
+277 directories, 1225 files

@@ -1,0 +1,53 @@
+{
+  "intents": [
+    {
+      "displayName": "RepetirInstrucoes",
+      "trainingPhrases": {
+        "parts": [
+          {"text": "repete"},
+          {"text": "repetir instruções"},
+          {"text": "volta"}
+        ]
+      },
+      "messages": [{"text": {"text": ["Reiniciando instruções."]}}]
+    },
+    {
+      "displayName": "AvancarPagina",
+      "trainingPhrases": {
+        "parts": [
+          {"text": "avançar"},
+          {"text": "próxima página"},
+          {"text": "vai para prova"}
+        ]
+      }
+    },
+    {
+      "displayName": "VoltarAoMenu",
+      "trainingPhrases": {
+        "parts": [
+          {"text": "menu principal"},
+          {"text": "voltar ao início"},
+          {"text": "inicio"}
+        ]
+      }
+    },
+    {
+      "displayName": "LerRespostaAtual",
+      "trainingPhrases": {
+        "parts": [
+          {"text": "ler resposta"},
+          {"text": "leia resposta"}
+        ]
+      }
+    },
+    {
+      "displayName": "SelecionarRespostaA",
+      "trainingPhrases": {
+        "parts": [
+          {"text": "opção 1"},
+          {"text": "resposta A"}
+        ]
+      }
+    }
+  ]
+}

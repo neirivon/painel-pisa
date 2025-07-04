@@ -1,0 +1,11 @@
+curl https://ipinfo.io/2804:1e68:c211:8302:16d7:1e3e:6a79:3cd5?token=73b6f9c2a53313
+{
+  "ip": "2804:1e68:c211:8302:16d7:1e3e:6a79:3cd5",
+  "city": "Uberlândia",
+  "region": "Minas Gerais",
+  "country": "BR",
+  "loc": "-18.9186,-48.2772",
+  "org": "AS53006 ALGAR TELECOM S/A",
+  "postal": "38400-000",
+  "timezone": "America/Sao_Paulo"
+}

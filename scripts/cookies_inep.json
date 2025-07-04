@@ -1,0 +1,37 @@
+{
+  "cookies": [
+    {
+      "domain": ".inep.gov.br",
+      "name": "_ga",
+      "path": "/",
+      "value": "GA1.1.76574774.1746666885"
+    },
+    {
+      "domain": ".inep.gov.br",
+      "name": "_ga_Y5PKKVSK9N",
+      "path": "/",
+      "value": "GS2.1.s1747105634$o3$g1$t1747107478$j0$l0$h0"
+    },
+    {
+      "domain": "saeb.inep.gov.br",
+      "name": "BIGipServerOpenshift_Prod_Apps_80",
+      "path": "/",
+      "value": "!3EC4nedMYtYkM2N5xOP8lLfRtRIENzAHi+l2GT/SuKvqRySf0Z16DQzmUGqdtngQVMkR0RKUX1j+oyo=",
+      "httpOnly": true
+    },
+    {
+      "domain": "saeb.inep.gov.br",
+      "name": "d860cb3b636a097c7521e2345cfa1fcd",
+      "path": "/",
+      "value": "44e303f84917fced9578c60b44caca73",
+      "httpOnly": true
+    },
+    {
+      "domain": "saeb.inep.gov.br",
+      "name": "i18next",
+      "path": "/",
+      "value": "pt-BR"
+    }
+  ]
+}
+

@@ -1,0 +1,34 @@
+Rubrica CTC – Contextualização Territorial e Cultural
+Inspirada em fundamentos da BNCC, da Educação Contextualizada, da Pedagogia de Paulo Freire, e dos princípios da equidade educacional, a Rubrica CTC tem como foco avaliar o quanto o estudante:
+
+Reconhece o seu território e sua cultura;
+
+Relaciona conhecimentos escolares com vivências;
+
+Valida identidades locais e múltiplas realidades sociais.
+
+🧩 Estrutura da Rubrica CTC
+Nível	Título	Descrição
+1	Explorador Desconectado	Não reconhece nem menciona seu território ou aspectos culturais locais.
+2	Conector Inicial	Faz referências vagas ou indiretas ao espaço, cultura ou comunidade.
+3	Criador Contextualizado	Relaciona explicitamente o conteúdo à realidade territorial e cultural.
+4	Transformador Sociocultural	Propõe ações, reflexões ou soluções ancoradas em sua realidade local.
+
+📘 Resumo descritivo por nível
+Nível 1 — Explorador Desconectado
+A produção apresenta elementos genéricos ou importados, sem qualquer associação com o território, cultura ou identidade local. Pode parecer descolada da realidade vivida pelo estudante.
+
+Nível 2 — Conector Inicial
+Há tentativas de conexão com o território ou cultura, mas de forma superficial ou descontextualizada. Exemplo: menções genéricas à “minha cidade” sem detalhes socioculturais.
+
+Nível 3 — Criador Contextualizado
+O estudante aplica o conhecimento escolar com exemplos reais de seu território, comunidade, ou manifestações culturais locais. Aponta relações significativas entre saber escolar e realidade.
+
+Nível 4 — Transformador Sociocultural
+Vai além da identificação: propõe mudanças, valoriza saberes locais, ou questiona desigualdades regionais. A produção reflete um posicionamento crítico territorializado.
+
+🧭 Aplicações práticas da CTC
+Uso	Exemplo
+Redações SAEB	Verifica se o aluno mobiliza vivências do seu território ao propor soluções
+PISA adaptado	Avalia se o estudante conecta o problema global (meio ambiente, matemática etc.) à sua realidade
+Painéis pedagógicos	Indica onde há maior ou menor engajamento contextual nos territórios do Brasil
