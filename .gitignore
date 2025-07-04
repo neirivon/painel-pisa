@@ -10,6 +10,9 @@ venv_*/
 __pycache__/
 *.pyc
 
+# Arquivo de dependências locais (não subir para o GitHub)
+requirements_local.txt
+
 # 💾 Dados e artefatos pesados
 *.csv
 *.tsv

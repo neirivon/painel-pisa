@@ -10,8 +10,7 @@ wordcloud
 # IA E NLP (modo cloud leve)
 scikit-learn
 transformers==4.38.0
-torch==2.0.1+cpu
+torch==2.0.1
 sentencepiece
 
-# Repositório CPU-only para Torch
--f https://download.pytorch.org/whl/torch_stable.html
+
