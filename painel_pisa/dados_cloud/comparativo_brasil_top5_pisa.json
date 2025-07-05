@@ -1,0 +1,39 @@
+[
+  {
+    "pais": "Singapore",
+    "area": "matematica",
+    "pontuacao": 573.98,
+    "posicao": 1
+  },
+  {
+    "pais": "Japan",
+    "area": "matematica",
+    "pontuacao": 534.93,
+    "posicao": 2
+  },
+  {
+    "pais": "Korea",
+    "area": "matematica",
+    "pontuacao": 531.09,
+    "posicao": 3
+  },
+  {
+    "pais": "Estonia",
+    "area": "matematica",
+    "pontuacao": 512.71,
+    "posicao": 4
+  },
+  {
+    "pais": "Finland",
+    "area": "matematica",
+    "pontuacao": 475.32,
+    "posicao": 5
+  },
+  {
+    "pais": "Brazil",
+    "area": "matematica",
+    "pontuacao": 381.14,
+    "posicao": 43
+  }
+]
+

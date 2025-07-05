@@ -1,0 +1,49 @@
+[
+  {
+    "rubrica_nome": "rubrica_sinapse_ia",
+    "rubrica_versao": "v4",
+    "dimensao_avaliada": "Progressão Cognitiva Emocional",
+    "juiz_avaliador": "Dirceu Nogueira de Sales Duarte Júnior",
+    "email_do_juiz_avaliador": "dirceu@ufu.br",
+    "criterios_avaliados": [
+      {
+        "criterio": "A1",
+        "campo_original": "clareza_e_objetividade",
+        "descricao": "Clareza dos Critérios",
+        "nota": 4
+      },
+      {
+        "criterio": "A2",
+        "campo_original": "coerencia_entre_descritores",
+        "descricao": "Distinção entre Níveis / Coerência interna",
+        "nota": 4
+      },
+      {
+        "criterio": "A3",
+        "campo_original": "adequacao_a_pratica_pedagogica",
+        "descricao": "Aplicabilidade na prática pedagógica",
+        "nota": 4
+      },
+      {
+        "criterio": "A4",
+        "campo_original": "alinhamento_entidades_normativas_e_avaliativas",
+        "descricao": "Alinhamento a entidades avaliativas",
+        "nota": 4
+      },
+      {
+        "criterio": "A5",
+        "campo_original": "originalidade_e_contribuicao",
+        "descricao": "Originalidade, Inovação e Engajamento",
+        "nota": 4
+      }
+    ],
+    "comentario": "Modelo de JSON",
+    "hash": "HSH#7E090CC5482575F8C247C3BEE3D0C46D",
+    "data": "2025-06-15T08:59:08.473Z",
+    "navegador": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+    "sistema_operacional": "Linux x86_64",
+    "idioma": "pt-BR",
+    "ip_publico": "2804:1e68:c211:f853:bc89:e3f3:6cb1:18be"
+  }
+]
+

@@ -1,0 +1,35 @@
+[
+  {
+    "disciplina": "Leitura",
+    "pergunta_original": "Qual é a mensagem principal do texto sobre a importância da leitura na juventude?",
+    "pergunta_adaptada_tmap": "Por que é importante ler quando somos jovens, especialmente em nossa comunidade no Triângulo Mineiro e Alto Paranaíba (TMAP)?",
+    "resposta_modelo": "A leitura desenvolve o pensamento crítico e nos ajuda a entender melhor o mundo, além de valorizar nossa cultura regional.",
+    "rubrica_pedagogica": "rubrica_sinapse_pedagogica_professor (v1.4)",
+    "fonte": "OCDE/PISA 2022",
+    "ano": 2022,
+    "versao": "v1.4",
+    "publico": "aluno"
+  },
+  {
+    "disciplina": "Matemática",
+    "pergunta_original": "Pedro precisa dividir igualmente 12 litros de suco entre 4 garrafas. Quantos litros cabem em cada garrafa?",
+    "pergunta_adaptada_tmap": "No TMAP, uma família quer dividir 12 litros de suco entre 4 garrafas iguais para uma festa na escola. Quantos litros vão em cada garrafa?",
+    "resposta_modelo": "Cada garrafa terá 3 litros, pois 12 dividido por 4 é igual a 3.",
+    "rubrica_pedagogica": "rubrica_sinapse_pedagogica_professor (v1.4)",
+    "fonte": "OCDE/PISA 2022",
+    "ano": 2022,
+    "versao": "v1.4",
+    "publico": "aluno"
+  },
+  {
+    "disciplina": "Ciências",
+    "pergunta_original": "Explique como as árvores ajudam a melhorar a qualidade do ar nas cidades.",
+    "pergunta_adaptada_tmap": "No TMAP, como as árvores da nossa região podem melhorar a qualidade do ar e a saúde das pessoas?",
+    "resposta_modelo": "As árvores absorvem gás carbônico e liberam oxigênio, além de filtrar poeira e poluentes, contribuindo para um ar mais limpo.",
+    "rubrica_pedagogica": "rubrica_sinapse_pedagogica_professor (v1.4)",
+    "fonte": "OCDE/PISA 2022",
+    "ano": 2022,
+    "versao": "v1.4",
+    "publico": "aluno"
+  }
+]

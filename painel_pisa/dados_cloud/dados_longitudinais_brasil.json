@@ -1,0 +1,10 @@
+[
+  { "Ano": 2000, "Leitura": 396, "Matematica": 334, "Ciencias": null },
+  { "Ano": 2003, "Leitura": 403, "Matematica": 356, "Ciencias": null },
+  { "Ano": 2006, "Leitura": 393, "Matematica": 370, "Ciencias": 390 },
+  { "Ano": 2009, "Leitura": 412, "Matematica": 386, "Ciencias": 405 },
+  { "Ano": 2012, "Leitura": 410, "Matematica": 391, "Ciencias": 405 },
+  { "Ano": 2015, "Leitura": 407, "Matematica": 377, "Ciencias": 401 },
+  { "Ano": 2018, "Leitura": 413, "Matematica": 384, "Ciencias": 404 },
+  { "Ano": 2022, "Leitura": 410, "Matematica": 379, "Ciencias": 403 }
+]

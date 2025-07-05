@@ -1,0 +1,266 @@
+{
+  "metadados": {
+    "gerado_por": "LLAMA3 + heurística de classificação formatividade/somatividade",
+    "autor": "Neirivon Elias Cardoso",
+    "data": "2025-06-21",
+    "base": "rubrica_sinapase_ia_v4.json"
+  },
+  "analise": [
+    {
+      "dimensao": "Progressão Cognitiva Educacional",
+      "nivel": "Emergente",
+      "descricao": "Lida apenas com informações simples, memorizadas ou repetidas, com baixa mobilização cognitiva.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.53,
+      "similaridade_somatividade": 0.465
+    },
+    {
+      "dimensao": "Progressão Cognitiva Educacional",
+      "nivel": "Intermediário",
+      "descricao": "Compreende conceitos básicos e consegue aplicá-los com apoio em situações familiares.",
+      "classificacao": "formativo",
+      "similaridade_formatividade": 0.442,
+      "similaridade_somatividade": 0.306
+    },
+    {
+      "dimensao": "Progressão Cognitiva Educacional",
+      "nivel": "Proficiente",
+      "descricao": "Analisa criticamente, estabelece relações e propõe explicações com base em dados ou conceitos.",
+      "classificacao": "formativo",
+      "similaridade_formatividade": 0.483,
+      "similaridade_somatividade": 0.377
+    },
+    {
+      "dimensao": "Progressão Cognitiva Educacional",
+      "nivel": "Avançado",
+      "descricao": "Elabora projetos interdisciplinares com propostas inovadoras, utilizando dados locais e estratégias científicas para resolver problemas reais da comunidade escolar ou regional.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.469,
+      "similaridade_somatividade": 0.46
+    },
+    {
+      "dimensao": "Perfil Socioeconômico e Contextual",
+      "nivel": "Emergente",
+      "descricao": "Apresenta limitações severas de acesso e estímulo no contexto familiar e comunitário.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.383,
+      "similaridade_somatividade": 0.327
+    },
+    {
+      "dimensao": "Perfil Socioeconômico e Contextual",
+      "nivel": "Intermediário",
+      "descricao": "Vivencia condições mínimas de estrutura e apoio escolar/familiar, com participação eventual.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.462,
+      "similaridade_somatividade": 0.44
+    },
+    {
+      "dimensao": "Perfil Socioeconômico e Contextual",
+      "nivel": "Proficiente",
+      "descricao": "Apresenta estabilidade socioeconômica e utiliza recursos comunitários e escolares com autonomia.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.489,
+      "similaridade_somatividade": 0.422
+    },
+    {
+      "dimensao": "Perfil Socioeconômico e Contextual",
+      "nivel": "Avançado",
+      "descricao": "Assume postura ativa na promoção da equidade, identidade territorial e justiça social em contextos diversos.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.403,
+      "similaridade_somatividade": 0.338
+    },
+    {
+      "dimensao": "Autonomia e Autorregulação da Aprendizagem",
+      "nivel": "Emergente",
+      "descricao": "Depende inteiramente de orientações externas para realizar atividades.",
+      "classificacao": "formativo",
+      "similaridade_formatividade": 0.476,
+      "similaridade_somatividade": 0.368
+    },
+    {
+      "dimensao": "Autonomia e Autorregulação da Aprendizagem",
+      "nivel": "Intermediário",
+      "descricao": "Realiza tarefas com ajuda parcial, demonstrando esforço para se organizar.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.413,
+      "similaridade_somatividade": 0.46
+    },
+    {
+      "dimensao": "Autonomia e Autorregulação da Aprendizagem",
+      "nivel": "Proficiente",
+      "descricao": "Planeja suas ações, avalia resultados e corrige estratégias de forma crescente.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.465,
+      "similaridade_somatividade": 0.502
+    },
+    {
+      "dimensao": "Autonomia e Autorregulação da Aprendizagem",
+      "nivel": "Avançado",
+      "descricao": "Demonstra domínio da gestão do próprio tempo, objetivos e estratégias de aprendizagem.",
+      "classificacao": "formativo",
+      "similaridade_formatividade": 0.568,
+      "similaridade_somatividade": 0.476
+    },
+    {
+      "dimensao": "Capacidade de Comunicação e Expressão",
+      "nivel": "Emergente",
+      "descricao": "Expressa-se com vocabulário restrito, apresentando dificuldades de coesão, clareza e organização textual.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.377,
+      "similaridade_somatividade": 0.414
+    },
+    {
+      "dimensao": "Capacidade de Comunicação e Expressão",
+      "nivel": "Intermediário",
+      "descricao": "Comunica ideias em contextos conhecidos com vocabulário funcional, demonstrando estrutura básica de expressão.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.42,
+      "similaridade_somatividade": 0.359
+    },
+    {
+      "dimensao": "Capacidade de Comunicação e Expressão",
+      "nivel": "Proficiente",
+      "descricao": "Organiza e expressa argumentos de forma coerente e adequada ao gênero e situação comunicativa.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.432,
+      "similaridade_somatividade": 0.402
+    },
+    {
+      "dimensao": "Capacidade de Comunicação e Expressão",
+      "nivel": "Avançado",
+      "descricao": "Produz discursos orais e escritos com riqueza vocabular, domínio discursivo e argumentação sólida, com foco social e educativo.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.475,
+      "similaridade_somatividade": 0.412
+    },
+    {
+      "dimensao": "Raciocínio Lógico e Solução de Problemas",
+      "nivel": "Emergente",
+      "descricao": "Aplica procedimentos simples sob mediação, com dificuldade em generalizar padrões ou inferir estratégias.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.525,
+      "similaridade_somatividade": 0.55
+    },
+    {
+      "dimensao": "Raciocínio Lógico e Solução de Problemas",
+      "nivel": "Intermediário",
+      "descricao": "Resolve problemas estruturados com apoio, utilizando técnicas previamente ensinadas.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.462,
+      "similaridade_somatividade": 0.509
+    },
+    {
+      "dimensao": "Raciocínio Lógico e Solução de Problemas",
+      "nivel": "Proficiente",
+      "descricao": "Aplica estratégias variadas com autonomia para resolver desafios do cotidiano escolar e comunitário.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.506,
+      "similaridade_somatividade": 0.492
+    },
+    {
+      "dimensao": "Raciocínio Lógico e Solução de Problemas",
+      "nivel": "Avançado",
+      "descricao": "Cria soluções originais para problemas reais, articulando dados, lógica e criatividade com base em múltiplas abordagens.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.375,
+      "similaridade_somatividade": 0.364
+    },
+    {
+      "dimensao": "Engajamento e Responsabilidade Social",
+      "nivel": "Emergente",
+      "descricao": "Participa de forma limitada e reativa, com baixo envolvimento nas ações coletivas escolares.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.493,
+      "similaridade_somatividade": 0.526
+    },
+    {
+      "dimensao": "Engajamento e Responsabilidade Social",
+      "nivel": "Intermediário",
+      "descricao": "Colabora quando solicitado, demonstrando sensibilidade inicial para ações em grupo e ética social.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.431,
+      "similaridade_somatividade": 0.353
+    },
+    {
+      "dimensao": "Engajamento e Responsabilidade Social",
+      "nivel": "Proficiente",
+      "descricao": "Compromete-se ativamente com propostas coletivas e busca resolver conflitos de forma empática e construtiva.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.344,
+      "similaridade_somatividade": 0.365
+    },
+    {
+      "dimensao": "Engajamento e Responsabilidade Social",
+      "nivel": "Avançado",
+      "descricao": "Lidera ações sociais e educativas com intencionalidade transformadora e compromisso com o bem coletivo local.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.477,
+      "similaridade_somatividade": 0.503
+    },
+    {
+      "dimensao": "Relacionamento com Saberes Científicos e Culturais",
+      "nivel": "Emergente",
+      "descricao": "Participa de atividades culturais e científicas como espectador, sem articulação crítica ou aprofundamento.",
+      "classificacao": "formativo",
+      "similaridade_formatividade": 0.522,
+      "similaridade_somatividade": 0.402
+    },
+    {
+      "dimensao": "Relacionamento com Saberes Científicos e Culturais",
+      "nivel": "Intermediário",
+      "descricao": "Reconhece saberes tradicionais e científicos com apoio docente, valorizando a diversidade de fontes e práticas.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.294,
+      "similaridade_somatividade": 0.316
+    },
+    {
+      "dimensao": "Relacionamento com Saberes Científicos e Culturais",
+      "nivel": "Proficiente",
+      "descricao": "Relaciona de forma autônoma conhecimentos escolares com manifestações culturais e científicas locais.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.578,
+      "similaridade_somatividade": 0.514
+    },
+    {
+      "dimensao": "Relacionamento com Saberes Científicos e Culturais",
+      "nivel": "Avançado",
+      "descricao": "Integra criticamente saberes diversos, propondo soluções e ações educativas de valorização territorial e cultural.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.382,
+      "similaridade_somatividade": 0.332
+    },
+    {
+      "dimensao": "Pertencimento e Equidade Territorial (CTC + EJI + ESCS)",
+      "nivel": "Emergente",
+      "descricao": "Apresenta baixa identificação com a cultura local e ausência de reconhecimento territorial ou étnico.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.353,
+      "similaridade_somatividade": 0.378
+    },
+    {
+      "dimensao": "Pertencimento e Equidade Territorial (CTC + EJI + ESCS)",
+      "nivel": "Intermediário",
+      "descricao": "Demonstra respeito à diversidade, mas ainda com postura passiva frente às desigualdades.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.407,
+      "similaridade_somatividade": 0.4
+    },
+    {
+      "dimensao": "Pertencimento e Equidade Territorial (CTC + EJI + ESCS)",
+      "nivel": "Proficiente",
+      "descricao": "Reconhece as desigualdades históricas e atua em projetos de valorização de grupos sub-representados.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.344,
+      "similaridade_somatividade": 0.29
+    },
+    {
+      "dimensao": "Pertencimento e Equidade Territorial (CTC + EJI + ESCS)",
+      "nivel": "Avançado",
+      "descricao": "Assume postura ativa na promoção da equidade, identidade territorial e justiça social em contextos diversos.",
+      "classificacao": "híbrido",
+      "similaridade_formatividade": 0.403,
+      "similaridade_somatividade": 0.338
+    }
+  ]
+}

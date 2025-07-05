@@ -1,0 +1,26 @@
+[
+  {
+    "area": "leitura",
+    "questao_id": "L1",
+    "pergunta": "A prefeitura de sua cidade publicou um novo regulamento para o transporte escolar. Ele deve garantir o acesso equitativo de todos os alunos, especialmente os das zonas rurais. Com base nesse regulamento, discuta os principais desafios e benefícios para os estudantes da sua região.",
+    "resposta_modelo": "O novo regulamento beneficia estudantes da zona rural ao garantir acesso regular às escolas, mas enfrenta desafios como infraestrutura e orçamento limitado.",
+    "resposta_mediana": "O regulamento ajuda alunos das cidades pequenas, mas não resolve tudo porque pode faltar ônibus ou motorista para pegar todo mundo.",
+    "resposta_inadequada": "Gosto muito de esportes e acho que todos deveriam praticar mais atividades físicas."
+  },
+  {
+    "area": "leitura",
+    "questao_id": "L2",
+    "pergunta": "A escola da sua cidade decidiu reformular o currículo para incluir mais atividades de leitura crítica. Explique como essa mudança pode impactar o aprendizado dos alunos.",
+    "resposta_modelo": "A leitura crítica ajuda os alunos a desenvolverem pensamento analítico, interpretação de textos e maior compreensão social.",
+    "resposta_mediana": "A leitura crítica é legal porque a gente lê mais livros e tem menos matemática, o que é bom pra quem gosta de português.",
+    "resposta_inadequada": "Acho que a cantina da escola devia vender sucos naturais e não só refrigerantes."
+  },
+  {
+    "area": "leitura",
+    "questao_id": "L3",
+    "pergunta": "Em uma escola de Uberlândia, um projeto piloto proibiu o uso de celulares nas aulas por 30 dias. Professores relataram melhora na atenção dos alunos, enquanto outros alunos protestaram contra a medida. Com base nesse cenário, argumente sua opinião sobre a proibição do uso de celulares em sala de aula.",
+    "resposta_modelo": "A proibição temporária de celulares permitiu observar melhorias na concentração, mostrando que limitar o uso pode favorecer o aprendizado. No entanto, a decisão deve considerar também estratégias pedagógicas que integrem a tecnologia com responsabilidade.",
+    "resposta_mediana": "Celular é ruim pra aula porque os alunos jogam e não prestam atenção, então tem que tirar mesmo.",
+    "resposta_inadequada": "Eu uso meu celular o tempo todo, ninguém tem que me dizer quando usar."
+  }
+]
