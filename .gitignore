@@ -16,7 +16,6 @@ requirements_local.txt
 # 💾 Dados e artefatos pesados
 *.csv
 *.tsv
-*.json
 *.sqlite3
 *.db
 *.log
