@@ -1,4 +1,4 @@
-# STREAMLIT E VISUALIZAÇÃO RESOLVER PROBLEMA
+# STREAMLIT E VISUALIZAÇÃO
 pymongo==4.6.3
 streamlit
 pandas
@@ -7,8 +7,10 @@ matplotlib
 plotly
 seaborn
 wordcloud
-python-dotenv
 
 # IA E NLP (modo cloud leve)
 scikit-learn
 transformers==4.38.0
+
+
+

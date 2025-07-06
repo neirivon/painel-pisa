@@ -6,7 +6,7 @@ estilo()
 
 modo = st.secrets["modo"] if "modo" in st.secrets else "local"
 
-st.title("🗃️ Onde ficam armazenados os dados do PISA e quem representa o Brasil?")
+st.title("🗃️ Onde ficam armazenados os dados e relatórios do PISA relacionados a cada edição e quem representa o Brasil?")
 
 st.markdown("""
 ### 🌐 Dados internacionais: OCDE
@@ -50,4 +50,24 @@ st.code("""
   "analise_taxonomia": true
 }
 """, language="json")
+
+# 👇 Novo bloco inserido abaixo
+st.markdown("---")
+st.markdown("### 📊 Comparativo de Estruturas: OCDE x INEP")
+
+st.markdown("""
+Esta tabela resume como os dados do PISA são apresentados pelas duas entidades:
+
+| Aspecto                     | OCDE (Internacional)                                            | INEP (Brasil)                                                  |
+|----------------------------|------------------------------------------------------------------|----------------------------------------------------------------|
+| **Formato dos dados**      | `.csv`, `.sav`, `.sas7bdat`                                     | `.pdf`, `.xlsx`                                                |
+| **Microdados**             | Sim, completos por estudante (com códigos de país, escola etc.) | Parcialmente agregados ou recortes específicos                 |
+| **Relatórios**             | Técnicos e analíticos, com foco global e rankings               | Relatórios descritivos focados no desempenho brasileiro        |
+| **Ferramentas de análise** | SPSS, R, Python, Stata                                          | Principalmente PDF e gráficos fixos em relatórios              |
+| **Campos educacionais**    | ESCS, PV1READ, PV1MATH, PV1SCIE, IDSTUD, etc.                   | Médias por região, escola pública/privada, gênero              |
+| **Foco analítico**         | Comparação entre países, tendências globais                     | Situação do Brasil ao longo do tempo                           |
+| **Periodicidade**          | Trienal                                                         | Trienal (com eventual atraso na publicação)                    |
+
+Essa comparação ajuda a entender como unir forças: usar a robustez dos microdados da OCDE com a contextualização nacional feita pelo INEP.
+""")
 

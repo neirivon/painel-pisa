@@ -12,6 +12,7 @@ __pycache__/
 
 # Arquivo de dependências locais (não subir para o GitHub)
 requirements_local.txt
+requirements.txt
 
 # 💾 Dados e artefatos pesados
 *.csv
@@ -45,5 +46,3 @@ dist/
 *.code-workspace
 painel_pisa/utils/config.py
 
-.env
-requirements.txt
